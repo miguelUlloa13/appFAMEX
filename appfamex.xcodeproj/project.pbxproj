@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7822CFF0296A28320012034F /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822CFEF296A28320012034F /* LogIn.storyboard */; };
 		7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822CFF3296A815C0012034F /* SignUpViewController.swift */; };
+		7822CFF6296A837D0012034F /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822CFF5296A837D0012034F /* Menu.storyboard */; };
+		7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822CFF7296A838F0012034F /* MenuViewController.swift */; };
+		7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822CFFA296A96090012034F /* MenuTableViewCell.swift */; };
+		7822CFFD296A96090012034F /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7822CFFB296A96090012034F /* MenuTableViewCell.xib */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -43,6 +47,10 @@
 /* Begin PBXFileReference section */
 		7822CFEF296A28320012034F /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		7822CFF3296A815C0012034F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7822CFF5296A837D0012034F /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		7822CFF7296A838F0012034F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7822CFFA296A96090012034F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		7822CFFB296A96090012034F /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -339,6 +347,7 @@
 		788CFD83296A2394009E189F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7822CFF5296A837D0012034F /* Menu.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,6 +355,9 @@
 		788CFD84296A239A009E189F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7822CFF7296A838F0012034F /* MenuViewController.swift */,
+				7822CFFA296A96090012034F /* MenuTableViewCell.swift */,
+				7822CFFB296A96090012034F /* MenuTableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -463,8 +475,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				788CFD42296958F3009E189F /* LaunchScreen.storyboard in Resources */,
+				7822CFFD296A96090012034F /* MenuTableViewCell.xib in Resources */,
 				788CFD3F296958F3009E189F /* Assets.xcassets in Resources */,
 				788CFD72296A1B37009E189F /* SignUp.storyboard in Resources */,
+				7822CFF6296A837D0012034F /* Menu.storyboard in Resources */,
 				788CFD87296A24C5009E189F /* Plateia.ttf in Resources */,
 				7822CFF0296A28320012034F /* LogIn.storyboard in Resources */,
 			);
@@ -493,7 +507,9 @@
 			files = (
 				7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */,
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
+				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
+				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
 				788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */,
 				788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */,
