@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sig In View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SigInViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Log In View Controller" customClass="LogInViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,8 +49,8 @@
                                                                 </constraints>
                                                                 <variation key="default">
                                                                     <mask key="constraints">
-                                                                        <exclude reference="O4d-CG-R05"/>
                                                                         <exclude reference="I03-iV-MT8"/>
+                                                                        <exclude reference="O4d-CG-R05"/>
                                                                     </mask>
                                                                 </variation>
                                                                 <variation key="heightClass=regular-widthClass=compact">
@@ -188,6 +188,9 @@
                                                                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="tappedSignUpBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5V-OM-xsB"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnK-Hg-3Sk">
                                                                                 <rect key="frame" x="0.0" y="100" width="390" height="50"/>
@@ -259,10 +262,45 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oH4-kd-upj"/>
+                    <connections>
+                        <outlet property="BtnsSV" destination="MuD-Rk-K7H" id="dej-Rw-zPn"/>
+                        <outlet property="BtnsView" destination="saL-Eu-Bwn" id="dG7-nQ-CmF"/>
+                        <outlet property="ContainerView" destination="gAk-Yq-O0R" id="fGd-ik-uuy"/>
+                        <outlet property="EntryTextView" destination="OBo-JC-WsB" id="B5q-09-JCN"/>
+                        <outlet property="GuessUsrBtn" destination="WnK-Hg-3Sk" id="3SD-2U-1QJ"/>
+                        <outlet property="LinePwView" destination="P08-4I-OCC" id="0Ig-zJ-ZAn"/>
+                        <outlet property="LineRefView" destination="mEr-om-Njb" id="ExV-Fu-7ao"/>
+                        <outlet property="LineUsrView" destination="fM0-NI-LMW" id="dsr-fl-0Zh"/>
+                        <outlet property="LogInBGImg" destination="b0b-iT-KpT" id="zYD-9z-cWh"/>
+                        <outlet property="LogInBtn" destination="HFa-wB-iwb" id="eq3-BD-GA1"/>
+                        <outlet property="LogInSV" destination="TGS-os-ZyL" id="8F6-Vv-Gwm"/>
+                        <outlet property="LogInScrollView" destination="Tmy-xQ-5xz" id="m3E-MQ-kal"/>
+                        <outlet property="LogInView" destination="LKG-er-iCk" id="544-Gi-tXz"/>
+                        <outlet property="LogoFAMEXImg" destination="dtk-V0-Kio" id="zjr-OG-kQy"/>
+                        <outlet property="LogoFAMEXView" destination="Ocl-Y2-kd9" id="YFb-2k-XZ4"/>
+                        <outlet property="PwIconImg" destination="hhk-O1-Rz4" id="uE8-Ia-ngb"/>
+                        <outlet property="PwTF" destination="VCE-ow-mRd" id="KQh-fy-gQx"/>
+                        <outlet property="SelectLanguageBtn" destination="L8q-Lb-YZF" id="Vpf-wJ-RKg"/>
+                        <outlet property="SignUpBtn" destination="3gN-qP-8CA" id="42d-Ut-WI0"/>
+                        <outlet property="SpaceView" destination="uSw-a7-82k" id="JGa-4J-mLo"/>
+                        <outlet property="UsrIconImg" destination="qIj-XJ-oZd" id="ioG-lU-hcL"/>
+                        <outlet property="UsrTF" destination="LTK-Nf-aXq" id="oXP-UB-irH"/>
+                        <segue destination="W5R-Oh-6kt" kind="show" identifier="signUpSegue" id="5hV-Sl-Va6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972.55813953488371" y="-2.5751072961373391"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="uzo-Z9-Ici">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="W5R-Oh-6kt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="t4U-Ov-OIl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XwM-SN-Kbj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="37"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LVD-K3-7Td">
