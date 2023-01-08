@@ -18,6 +18,8 @@
 		7822D001296B6BB60012034F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822D000296B6BB60012034F /* HomeViewController.swift */; };
 		7822D003296B718A0012034F /* FAMEX.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822D002296B718A0012034F /* FAMEX.storyboard */; };
 		7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822D004296B71A70012034F /* FAMEXViewController.swift */; };
+		7822D008296B771F0012034F /* France.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822D007296B771F0012034F /* France.storyboard */; };
+		7822D00A296B77340012034F /* FranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822D009296B77340012034F /* FranceViewController.swift */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -65,6 +67,8 @@
 		7822D000296B6BB60012034F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7822D002296B718A0012034F /* FAMEX.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FAMEX.storyboard; sourceTree = "<group>"; };
 		7822D004296B71A70012034F /* FAMEXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAMEXViewController.swift; sourceTree = "<group>"; };
+		7822D007296B771F0012034F /* France.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = France.storyboard; sourceTree = "<group>"; };
+		7822D009296B77340012034F /* FranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceViewController.swift; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +131,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7822D006296B76E60012034F /* Pop Ups VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Pop Ups VC";
+			sourceTree = "<group>";
+		};
 		788CFD26296958F2009E189F = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +177,7 @@
 				788CFD75296A2159009E189F /* Home VC */,
 				788CFD79296A22D0009E189F /* FAMEX VC */,
 				788CFD7A296A22DD009E189F /* France VC */,
+				7822D006296B76E60012034F /* Pop Ups VC */,
 			);
 			path = appfamex;
 			sourceTree = "<group>";
@@ -355,6 +367,7 @@
 		788CFD7F296A2347009E189F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7822D007296B771F0012034F /* France.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,6 +375,7 @@
 		788CFD80296A234A009E189F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7822D009296B77340012034F /* FranceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -534,6 +548,7 @@
 				788CFD42296958F3009E189F /* LaunchScreen.storyboard in Resources */,
 				7822CFFD296A96090012034F /* MenuTableViewCell.xib in Resources */,
 				788CFD3F296958F3009E189F /* Assets.xcassets in Resources */,
+				7822D008296B771F0012034F /* France.storyboard in Resources */,
 				788CFD72296A1B37009E189F /* SignUp.storyboard in Resources */,
 				7822CFF6296A837D0012034F /* Menu.storyboard in Resources */,
 				7822D003296B718A0012034F /* FAMEX.storyboard in Resources */,
@@ -669,6 +684,7 @@
 			files = (
 				7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */,
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
+				7822D00A296B77340012034F /* FranceViewController.swift in Sources */,
 				7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */,
 				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
