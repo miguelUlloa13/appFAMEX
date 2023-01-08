@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BB883B779B61B29ED9F2B86 /* Pods_appfamex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECA955FACE83E251DB5F31A /* Pods_appfamex.framework */; };
 		7822CFF0296A28320012034F /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822CFEF296A28320012034F /* LogIn.storyboard */; };
 		7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822CFF3296A815C0012034F /* SignUpViewController.swift */; };
 		7822CFF6296A837D0012034F /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822CFF5296A837D0012034F /* Menu.storyboard */; };
 		7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822CFF7296A838F0012034F /* MenuViewController.swift */; };
 		7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822CFFA296A96090012034F /* MenuTableViewCell.swift */; };
 		7822CFFD296A96090012034F /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7822CFFB296A96090012034F /* MenuTableViewCell.xib */; };
+		7822CFFF296B6B940012034F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822CFFE296B6B940012034F /* Home.storyboard */; };
+		7822D001296B6BB60012034F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822D000296B6BB60012034F /* HomeViewController.swift */; };
+		7822D003296B718A0012034F /* FAMEX.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822D002296B718A0012034F /* FAMEX.storyboard */; };
+		7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822D004296B71A70012034F /* FAMEXViewController.swift */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -25,6 +30,8 @@
 		788CFD72296A1B37009E189F /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788CFD71296A1B37009E189F /* SignUp.storyboard */; };
 		788CFD74296A211A009E189F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD73296A211A009E189F /* Extensions.swift */; };
 		788CFD87296A24C5009E189F /* Plateia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 788CFD86296A24C5009E189F /* Plateia.ttf */; };
+		8814E23C7C8E7D34FD0DD6DE /* Pods_appfamex_appfamexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */; };
+		F6CF7EFE507C7080A4922B91 /* Pods_appfamexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +52,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1037D9A5B22A6D3B3E8311C5 /* Pods-appfamex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamex.debug.xcconfig"; path = "Target Support Files/Pods-appfamex/Pods-appfamex.debug.xcconfig"; sourceTree = "<group>"; };
+		4A9484E554E468485330E987 /* Pods-appfamexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamexTests.release.xcconfig"; path = "Target Support Files/Pods-appfamexTests/Pods-appfamexTests.release.xcconfig"; sourceTree = "<group>"; };
+		6361DFB2740A14D57D6C59AD /* Pods-appfamex-appfamexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamex-appfamexUITests.debug.xcconfig"; path = "Target Support Files/Pods-appfamex-appfamexUITests/Pods-appfamex-appfamexUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7822CFEF296A28320012034F /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		7822CFF3296A815C0012034F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7822CFF5296A837D0012034F /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		7822CFF7296A838F0012034F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7822CFFA296A96090012034F /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		7822CFFB296A96090012034F /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		7822CFFE296B6B940012034F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		7822D000296B6BB60012034F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7822D002296B718A0012034F /* FAMEX.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FAMEX.storyboard; sourceTree = "<group>"; };
+		7822D004296B71A70012034F /* FAMEXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAMEXViewController.swift; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +81,12 @@
 		788CFD71296A1B37009E189F /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		788CFD73296A211A009E189F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		788CFD86296A24C5009E189F /* Plateia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Plateia.ttf; sourceTree = "<group>"; };
+		88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamex_appfamexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		991939547D034D42DDF10B47 /* Pods-appfamexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamexTests.debug.xcconfig"; path = "Target Support Files/Pods-appfamexTests/Pods-appfamexTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA6882834A9A177C64EFA49A /* Pods-appfamex-appfamexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamex-appfamexUITests.release.xcconfig"; path = "Target Support Files/Pods-appfamex-appfamexUITests/Pods-appfamex-appfamexUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C60B28BF465B9D8754992A88 /* Pods-appfamex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamex.release.xcconfig"; path = "Target Support Files/Pods-appfamex/Pods-appfamex.release.xcconfig"; sourceTree = "<group>"; };
+		CECA955FACE83E251DB5F31A /* Pods_appfamex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BB883B779B61B29ED9F2B86 /* Pods_appfamex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CF7EFE507C7080A4922B91 /* Pods_appfamexTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +110,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8814E23C7C8E7D34FD0DD6DE /* Pods_appfamex_appfamexUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FD2DDAB6C9F54F37A418387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CECA955FACE83E251DB5F31A /* Pods_appfamex.framework */,
+				88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */,
+				8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		788CFD26296958F2009E189F = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +134,8 @@
 				788CFD4B296958F3009E189F /* appfamexTests */,
 				788CFD55296958F3009E189F /* appfamexUITests */,
 				788CFD30296958F2009E189F /* Products */,
+				AEBF199F50CFFB94DDD7FC13 /* Pods */,
+				5FD2DDAB6C9F54F37A418387 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,6 +289,7 @@
 		788CFD77296A229D009E189F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7822CFFE296B6B940012034F /* Home.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +297,7 @@
 		788CFD78296A22A0009E189F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7822D000296B6BB60012034F /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +332,7 @@
 		788CFD7C296A2328009E189F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7822D002296B718A0012034F /* FAMEX.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +340,7 @@
 		788CFD7D296A232B009E189F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7822D004296B71A70012034F /* FAMEXViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -347,6 +386,7 @@
 		788CFD83296A2394009E189F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7822CFFB296A96090012034F /* MenuTableViewCell.xib */,
 				7822CFF5296A837D0012034F /* Menu.storyboard */,
 			);
 			path = View;
@@ -357,7 +397,6 @@
 			children = (
 				7822CFF7296A838F0012034F /* MenuViewController.swift */,
 				7822CFFA296A96090012034F /* MenuTableViewCell.swift */,
-				7822CFFB296A96090012034F /* MenuTableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -370,6 +409,19 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		AEBF199F50CFFB94DDD7FC13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1037D9A5B22A6D3B3E8311C5 /* Pods-appfamex.debug.xcconfig */,
+				C60B28BF465B9D8754992A88 /* Pods-appfamex.release.xcconfig */,
+				6361DFB2740A14D57D6C59AD /* Pods-appfamex-appfamexUITests.debug.xcconfig */,
+				AA6882834A9A177C64EFA49A /* Pods-appfamex-appfamexUITests.release.xcconfig */,
+				991939547D034D42DDF10B47 /* Pods-appfamexTests.debug.xcconfig */,
+				4A9484E554E468485330E987 /* Pods-appfamexTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -377,9 +429,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 788CFD5C296958F3009E189F /* Build configuration list for PBXNativeTarget "appfamex" */;
 			buildPhases = (
+				C8D4089EF503C3576525B50C /* [CP] Check Pods Manifest.lock */,
 				788CFD2B296958F2009E189F /* Sources */,
 				788CFD2C296958F2009E189F /* Frameworks */,
 				788CFD2D296958F2009E189F /* Resources */,
+				3CCDF86C4E80CBF0B54D21D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,6 +448,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 788CFD5F296958F3009E189F /* Build configuration list for PBXNativeTarget "appfamexTests" */;
 			buildPhases = (
+				6B70174BF52CFC8097BFF1C6 /* [CP] Check Pods Manifest.lock */,
 				788CFD44296958F3009E189F /* Sources */,
 				788CFD45296958F3009E189F /* Frameworks */,
 				788CFD46296958F3009E189F /* Resources */,
@@ -412,9 +467,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 788CFD62296958F3009E189F /* Build configuration list for PBXNativeTarget "appfamexUITests" */;
 			buildPhases = (
+				3209AEE2C8FBA2C191129342 /* [CP] Check Pods Manifest.lock */,
 				788CFD4E296958F3009E189F /* Sources */,
 				788CFD4F296958F3009E189F /* Frameworks */,
 				788CFD50296958F3009E189F /* Resources */,
+				D35503D07D17D54083EDE7E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -479,8 +536,10 @@
 				788CFD3F296958F3009E189F /* Assets.xcassets in Resources */,
 				788CFD72296A1B37009E189F /* SignUp.storyboard in Resources */,
 				7822CFF6296A837D0012034F /* Menu.storyboard in Resources */,
+				7822D003296B718A0012034F /* FAMEX.storyboard in Resources */,
 				788CFD87296A24C5009E189F /* Plateia.ttf in Resources */,
 				7822CFF0296A28320012034F /* LogIn.storyboard in Resources */,
+				7822CFFF296B6B940012034F /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +559,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3209AEE2C8FBA2C191129342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-appfamex-appfamexUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CCDF86C4E80CBF0B54D21D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-appfamex/Pods-appfamex-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-appfamex/Pods-appfamex-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-appfamex/Pods-appfamex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B70174BF52CFC8097BFF1C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-appfamexTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D4089EF503C3576525B50C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-appfamex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D35503D07D17D54083EDE7E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-appfamex-appfamexUITests/Pods-appfamex-appfamexUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-appfamex-appfamexUITests/Pods-appfamex-appfamexUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-appfamex-appfamexUITests/Pods-appfamex-appfamexUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		788CFD2B296958F2009E189F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -507,9 +669,11 @@
 			files = (
 				7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */,
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
+				7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */,
 				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
+				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
 				788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */,
 				788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */,
@@ -676,6 +840,7 @@
 		};
 		788CFD5D296958F3009E189F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1037D9A5B22A6D3B3E8311C5 /* Pods-appfamex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -704,6 +869,7 @@
 		};
 		788CFD5E296958F3009E189F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60B28BF465B9D8754992A88 /* Pods-appfamex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -732,6 +898,7 @@
 		};
 		788CFD60296958F3009E189F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991939547D034D42DDF10B47 /* Pods-appfamexTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -752,6 +919,7 @@
 		};
 		788CFD61296958F3009E189F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9484E554E468485330E987 /* Pods-appfamexTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -772,6 +940,7 @@
 		};
 		788CFD63296958F3009E189F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6361DFB2740A14D57D6C59AD /* Pods-appfamex-appfamexUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -790,6 +959,7 @@
 		};
 		788CFD64296958F3009E189F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6882834A9A177C64EFA49A /* Pods-appfamex-appfamexUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
