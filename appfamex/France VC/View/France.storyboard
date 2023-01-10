@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--France View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="FranceViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImgThree" translatesAutoresizingMaskIntoConstraints="NO" id="1jn-sq-KR1">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <rect key="frame" x="-5" y="0.0" width="403" height="852"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZW-Qu-cp2">
                                         <rect key="frame" x="0.0" y="59" width="393" height="759"/>
@@ -260,10 +260,10 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="1jn-sq-KR1" firstAttribute="leading" secondItem="uKW-gz-JCS" secondAttribute="leading" id="Bgw-P9-HBx"/>
+                                    <constraint firstItem="1jn-sq-KR1" firstAttribute="leading" secondItem="uKW-gz-JCS" secondAttribute="leading" constant="-5" id="Bgw-P9-HBx"/>
                                     <constraint firstItem="1jn-sq-KR1" firstAttribute="top" secondItem="uKW-gz-JCS" secondAttribute="top" id="WRX-Ru-FxF"/>
                                     <constraint firstAttribute="bottom" secondItem="1jn-sq-KR1" secondAttribute="bottom" id="jjP-9c-Edu"/>
-                                    <constraint firstAttribute="trailing" secondItem="1jn-sq-KR1" secondAttribute="trailing" id="xoN-3k-yLn"/>
+                                    <constraint firstAttribute="trailing" secondItem="1jn-sq-KR1" secondAttribute="trailing" constant="-5" id="xoN-3k-yLn"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -280,6 +280,35 @@
                             <constraint firstItem="uKW-gz-JCS" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="zpb-X5-L0g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AboutFranceSV" destination="mMs-ck-SQD" id="IJV-CQ-rqr"/>
+                        <outlet property="AboutFranceView" destination="lXm-WZ-SaD" id="guu-Jb-fS5"/>
+                        <outlet property="ConferencesExhibitionsChaletsSV" destination="v0g-QC-QOl" id="Tr7-W6-PfB"/>
+                        <outlet property="FranceBGImg" destination="1jn-sq-KR1" id="9Z0-5K-Qet"/>
+                        <outlet property="FranceBtnsSV" destination="oMJ-ed-sQo" id="zNm-ES-G71"/>
+                        <outlet property="FranceBtnsView" destination="OvU-Xj-NQU" id="zMI-9B-zc7"/>
+                        <outlet property="FranceChaletsBtn" destination="RSb-5Z-Gvo" id="unH-rP-7VD"/>
+                        <outlet property="FranceChaletsView" destination="kjT-dy-mxJ" id="U91-0R-2mP"/>
+                        <outlet property="FranceCommercialBtn" destination="oHq-r9-3DF" id="qvn-d0-81C"/>
+                        <outlet property="FranceCommercialView" destination="TBC-LV-v66" id="J6O-Yf-H9Y"/>
+                        <outlet property="FranceConferencesBtn" destination="zql-bC-nZp" id="PHY-4E-2sC"/>
+                        <outlet property="FranceConferencesExhibitionChaletsView" destination="iZl-21-26s" id="981-8r-XHV"/>
+                        <outlet property="FranceConferencesView" destination="OIF-3T-Lbl" id="X9Y-RR-8sA"/>
+                        <outlet property="FranceEmbassyBtn" destination="DxR-d7-EDT" id="i3i-ua-855"/>
+                        <outlet property="FranceEmbassyView" destination="S9A-tA-15t" id="sxy-Cb-D3K"/>
+                        <outlet property="FranceExhibitionBtn" destination="XU2-RL-mAZ" id="cFz-00-bRf"/>
+                        <outlet property="FranceExhibitionView" destination="pit-jO-fYm" id="5Tc-oi-Q3W"/>
+                        <outlet property="FranceIDBtn" destination="TMI-0D-YPK" id="Ygq-IC-HoA"/>
+                        <outlet property="FranceIDView" destination="cYM-O6-yof" id="AOO-pG-O7g"/>
+                        <outlet property="FranceJobBtn" destination="EwN-ai-Un5" id="gi2-rZ-mmG"/>
+                        <outlet property="FranceJobView" destination="ST0-Ue-yX3" id="75s-gL-Oh3"/>
+                        <outlet property="FranceLbl" destination="cn4-zn-G72" id="7qe-hW-yd7"/>
+                        <outlet property="FranceLblView" destination="g36-WC-Qup" id="C1N-V5-Xw5"/>
+                        <outlet property="FranceLeadersBtn" destination="WsX-9x-Hf5" id="ufO-ms-AC0"/>
+                        <outlet property="FranceLeadersView" destination="UzQ-b5-v27" id="fmp-W9-Qbi"/>
+                        <outlet property="FranceSV" destination="OZW-Qu-cp2" id="b7C-rm-lS3"/>
+                        <outlet property="FranceView" destination="uKW-gz-JCS" id="aXG-es-tQ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -20,6 +20,7 @@
 		7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822D004296B71A70012034F /* FAMEXViewController.swift */; };
 		7822D008296B771F0012034F /* France.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822D007296B771F0012034F /* France.storyboard */; };
 		7822D00A296B77340012034F /* FranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822D009296B77340012034F /* FranceViewController.swift */; };
+		785D67E9296D0FDF0038ACBC /* FAMEXFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D67E8296D0FDF0038ACBC /* FAMEXFont.swift */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -69,6 +70,7 @@
 		7822D004296B71A70012034F /* FAMEXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAMEXViewController.swift; sourceTree = "<group>"; };
 		7822D007296B771F0012034F /* France.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = France.storyboard; sourceTree = "<group>"; };
 		7822D009296B77340012034F /* FranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceViewController.swift; sourceTree = "<group>"; };
+		785D67E8296D0FDF0038ACBC /* FAMEXFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAMEXFont.swift; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				788CFD73296A211A009E189F /* Extensions.swift */,
+				785D67E8296D0FDF0038ACBC /* FAMEXFont.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 				7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */,
 				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
+				785D67E9296D0FDF0038ACBC /* FAMEXFont.swift in Sources */,
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
 				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,

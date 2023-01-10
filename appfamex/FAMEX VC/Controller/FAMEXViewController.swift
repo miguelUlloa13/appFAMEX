@@ -9,7 +9,6 @@ import UIKit
 
 class FAMEXViewController: UIViewController {
     
-    
     // MARK: - Outlets
     
         // Views
@@ -123,41 +122,154 @@ class FAMEXViewController: UIViewController {
     
     func setUpLabels() {
         
-        labelshandleFont(Label: WhatIsFAMEXTitleLbl, Title: "¿QUÉ ES?", Font: .Plateia(size: 30)!, JumpLine: false)
-        labelshandleFont(Label: WhatIsFAMEXTextLbl, Title: "La Feria Aeroespacial México (FAMEX), es un evento organizado por la Secretaria de la Defensa Nacional (SEDENA) a través de la Fuerza Aérea Mexicana que integra actividades del ámbito aeronáutico civil, comercial, militar y de defensa.", Font: .Futura(size: 20)!, JumpLine: true)
+        let myTitleText = TitleTextFont()
+        let myBodytext = BodyTextFont()
         
-        labelshandleFont(Label: HistoryFAMEXTitleLbl, Title: "HISTORIA", Font: .Plateia(size: 30)!, JumpLine: false)
-        labelshandleFont(Label: HistoryFAMEXTextLbl, Title: "La primera edición fue en el año 2015, con la finalidad de impulsar a México en el desarrollo económico del sector aeronáutico nacional, el responsable de la planeación, organización y materialización del evento fue el Comité Organizador.", Font: .Futura(size: 20)!, JumpLine: true)
+            // Title: QUE ES?
+        myTitleText.Label = WhatIsFAMEXTitleLbl
+        myTitleText.Title = "¿QUÉ ES?"
+        myTitleText.HandlingText()
         
-        labelshandleFont(Label: ObjectivesFAMEXTitleLbl, Title: "OBJETIVOS", Font: .Plateia(size: 30)!, JumpLine: true)
-        labelshandleFont(Label: ObjectivesFAMEXTextLbl, Title: "Reunir a los mejores lideres de la industria y servicio de la aviación para favorecer el intercambio comercial e impulsar el crecimiento de la industria aeroespacial en distintas regiones del país.", Font: .Futura(size: 20)!, JumpLine: true)
+            // Body: QUE ES?
+        myBodytext.Label = WhatIsFAMEXTextLbl
+        myBodytext.Title = "La Feria Aeroespacial México (FAMEX), es un evento organizado por la Secretaria de la Defensa Nacional (SEDENA) a través de la Fuerza Aérea Mexicana que integra actividades del ámbito aeronáutico civil, comercial, militar y de defensa."
+        myBodytext.HandlingText()
         
-        labelshandleFont(Label: WhyMexicoTitleLbl, Title: "¿POR QUÉ MÉXICO?", Font: .Plateia(size: 30)!, JumpLine: false)
-        labelshandleFont(Label: WhyMexicoTextLbl, Title: "EVOLUCIÓN DE LA FERIA AEROESPACIAL EN MÉXICO", Font: .Plateia(size: 20)!, JumpLine: true)
+            // Title: Historia
+        myTitleText.Label = HistoryFAMEXTitleLbl
+        myTitleText.Title = "HISTORIA"
+        myTitleText.HandlingText()
         
-        labelshandleFont(Label: FirstYearLbl, Title: "2015", Font: .Plateia(size: 25)!, JumpLine: false)
-        labelshandleFont(Label: SecondYearLbl, Title: "2019", Font: .Plateia(size: 25)!, JumpLine: false)
-        labelshandleFont(Label: ThirdYearLbl, Title: "2023", Font: .Plateia(size: 25)!, JumpLine: false)
+            // Body: Historia
+        myBodytext.Label = HistoryFAMEXTextLbl
+        myBodytext.Title = "La primera edición fue en el año 2015, con la finalidad de impulsar a México en el desarrollo económico del sector aeronáutico nacional, el responsable de la planeación, organización y materialización del evento fue el Comité Organizador."
+        myBodytext.HandlingText()
         
-        labelshandleFont(Label: ExhibitorsFAMEXLbl, Title: "Expositores", Font: .Futura(size: 15)!, JumpLine: false)
-        labelshandleFont(Label: FirstYearExhibitorsFAMEXLbl, Title: "240", Font: .Plateia(size: 20)!, JumpLine: false)
-        labelshandleFont(Label: SecondYearExhibitorsFAMEXLbl, Title: "505", Font: .Plateia(size: 20)!, JumpLine: false)
+            // Title: Objetivos
+        myTitleText.Label = ObjectivesFAMEXTitleLbl
+        myTitleText.Title = "OBJETIVOS"
+        myTitleText.HandlingText()
+
+            // Body: Objetivos
+        myBodytext.Label = ObjectivesFAMEXTextLbl
+        myBodytext.Title = "Reunir a los mejores lideres de la industria y servicio de la aviación para favorecer el intercambio comercial e impulsar el crecimiento de la industria aeroespacial en distintas regiones del país."
+        myBodytext.HandlingText()
         
-        labelshandleFont(Label: AircraftFAMEXLbl, Title: "Aeronavez", Font: .Futura(size: 15)!, JumpLine: false)
-        labelshandleFont(Label: FirstYearAircraftFAMEXLbl, Title: "32", Font: .Plateia(size: 20)!, JumpLine: false)
-        labelshandleFont(Label: SecondYearAircraftFAMEXLbl, Title: "48", Font: .Plateia(size: 20)!, JumpLine: false)
+            // Title: Por que Mexico?
+        myTitleText.Label = WhyMexicoTitleLbl
+        myTitleText.Title = "¿POR QUÉ MÉXICO?"
+        myTitleText.HandlingText()
         
-        labelshandleFont(Label: B2BMeetingLbl, Title: "B2B Meetings", Font: .Futura(size: 15)!, JumpLine: false)
-        labelshandleFont(Label: FirstYearB2BMeetingLbl, Title: "3500", Font: .Plateia(size: 20)!, JumpLine: false)
-        labelshandleFont(Label: SecondYearB2BMeetingLbl, Title: "4500", Font: .Plateia(size: 20)!, JumpLine: false)
+            // Body: Por que Mexico?
+        myBodytext.Label = WhyMexicoTextLbl
+        myBodytext.Title = "EVOLUCIÓN DE LA FERIA AEROESPACIAL EN MÉXICO"
+        myBodytext.HandlingText()
         
-        labelshandleFont(Label: VisitorsFAMEXLbl, Title: "Visitantes", Font: .Futura(size: 15)!, JumpLine: false)
-        labelshandleFont(Label: FirstYearVisitorsFAMEXLbl, Title: "32000", Font: .Plateia(size: 20)!, JumpLine: false)
-        labelshandleFont(Label: SecondYearVisitorsFAMEXLbl, Title: "45000", Font: .Plateia(size: 20)!, JumpLine: false)
+            // Years: 2015, 2019, 2023
+        myTitleText.Label = FirstYearLbl
+        myTitleText.Title = "2015"
+        myTitleText.Size = 25
+        myTitleText.HandlingText()
         
-        labelshandleFont(Label: CountriesFAMEXLbl, Title: "Países", Font: .Futura(size: 15)!, JumpLine: false)
-        labelshandleFont(Label: FirstYearCountriesFAMEXLbl, Title: "16", Font: .Plateia(size: 20)!, JumpLine: false)
-        labelshandleFont(Label: SecondYearCountriesFAMEXLbl, Title: "35", Font: .Plateia(size: 20)!, JumpLine: false)
+        myTitleText.Label = SecondYearLbl
+        myTitleText.Title = "2019"
+        myTitleText.Size = 25
+        myTitleText.HandlingText()
+        
+        myTitleText.Label = ThirdYearLbl
+        myTitleText.Title = "2023"
+        myTitleText.Size = 25
+        myTitleText.HandlingText()
+        
+            // Expositores
+        myBodytext.Label = ExhibitorsFAMEXLbl
+        myBodytext.Title = "Expositores"
+        myBodytext.Size = 15
+        myBodytext.HandlingText()
+        
+            // Expositores: 240
+        myTitleText.Label = FirstYearExhibitorsFAMEXLbl
+        myTitleText.Title = "240"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
+        
+            // Expositores: 505
+        myTitleText.Label = SecondYearExhibitorsFAMEXLbl
+        myTitleText.Title = "505"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
+        
+            // Aeronavez
+        myBodytext.Label = AircraftFAMEXLbl
+        myBodytext.Title = "Aeronavez"
+        myBodytext.Size = 15
+        myBodytext.HandlingText()
+        
+            // Aeronavez: 32
+        myTitleText.Label = FirstYearAircraftFAMEXLbl
+        myTitleText.Title = "32"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
+        
+            // Aeronavez: 48
+        myTitleText.Label = SecondYearAircraftFAMEXLbl
+        myTitleText.Title = "48"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
+        
+            // B2B Meetings
+        myBodytext.Label = B2BMeetingLbl
+        myBodytext.Title = "B2B Meetings"
+        myBodytext.Size = 15
+        myBodytext.HandlingText()
+        
+            // B2B Meetings: 3500
+        myTitleText.Label = FirstYearB2BMeetingLbl
+        myTitleText.Title = "3500"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
+        
+            // B2B Meetings: 4500
+        myTitleText.Label = SecondYearB2BMeetingLbl
+        myTitleText.Title = "4500"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
+        
+            // Visitantes
+        myBodytext.Label = VisitorsFAMEXLbl
+        myBodytext.Title = "Visitantes"
+        myBodytext.Size = 15
+        myBodytext.HandlingText()
+        
+            // Visitantes: 32000
+        myTitleText.Label = FirstYearVisitorsFAMEXLbl
+        myTitleText.Title = "32000"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
+        
+            // Visitantes: 45000
+        myTitleText.Label = SecondYearVisitorsFAMEXLbl
+        myTitleText.Title = "45000"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
+
+            // Países
+        myBodytext.Label = CountriesFAMEXLbl
+        myBodytext.Title = "Países"
+        myBodytext.Size = 15
+        myBodytext.HandlingText()
+        
+            // Países: 16
+        myTitleText.Label = FirstYearCountriesFAMEXLbl
+        myTitleText.Title = "16"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
+        
+            // Países: 35
+        myTitleText.Label = SecondYearCountriesFAMEXLbl
+        myTitleText.Title = "35"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
         
     }
     
@@ -184,24 +296,6 @@ class FAMEXViewController: UIViewController {
         
     }
     
-    func labelshandleFont(Label: UILabel, Title: String, Font: UIFont, JumpLine: Bool) {
-        if JumpLine == true {
-            Label.text = Title
-            Label.numberOfLines = 0
-            Label.textColor = .white
-            Label.font = Font
-            Label.adjustsFontSizeToFitWidth = true
-            Label.minimumScaleFactor = 0.5
-            Label.textAlignment = .center
-        } else {
-            Label.text = Title
-            Label.textColor = .white
-            Label.font = Font
-            Label.adjustsFontSizeToFitWidth = true
-            Label.minimumScaleFactor = 0.5
-            Label.textAlignment = .center
-        }
-    }
     
     // MARK: - Method Actions
     
