@@ -161,9 +161,10 @@ class FAMEXViewController: UIViewController {
         myTitleText.HandlingText()
         
             // Body: Por que Mexico?
-        myBodytext.Label = WhyMexicoTextLbl
-        myBodytext.Title = "EVOLUCIÓN DE LA FERIA AEROESPACIAL EN MÉXICO"
-        myBodytext.HandlingText()
+        myTitleText.Label = WhyMexicoTextLbl
+        myTitleText.Title = "EVOLUCIÓN DE LA FERIA AEROESPACIAL EN MÉXICO"
+        myTitleText.Size = 20
+        myTitleText.HandlingText()
         
             // Years: 2015, 2019, 2023
         myTitleText.Label = FirstYearLbl
@@ -307,7 +308,7 @@ class FAMEXViewController: UIViewController {
               }else{
                   UIApplication.shared.openURL(url)
               }
-          }
+        }
         
     }
 
