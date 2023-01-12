@@ -11,8 +11,7 @@
         <!--Menu View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="Y6W-OH-hqX" customClass="MenuViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuVC" id="Y6W-OH-hqX" customClass="MenuViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,6 +209,7 @@
                         <outlet property="UsrNameView" destination="kAl-Fm-hQF" id="Sq3-Mm-ccR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="47.441860465116278" y="-2.5751072961373391"/>
         </scene>

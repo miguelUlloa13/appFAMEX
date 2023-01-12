@@ -42,6 +42,9 @@ class HomeViewController: UIViewController {
     
     
     // MARK: - Properties
+    
+    let myMenu = MenuModel()    // Object type Menu
+    
     let HomeCarouselImgs = ["HomeCarouselImgOne", "HomeCarouselImgTwo", "HomeCarouselImgThree", "HomeCarouselImgFour", "HomeCarouselImgFive"]
     
     let SponsorsCarouselImgs = ["SponsorCarouselImgOne", "SponsorCarouselImgTwo", "SponsorCarouselImgThree"]
@@ -49,9 +52,8 @@ class HomeViewController: UIViewController {
     // MARK: - View Life Cycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.title = "INICIO"
-        self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Plateia", size: 25)!, NSAttributedString.Key.foregroundColor:UIColor.white]
+        
+        view.backgroundColor = #colorLiteral(red: 0.01175179426, green: 0.1716858149, blue: 0.3742573261, alpha: 1)
         
         HomeCarousel.delegate = self
         HomeCarousel.dataSource = self
@@ -61,6 +63,8 @@ class HomeViewController: UIViewController {
         setUpLabels()
         setUpButtons()
         setUpCarousels()
+        addChildMenuController()
+        setUpMenu()
         
     }
     
@@ -98,6 +102,37 @@ class HomeViewController: UIViewController {
             }
             myCarousel.scrollToItem(at: activeItemIndex, duration: 3)
         }
+    }
+    
+    func setUpMenu() {
+        
+        myMenu.navBar = navigationController!
+        myMenu.navItem = navigationItem
+        
+        myMenu.customNavigationBar(viewTitle: "INICIO")
+        myMenu.myView = HomeView
+        myMenu.myBGImage = HomeBGImg
+        myMenu.firstViewPosition = HomeView.transform
+        
+    }
+    
+    private func addChildMenuController() {
+        
+        let storyBoard = UIStoryboard(name: "Menu", bundle: nil)
+        let menuVC = storyBoard.instantiateViewController(withIdentifier: "MenuVC")
+        
+        //let menuViewController = storyboard!.instantiateViewController(withIdentifier: "MenuSB")
+        self.addChild(menuVC)
+        menuVC.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(menuVC.view)
+        NSLayoutConstraint.activate([
+            menuVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),   // Constraint Izquierdo
+            menuVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -110),   // Constraint derecho
+            menuVC.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),          // Constraint superior
+            menuVC.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)])    // Constraint inferior
+        menuVC.didMove(toParent: self)
+        self.view.sendSubviewToBack(menuVC.view)
+
     }
     
     // MARK: - Method Actions
@@ -161,11 +196,8 @@ extension HomeViewController: iCarouselDelegate, iCarouselDataSource{
     // Method to set spacing between images in the carousel
     func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
         if carousel == self.HomeCarousel {
-            switch option {
-            case .spacing:
+            if option == .spacing {
                 return 0.3
-            default:
-                print()
             }
         }
         return value

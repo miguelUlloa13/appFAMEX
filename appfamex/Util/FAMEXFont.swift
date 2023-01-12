@@ -13,13 +13,13 @@ class TitleTextFont {
     
         // Propiedades
     
-    var Label: UILabel?                                                                                 // Label
-    var Title: String?                                                                                 // Titulo del label
-    var Font: String = "Plateia"                                                                        // Fuente
-    var Size: CGFloat = 30                                                                              // Tamaño del texto
-    var TextColor: UIColor = .white                                                                     // Color del text
-    var LineBreak: Bool = true                                                                          // Salto de linea
-    var TextAlignment: NSTextAlignment = .center                                                        // Alineacion del texto
+    var Label: UILabel?                                 // Label
+    var Title: String?                                  // Titulo del label
+    var Font: String = "Plateia"                        // Fuente
+    var Size: CGFloat = 30                              // Tamaño del texto
+    var TextColor: UIColor = .white                     // Color del text
+    var LineBreak: Bool = true                          // Salto de linea
+    var TextAlignment: NSTextAlignment = .center        // Alineacion del texto
         
     
         // Metodos

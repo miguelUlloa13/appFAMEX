@@ -292,10 +292,10 @@
             </objects>
             <point key="canvasLocation" x="972.55813953488371" y="-2.5751072961373391"/>
         </scene>
-        <!--France-->
+        <!--Home-->
         <scene sceneID="uzo-Z9-Ici">
             <objects>
-                <viewControllerPlaceholder storyboardName="France" id="W5R-Oh-6kt" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" id="W5R-Oh-6kt" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="t4U-Ov-OIl"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XwM-SN-Kbj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

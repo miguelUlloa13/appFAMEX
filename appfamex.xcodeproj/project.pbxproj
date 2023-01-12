@@ -21,6 +21,7 @@
 		7822D008296B771F0012034F /* France.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7822D007296B771F0012034F /* France.storyboard */; };
 		7822D00A296B77340012034F /* FranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7822D009296B77340012034F /* FranceViewController.swift */; };
 		785D67E9296D0FDF0038ACBC /* FAMEXFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D67E8296D0FDF0038ACBC /* FAMEXFont.swift */; };
+		785D67EF296F8E660038ACBC /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D67EE296F8E660038ACBC /* MenuModel.swift */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -71,6 +72,7 @@
 		7822D007296B771F0012034F /* France.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = France.storyboard; sourceTree = "<group>"; };
 		7822D009296B77340012034F /* FranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceViewController.swift; sourceTree = "<group>"; };
 		785D67E8296D0FDF0038ACBC /* FAMEXFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAMEXFont.swift; sourceTree = "<group>"; };
+		785D67EE296F8E660038ACBC /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,37 @@
 			path = "Pop Ups VC";
 			sourceTree = "<group>";
 		};
+		785D67EA296DF0D10038ACBC /* Show VC */ = {
+			isa = PBXGroup;
+			children = (
+				785D67ED296DF10D0038ACBC /* Controller */,
+				785D67EC296DF10A0038ACBC /* View */,
+				785D67EB296DF1070038ACBC /* Model */,
+			);
+			path = "Show VC";
+			sourceTree = "<group>";
+		};
+		785D67EB296DF1070038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D67EC296DF10A0038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D67ED296DF10D0038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		788CFD26296958F2009E189F = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +213,7 @@
 				788CFD79296A22D0009E189F /* FAMEX VC */,
 				788CFD7A296A22DD009E189F /* France VC */,
 				7822D006296B76E60012034F /* Pop Ups VC */,
+				785D67EA296DF0D10038ACBC /* Show VC */,
 			);
 			path = appfamex;
 			sourceTree = "<group>";
@@ -396,6 +430,7 @@
 		788CFD82296A238E009E189F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				785D67EE296F8E660038ACBC /* MenuModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -694,6 +729,7 @@
 				785D67E9296D0FDF0038ACBC /* FAMEXFont.swift in Sources */,
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
 				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
+				785D67EF296F8E660038ACBC /* MenuModel.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
 				788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */,
 				788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */,
