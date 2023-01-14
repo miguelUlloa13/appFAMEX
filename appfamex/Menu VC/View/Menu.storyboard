@@ -207,11 +207,55 @@
                         <outlet property="UsrLbl" destination="ELM-at-sgs" id="nvS-Gu-OGm"/>
                         <outlet property="UsrNameLbl" destination="t3k-Mr-fqh" id="0rt-Tq-Khl"/>
                         <outlet property="UsrNameView" destination="kAl-Fm-hQF" id="Sq3-Mm-ccR"/>
+                        <segue destination="dJK-Uc-fMX" kind="show" identifier="HomeSegue" id="c8d-0s-3Bj"/>
+                        <segue destination="rMM-J6-FzB" kind="show" identifier="FAMEXSegue" id="CQk-Zr-KkI"/>
+                        <segue destination="v48-LZ-3Lh" kind="show" identifier="FRANCESegue" id="CC4-Bq-McU"/>
+                        <segue destination="itw-Ih-Pe6" kind="show" identifier="ShowSegue" id="oBu-zx-9t2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="47.441860465116278" y="-2.5751072961373391"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="uun-FR-IN9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="dJK-Uc-fMX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XkS-3s-BEG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TxZ-MC-iw6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="-284"/>
+        </scene>
+        <!--FAMEX-->
+        <scene sceneID="5A9-rh-UE6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FAMEX" id="rMM-J6-FzB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8ug-IH-Gko"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vpz-iN-W3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="-112"/>
+        </scene>
+        <!--France-->
+        <scene sceneID="o5N-cI-QZx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="France" id="v48-LZ-3Lh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Qmd-Ug-ILd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UER-Dm-Zp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="67"/>
+        </scene>
+        <!--Show-->
+        <scene sceneID="FlQ-4U-Y79">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Show" id="itw-Ih-Pe6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gse-0L-MfO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vhh-H4-RrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="202"/>
         </scene>
     </scenes>
     <resources>

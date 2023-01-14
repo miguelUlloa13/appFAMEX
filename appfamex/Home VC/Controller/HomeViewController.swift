@@ -120,8 +120,6 @@ class HomeViewController: UIViewController {
         
         let storyBoard = UIStoryboard(name: "Menu", bundle: nil)
         let menuVC = storyBoard.instantiateViewController(withIdentifier: "MenuVC")
-        
-        //let menuViewController = storyboard!.instantiateViewController(withIdentifier: "MenuSB")
         self.addChild(menuVC)
         menuVC.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(menuVC.view)

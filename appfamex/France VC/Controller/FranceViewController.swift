@@ -46,12 +46,18 @@ class FranceViewController: UIViewController {
         // Labels
     @IBOutlet weak var FranceLbl: UILabel!
     
+    // MARK: - Properties
+    
+    let myMenu = MenuModel()    // Object type Menu
+    
     // MARK: - View Life Cycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUpButtons()
         setUpLabels()
+        addChildMenuViewController()
+        setUpMenu()
 
     }
     
@@ -141,6 +147,35 @@ class FranceViewController: UIViewController {
         myTitle.Title = "E\nV\nE\nN\nT\nO\nS"
         myTitle.Size = 40
         myTitle.HandlingText()
+
+    }
+    
+    func setUpMenu() {
+        
+        myMenu.navBar = navigationController!
+        myMenu.navItem = navigationItem
+        
+        myMenu.customNavigationBar(viewTitle: "FRANCIA")
+        myMenu.myView = FranceView
+        myMenu.myBGImage = FranceBGImg
+        myMenu.firstViewPosition = FranceView.transform
+        
+    }
+    
+    private func addChildMenuViewController() {
+        
+        let storyBoard = UIStoryboard(name: "Menu", bundle: nil)
+        let menuVC = storyBoard.instantiateViewController(withIdentifier: "MenuVC")
+        self.addChild(menuVC)
+        menuVC.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(menuVC.view)
+        NSLayoutConstraint.activate([
+            menuVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),   // Constraint Izquierdo
+            menuVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -110),   // Constraint derecho
+            menuVC.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),          // Constraint superior
+            menuVC.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)])    // Constraint inferior
+        menuVC.didMove(toParent: self)
+        self.view.sendSubviewToBack(menuVC.view)
 
     }
     

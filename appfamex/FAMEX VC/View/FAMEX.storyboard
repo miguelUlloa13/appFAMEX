@@ -809,7 +809,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ax1-Ub-iw5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.062745101750000004" green="0.1686274707" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="7Jw-EF-chc" firstAttribute="leading" secondItem="Ax1-Ub-iw5" secondAttribute="leading" id="2AT-GW-W4d"/>
                             <constraint firstItem="7Jw-EF-chc" firstAttribute="top" secondItem="IvE-x9-MFu" secondAttribute="top" id="GCp-n1-0qT"/>
@@ -921,9 +921,6 @@
         <image name="LogoImgFAMEX2023White" width="494" height="292"/>
         <image name="VisitorsIcon" width="153" height="152"/>
         <image name="WhiteGradientColor" width="1081" height="292"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

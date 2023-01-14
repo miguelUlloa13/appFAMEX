@@ -42,58 +42,7 @@ class MenuViewController: UIViewController {
     // MARK: - Properties
     
     let myMenu = MenuModel()    // Object type Menu
-    
-    /*
-    struct MenuModel {                      // Modelo del menu
-        var title = String()                // Nombre de la seccion
-        var segueIdentifier = String()      // Identificador del segue
-        var image = String()                // Imagen de la seccion
-    }
-    
-    // Arreglo con las secciones del menu
-    var menuSections: [MenuModel] = [
-        
-        MenuModel(title: "Inicio",                              // Home
-                  segueIdentifier: "InicioSegue",
-                  image: "HomeIconImg"),
-        MenuModel(title: "FAMEX",                               // FAMEX
-                  segueIdentifier: "FAMEXSegue",
-                  image: "FAMEXIconImg"),
-        MenuModel(title: "FRANCIA",                             // France
-                  segueIdentifier: "FRANCIASegue",
-                  image: "FranceIconImg"),
-        MenuModel(title: "Evento",                              // Show
-                  segueIdentifier: "EventoSegue",
-                  image: "ShowIconImg"),
-        MenuModel(title: "Mi Itinerario",                       // Itinerary
-                  segueIdentifier: "ItinerarioSegue",
-                  image: "ItineraryIconImg"),
-        MenuModel(title: "Restaurantes",                        // Restaurants
-                  segueIdentifier: "RestaurantesSegue",
-                  image: "RestaurantsIconImg"),
-        MenuModel(title: "Espectáculo Aéreo",                   // Air Show
-                  segueIdentifier: "EspectAerSegue",
-                  image: "AirShowIconImg"),
-        MenuModel(title: "FAMEX EN MUMA",                       // MUMA
-                  segueIdentifier: "MUMASegue",
-                  image: "MUMAIconImg"),
-        MenuModel(title: "Accesos P.C.D",                       // PWD Accesibility (Accesibilty for Person with Disabilities)
-                  segueIdentifier: "AccesSegue",
-                  image: "PWDAccesIconImg"),
-        MenuModel(title: "Sanitización",                        // Sanitization
-                  segueIdentifier: "SanitizacionSegue",
-                  image: "SanitizationIconImg"),
-        MenuModel(title: "PRE-FAMEX",                           // Get Ready FAMEX
-                  segueIdentifier: "PreparateSegue",
-                  image: "GetReadyIconImg"),
-        MenuModel(title: "Configuración",                       // Settings
-                  segueIdentifier: "ConfigSegue",
-                  image: "SettingIconImg")
-    
-    ]
-    
-     */
-    
+    private let cellSizeWitdh = UIScreen.main.bounds.width / 5
     
     // MARK: - View Life Cycle Method
     override func viewDidLoad() {
@@ -103,7 +52,7 @@ class MenuViewController: UIViewController {
         MenuTV.dataSource = self
         MenuTV.backgroundColor = .clear
         MenuTV.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "MenuCell")
- 
+   
         setUpLabels()
         setUpButtons()
         
@@ -179,6 +128,12 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: myMenu.menuSections[indexPath.row].segueIdentifier, sender: self)
         
     }
 

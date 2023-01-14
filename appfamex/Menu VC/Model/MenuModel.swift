@@ -27,10 +27,10 @@ class MenuModel {
     var navItem = UINavigationItem()
     
     let menuSections: [menuPropertiesTuple] = [
-        ("Inicio", "InicioSegue", "HomeIconImg"),                       // Home
+        ("Inicio", "HomeSegue", "HomeIconImg"),                       // Home
         ("FAMEX", "FAMEXSegue", "FAMEXIconImg"),                        // FAMEX
-        ("FRANCIA", "FRANCIASegue", "FranceIconImg"),                   // France
-        ("Evento", "EventoSegue", "ShowIconImg"),                       // Show
+        ("FRANCIA", "FRANCESegue", "FranceIconImg"),                   // France
+        ("Evento", "ShowSegue", "ShowIconImg"),                       // Show
         ("Mi Itinerario", "ItinerarioSegue", "ItineraryIconImg"),       // Itinerary
         ("Restaurantes", "RestaurantesSegue", "RestaurantsIconImg"),    // Restaurants
         ("Espectáculo Aéreo", "EspectAerSegue", "AirShowIconImg"),      // Air Show
