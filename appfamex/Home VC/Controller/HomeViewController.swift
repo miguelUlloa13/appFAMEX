@@ -36,7 +36,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var SponsorLbl: UILabel!
     
         // Carousels
- 
     @IBOutlet weak var HomeCarousel: iCarousel!
     @IBOutlet weak var SponsorCarousel: iCarousel!
     
@@ -87,13 +86,13 @@ class HomeViewController: UIViewController {
     func setUpCarousels() {
         HomeCarousel.type = .rotary
         HomeCarousel.backgroundColor = .clear
-        CarouselhandleTimer(myCarousel: HomeCarousel)
+        CarouselHandleTimer(myCarousel: HomeCarousel)
         SponsorCarousel.type = .linear
         SponsorCarousel.backgroundColor = .clear
-        CarouselhandleTimer(myCarousel: SponsorCarousel)
+        CarouselHandleTimer(myCarousel: SponsorCarousel)
     }
     
-    func CarouselhandleTimer(myCarousel: iCarousel) {
+    func CarouselHandleTimer(myCarousel: iCarousel) {
         var activeItemIndex = 0
         Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (timer) in   // Funcion autoscroll
             activeItemIndex += 1
@@ -134,7 +133,28 @@ class HomeViewController: UIViewController {
     }
     
     // MARK: - Method Actions
+    
+    @IBAction func TappedShowBtn(_ sender: Any) {
+        
+        ShowBtn.bounce()
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Show", bundle: nil)
+        let showVC = storyBoard.instantiateViewController(withIdentifier: "ShowVC") as! ShowViewController
+        self.navigationController?.pushViewController(showVC, animated: true)
 
+    }
+    
+    
+    @IBAction func TappedItineraryBtn(_ sender: Any) {
+        
+        ItineraryBtn.bounce()
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Itinerary", bundle: nil)
+        let itineraryVC = storyBoard.instantiateViewController(withIdentifier: "ItineraryVC") as! ItineraryViewController
+        self.navigationController?.pushViewController(itineraryVC, animated: true)
+
+    }
+    
 }
 
 
@@ -164,7 +184,7 @@ extension HomeViewController: iCarouselDelegate, iCarouselDataSource{
         
         if carousel == self.HomeCarousel {
             // create a UIView
-            let HomeCarouselview = UIView(frame: CGRect(x: 0, y: 0, width: HomeCarousel.frame.size.width, height: HomeCarousel.frame.size.height))
+            let HomeCarouselview = UIView(frame: CGRect(x: 0, y: 0, width: HomeCarousel.frame.size.width/1.1, height: HomeCarousel.frame.size.height))
             
             // Create a UIImage
             let imgPackCarousel = UIImageView(frame: HomeCarouselview.bounds)

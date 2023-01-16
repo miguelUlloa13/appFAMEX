@@ -24,6 +24,14 @@
 		785D67EF296F8E660038ACBC /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D67EE296F8E660038ACBC /* MenuModel.swift */; };
 		785D67F8297355A00038ACBC /* Show.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D67F7297355A00038ACBC /* Show.storyboard */; };
 		785D67FA297355C00038ACBC /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D67F9297355C00038ACBC /* ShowViewController.swift */; };
+		785D680029736FDD0038ACBC /* ItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D67FF29736FDD0038ACBC /* ItineraryViewController.swift */; };
+		785D680229736FED0038ACBC /* Itinerary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D680129736FED0038ACBC /* Itinerary.storyboard */; };
+		785D68082973B5410038ACBC /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D68072973B5410038ACBC /* RestaurantsViewController.swift */; };
+		785D680A2973B5580038ACBC /* Restaurants.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D68092973B5580038ACBC /* Restaurants.storyboard */; };
+		785D68102974AD880038ACBC /* AirShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D680F2974AD880038ACBC /* AirShowViewController.swift */; };
+		785D68122974ADA40038ACBC /* AirShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D68112974ADA40038ACBC /* AirShow.storyboard */; };
+		785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D68182974C9130038ACBC /* FirstPopUpViewController.swift */; };
+		785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -77,6 +85,14 @@
 		785D67EE296F8E660038ACBC /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		785D67F7297355A00038ACBC /* Show.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Show.storyboard; sourceTree = "<group>"; };
 		785D67F9297355C00038ACBC /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		785D67FF29736FDD0038ACBC /* ItineraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryViewController.swift; sourceTree = "<group>"; };
+		785D680129736FED0038ACBC /* Itinerary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Itinerary.storyboard; sourceTree = "<group>"; };
+		785D68072973B5410038ACBC /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		785D68092973B5580038ACBC /* Restaurants.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurants.storyboard; sourceTree = "<group>"; };
+		785D680F2974AD880038ACBC /* AirShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirShowViewController.swift; sourceTree = "<group>"; };
+		785D68112974ADA40038ACBC /* AirShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AirShow.storyboard; sourceTree = "<group>"; };
+		785D68182974C9130038ACBC /* FirstPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPopUpViewController.swift; sourceTree = "<group>"; };
+		785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPopUp.storyboard; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +158,9 @@
 		7822D006296B76E60012034F /* Pop Ups VC */ = {
 			isa = PBXGroup;
 			children = (
+				785D68152974C8270038ACBC /* Controller */,
+				785D68142974C8210038ACBC /* View */,
+				785D68132974C81B0038ACBC /* Model */,
 			);
 			path = "Pop Ups VC";
 			sourceTree = "<group>";
@@ -159,7 +178,6 @@
 		785D67EB296DF1070038ACBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				785D67F9297355C00038ACBC /* ShowViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +193,129 @@
 		785D67ED296DF10D0038ACBC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				785D67F9297355C00038ACBC /* ShowViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785D67FB29736F040038ACBC /* Itinerary VC */ = {
+			isa = PBXGroup;
+			children = (
+				785D67FE29736FC10038ACBC /* Controller */,
+				785D67FD29736FB60038ACBC /* View */,
+				785D67FC29736FAD0038ACBC /* Model */,
+			);
+			path = "Itinerary VC";
+			sourceTree = "<group>";
+		};
+		785D67FC29736FAD0038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D67FD29736FB60038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D680129736FED0038ACBC /* Itinerary.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D67FE29736FC10038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D67FF29736FDD0038ACBC /* ItineraryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785D68032973B2840038ACBC /* Restaurants VC */ = {
+			isa = PBXGroup;
+			children = (
+				785D68062973B2CB0038ACBC /* Controller */,
+				785D68052973B2C50038ACBC /* View */,
+				785D68042973B2BF0038ACBC /* Model */,
+			);
+			path = "Restaurants VC";
+			sourceTree = "<group>";
+		};
+		785D68042973B2BF0038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D68052973B2C50038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D68092973B5580038ACBC /* Restaurants.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D68062973B2CB0038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D68072973B5410038ACBC /* RestaurantsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785D680B2974AD2F0038ACBC /* Air Show VC */ = {
+			isa = PBXGroup;
+			children = (
+				785D680E2974AD660038ACBC /* Controller */,
+				785D680D2974AD5D0038ACBC /* View */,
+				785D680C2974AD570038ACBC /* Model */,
+			);
+			path = "Air Show VC";
+			sourceTree = "<group>";
+		};
+		785D680C2974AD570038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D680D2974AD5D0038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D68112974ADA40038ACBC /* AirShow.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D680E2974AD660038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D680F2974AD880038ACBC /* AirShowViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785D68132974C81B0038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D68142974C8210038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D68152974C8270038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D68182974C9130038ACBC /* FirstPopUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,6 +360,9 @@
 				788CFD79296A22D0009E189F /* FAMEX VC */,
 				788CFD7A296A22DD009E189F /* France VC */,
 				785D67EA296DF0D10038ACBC /* Show VC */,
+				785D67FB29736F040038ACBC /* Itinerary VC */,
+				785D68032973B2840038ACBC /* Restaurants VC */,
+				785D680B2974AD2F0038ACBC /* Air Show VC */,
 				7822D006296B76E60012034F /* Pop Ups VC */,
 			);
 			path = appfamex;
@@ -591,15 +735,19 @@
 			files = (
 				788CFD42296958F3009E189F /* LaunchScreen.storyboard in Resources */,
 				7822CFFD296A96090012034F /* MenuTableViewCell.xib in Resources */,
+				785D680229736FED0038ACBC /* Itinerary.storyboard in Resources */,
 				788CFD3F296958F3009E189F /* Assets.xcassets in Resources */,
 				7822D008296B771F0012034F /* France.storyboard in Resources */,
 				788CFD72296A1B37009E189F /* SignUp.storyboard in Resources */,
 				785D67F8297355A00038ACBC /* Show.storyboard in Resources */,
 				7822CFF6296A837D0012034F /* Menu.storyboard in Resources */,
+				785D68122974ADA40038ACBC /* AirShow.storyboard in Resources */,
+				785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */,
 				7822D003296B718A0012034F /* FAMEX.storyboard in Resources */,
 				788CFD87296A24C5009E189F /* Plateia.ttf in Resources */,
 				7822CFF0296A28320012034F /* LogIn.storyboard in Resources */,
 				7822CFFF296B6B940012034F /* Home.storyboard in Resources */,
+				785D680A2973B5580038ACBC /* Restaurants.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,12 +880,16 @@
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
 				7822D00A296B77340012034F /* FranceViewController.swift in Sources */,
 				7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */,
+				785D68082973B5410038ACBC /* RestaurantsViewController.swift in Sources */,
 				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
+				785D68102974AD880038ACBC /* AirShowViewController.swift in Sources */,
+				785D680029736FDD0038ACBC /* ItineraryViewController.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
 				785D67E9296D0FDF0038ACBC /* FAMEXFont.swift in Sources */,
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
 				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
 				785D67EF296F8E660038ACBC /* MenuModel.swift in Sources */,
+				785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
 				788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */,
 				788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */,

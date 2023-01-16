@@ -211,6 +211,9 @@
                         <segue destination="rMM-J6-FzB" kind="show" identifier="FAMEXSegue" id="CQk-Zr-KkI"/>
                         <segue destination="v48-LZ-3Lh" kind="show" identifier="FRANCESegue" id="CC4-Bq-McU"/>
                         <segue destination="itw-Ih-Pe6" kind="show" identifier="ShowSegue" id="oBu-zx-9t2"/>
+                        <segue destination="7ZI-jv-poC" kind="show" identifier="ItinerarySegue" id="dZV-b1-oUZ"/>
+                        <segue destination="3rc-hh-YAB" kind="show" identifier="RestaurantsSegue" id="6Ho-Iw-hdk"/>
+                        <segue destination="lUB-fO-sep" kind="show" identifier="AIrShowSegue" id="eyC-2Y-MF6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -225,7 +228,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TxZ-MC-iw6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="-284"/>
+            <point key="canvasLocation" x="1263" y="-121"/>
         </scene>
         <!--FAMEX-->
         <scene sceneID="5A9-rh-UE6">
@@ -235,7 +238,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vpz-iN-W3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="-112"/>
+            <point key="canvasLocation" x="1261" y="-75"/>
         </scene>
         <!--France-->
         <scene sceneID="o5N-cI-QZx">
@@ -245,7 +248,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UER-Dm-Zp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="67"/>
+            <point key="canvasLocation" x="1263" y="-20"/>
         </scene>
         <!--Show-->
         <scene sceneID="FlQ-4U-Y79">
@@ -255,7 +258,37 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vhh-H4-RrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="202"/>
+            <point key="canvasLocation" x="1263" y="47"/>
+        </scene>
+        <!--Itinerary-->
+        <scene sceneID="gI8-Rp-lJj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Itinerary" id="7ZI-jv-poC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Myu-dO-n7C"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qj-R1-iZY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263" y="116"/>
+        </scene>
+        <!--Restaurants-->
+        <scene sceneID="hAj-cd-5MC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Restaurants" id="3rc-hh-YAB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="61w-6z-lIS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="StV-qh-GTf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263" y="179"/>
+        </scene>
+        <!--AirShow-->
+        <scene sceneID="ieB-Oh-kkf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AirShow" id="lUB-fO-sep" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="azQ-qh-etD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exB-Fa-4ol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="257"/>
         </scene>
     </scenes>
     <resources>

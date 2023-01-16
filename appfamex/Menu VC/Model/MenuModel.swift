@@ -31,9 +31,9 @@ class MenuModel {
         ("FAMEX", "FAMEXSegue", "FAMEXIconImg"),                        // FAMEX
         ("FRANCIA", "FRANCESegue", "FranceIconImg"),                   // France
         ("Evento", "ShowSegue", "ShowIconImg"),                       // Show
-        ("Mi Itinerario", "ItinerarioSegue", "ItineraryIconImg"),       // Itinerary
-        ("Restaurantes", "RestaurantesSegue", "RestaurantsIconImg"),    // Restaurants
-        ("Espectáculo Aéreo", "EspectAerSegue", "AirShowIconImg"),      // Air Show
+        ("Mi Itinerario", "ItinerarySegue", "ItineraryIconImg"),       // Itinerary
+        ("Restaurantes", "RestaurantsSegue", "RestaurantsIconImg"),    // Restaurants
+        ("Espectáculo Aéreo", "AIrShowSegue", "AirShowIconImg"),      // Air Show
         ("FAMEX EN MUMA", "MUMASegue", "MUMAIconImg"),                  // MUMA
         ("Accesos P.C.D", "AccesSegue", "PWDAccesIconImg"),             // PWD Accesibility (Accesibilty for Person with Disabilities)
         ("Sanitización", "SanitizacionSegue", "SanitizationIconImg"),   // Sanitization
@@ -78,7 +78,7 @@ class MenuModel {
         navBar.navigationBar.barStyle = .black
         
         navItem.title = viewTitle
-        navBar.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Plateia", size: 25)!, NSAttributedString.Key.foregroundColor:UIColor.white]
+        navBar.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Plateia", size: 22)!, NSAttributedString.Key.foregroundColor:UIColor.white]
         
         navItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "HamburguerBtnImg")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(TappedHamburguerBtn))
     }

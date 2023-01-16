@@ -74,7 +74,7 @@ class FranceViewController: UIViewController {
             // Exposicion Estatica
         FranceExhibitionBtn.setTitle("EXPOSICIÓN\nESTÁTICA", for: .normal)
         FranceExhibitionBtn.titleLabel?.font = UIFont(name: "Plateia", size: 20)
-        FranceExhibitionBtn.setTitleColor(.blue, for: .normal)
+        FranceExhibitionBtn.setTitleColor(.link, for: .normal)
         FranceExhibitionBtn.titleLabel?.numberOfLines = 0
         FranceExhibitionBtn.titleLabel?.adjustsFontSizeToFitWidth = true
         FranceExhibitionBtn.titleLabel?.minimumScaleFactor = 0.5
@@ -113,24 +113,28 @@ class FranceViewController: UIViewController {
                 attributes: myAttributes
              )
         
+        FranceJobBtn.tag = 0
         FranceJobBtn.setAttributedTitle(attributeString1, for: .normal)
         FranceJobBtn.titleLabel?.numberOfLines = 0
         FranceJobBtn.titleLabel?.textAlignment = .center
         FranceJobBtn.titleLabel?.adjustsFontSizeToFitWidth = true
         FranceJobBtn.titleLabel?.minimumScaleFactor = 0.5
         
+        FranceLeadersBtn.tag = 1
         FranceLeadersBtn.setAttributedTitle(attributeString2, for: .normal)
         FranceLeadersBtn.titleLabel?.numberOfLines = 0
         FranceLeadersBtn.titleLabel?.textAlignment = .center
         FranceLeadersBtn.titleLabel?.adjustsFontSizeToFitWidth = true
         FranceJobBtn.titleLabel?.minimumScaleFactor = 0.5
         
+        FranceIDBtn.tag = 2
         FranceIDBtn.setAttributedTitle(attributeString3, for: .normal)
         FranceIDBtn.titleLabel?.numberOfLines = 0
         FranceIDBtn.titleLabel?.textAlignment = .center
         FranceIDBtn.titleLabel?.adjustsFontSizeToFitWidth = true
         FranceJobBtn.titleLabel?.minimumScaleFactor = 0.5
         
+        FranceCommercialBtn.tag = 3
         FranceCommercialBtn.setAttributedTitle(attributeString4, for: .normal)
         FranceCommercialBtn.titleLabel?.numberOfLines = 0
         FranceCommercialBtn.titleLabel?.textAlignment = .center
@@ -144,7 +148,7 @@ class FranceViewController: UIViewController {
         let myTitle = TitleTextFont()
         
         myTitle.Label = FranceLbl
-        myTitle.Title = "E\nV\nE\nN\nT\nO\nS"
+        myTitle.Title = "F\nR\nA\nN\nC\nI\nA"
         myTitle.Size = 40
         myTitle.HandlingText()
 
@@ -181,7 +185,7 @@ class FranceViewController: UIViewController {
     
     // MARK: - Method Actions
     
-    @IBAction func tappedFranceEmbassyBtn(_ sender: Any) {
+    @IBAction func tappedFranceEmbassyBtn(_ sender: UIButton) {
         
         if let url = URL(string: "https://mx.ambafrance.org") {
               if #available(iOS 10, *){
@@ -190,6 +194,46 @@ class FranceViewController: UIViewController {
                   UIApplication.shared.openURL(url)
               }
         }
+        
+    }
+    
+    
+    @IBAction func TappedAboutFranceBtns(_ sender: UIButton) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "FirstPopUp", bundle: nil)
+        let popUpVC = storyBoard.instantiateViewController(withIdentifier: "FirstPopUpVC") as! FirstPopUpViewController
+        let navBarOnModal: UINavigationController = UINavigationController(rootViewController: popUpVC)
+        
+        switch sender.tag {
+        case 0:
+            
+            popUpVC.PopUpOneImage = UIImage(named: "avionsito1Img")
+            popUpVC.PopUpOneTitle = "Hola"
+            popUpVC.PopUpOneDescription = "Adios"
+            
+        case 1:
+            
+            popUpVC.PopUpOneImage = UIImage(named: "avionsito2Img")
+            popUpVC.PopUpOneTitle = "Hola2"
+            popUpVC.PopUpOneDescription = "Adios2"
+            
+        case 2:
+            
+            popUpVC.PopUpOneImage = UIImage(named: "avionsito3Img")
+            popUpVC.PopUpOneTitle = "Hola3"
+            popUpVC.PopUpOneDescription = "Adios3"
+            
+        case 3:
+            
+            popUpVC.PopUpOneImage = UIImage(named: "avionsito4Img")
+            popUpVC.PopUpOneTitle = "Hola4"
+            popUpVC.PopUpOneDescription = "Adios4"
+            
+        default:
+            print("Opcion Invalida")
+        }
+        
+        self.present(navBarOnModal, animated: true, completion: nil)
         
     }
     

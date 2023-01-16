@@ -292,12 +292,13 @@ class FAMEXViewController: UIViewController {
     }
     
     func setUpButton() {
-
+        
         PastEditionsFAMEX.round()
-        PastEditionsFAMEX.titleLabel?.text = "  EDICIONES\n  PASADAS"
+        PastEditionsFAMEX.setTitle("  EDICIONES\n  PASADAS", for: .normal)
+        PastEditionsFAMEX.titleLabel?.font = UIFont(name: "Plateia", size: 20)
+        PastEditionsFAMEX.setTitleColor(.white, for: .normal)
         PastEditionsFAMEX.titleLabel?.numberOfLines = 0
-        PastEditionsFAMEX.titleLabel?.textColor = .white
-        PastEditionsFAMEX.titleLabel?.font = .Plateia(size: 20)
+        PastEditionsFAMEX.titleLabel?.textAlignment = .center
         PastEditionsFAMEX.titleLabel?.adjustsFontSizeToFitWidth = true
         PastEditionsFAMEX.titleLabel?.minimumScaleFactor = 0.5
         
