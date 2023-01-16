@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,7 @@
 		785D68122974ADA40038ACBC /* AirShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D68112974ADA40038ACBC /* AirShow.storyboard */; };
 		785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D68182974C9130038ACBC /* FirstPopUpViewController.swift */; };
 		785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */; };
+		785D68212975225B0038ACBC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D68202975225B0038ACBC /* Profile.storyboard */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -93,6 +94,7 @@
 		785D68112974ADA40038ACBC /* AirShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AirShow.storyboard; sourceTree = "<group>"; };
 		785D68182974C9130038ACBC /* FirstPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPopUpViewController.swift; sourceTree = "<group>"; };
 		785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPopUp.storyboard; sourceTree = "<group>"; };
+		785D68202975225B0038ACBC /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -320,6 +322,38 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		785D681C2975220F0038ACBC /* Profile VC */ = {
+			isa = PBXGroup;
+			children = (
+				785D681F2975223C0038ACBC /* Controller */,
+				785D681E297522360038ACBC /* View */,
+				785D681D2975222D0038ACBC /* Model */,
+			);
+			path = "Profile VC";
+			sourceTree = "<group>";
+		};
+		785D681D2975222D0038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D681E297522360038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D68202975225B0038ACBC /* Profile.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D681F2975223C0038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		788CFD26296958F2009E189F = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +390,7 @@
 				788CFD652969EF11009E189F /* Log In VC */,
 				788CFD6D296A1AD6009E189F /* Sign Up VC */,
 				788CFD81296A2370009E189F /* Menu VC */,
+				785D681C2975220F0038ACBC /* Profile VC */,
 				788CFD75296A2159009E189F /* Home VC */,
 				788CFD79296A22D0009E189F /* FAMEX VC */,
 				788CFD7A296A22DD009E189F /* France VC */,
@@ -709,7 +744,7 @@
 				};
 			};
 			buildConfigurationList = 788CFD2A296958F2009E189F /* Build configuration list for PBXProject "appfamex" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -743,6 +778,7 @@
 				7822CFF6296A837D0012034F /* Menu.storyboard in Resources */,
 				785D68122974ADA40038ACBC /* AirShow.storyboard in Resources */,
 				785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */,
+				785D68212975225B0038ACBC /* Profile.storyboard in Resources */,
 				7822D003296B718A0012034F /* FAMEX.storyboard in Resources */,
 				788CFD87296A24C5009E189F /* Plateia.ttf in Resources */,
 				7822CFF0296A28320012034F /* LogIn.storyboard in Resources */,
@@ -990,7 +1026,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1044,7 +1080,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

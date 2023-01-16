@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -225,10 +226,8 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="80" id="SS7-V7-G3u"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="FranceEmbassyImg"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" title="Button" backgroundImage="FranceEmbassyImg"/>
                                                                         <connections>
                                                                             <action selector="tappedFranceEmbassyBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4tx-Vx-9Vc"/>
                                                                         </connections>

@@ -78,7 +78,7 @@ class MenuModel {
         navBar.navigationBar.barStyle = .black
         
         navItem.title = viewTitle
-        navBar.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Plateia", size: 22)!, NSAttributedString.Key.foregroundColor:UIColor.white]
+        navBar.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Plateia", size: 18)!, NSAttributedString.Key.foregroundColor:UIColor.white]
         
         navItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "HamburguerBtnImg")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(TappedHamburguerBtn))
     }

@@ -81,13 +81,24 @@ class LogInViewController: UIViewController {
         // Buttons
         LogInBtn.round()
         LogInBtn.setTitle("Log In", for: .normal)
-        LogInBtn.titleLabel?.font = .Plateia(size: 20)
+        LogInBtn.titleLabel?.font = UIFont(name: "Futura", size: 20)
+        LogInBtn.setTitleColor(.white, for: .normal)
+        LogInBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        LogInBtn.titleLabel?.minimumScaleFactor = 0.5
+        
         // SignUpBtn.round()
         SignUpBtn.setTitle("Registrarse", for: .normal)
-        SignUpBtn.titleLabel?.font = .Plateia(size: 20)
+        SignUpBtn.titleLabel?.font = UIFont(name: "Futura", size: 20)
+        SignUpBtn.setTitleColor(.white, for: .normal)
+        SignUpBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        SignUpBtn.titleLabel?.minimumScaleFactor = 0.5
+
         GuessUsrBtn.round()
         GuessUsrBtn.setTitle("Usuario Invitado", for: .normal)
-        GuessUsrBtn.titleLabel?.font = .Plateia(size: 20)
+        GuessUsrBtn.titleLabel?.font = UIFont(name: "Futura", size: 20)
+        GuessUsrBtn.setTitleColor(.link, for: .normal)
+        GuessUsrBtn.titleLabel?.adjustsFontSizeToFitWidth = true
+        GuessUsrBtn.titleLabel?.minimumScaleFactor = 0.5
     }
     
     // MARK: - Method Actions

@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImgTwo" translatesAutoresizingMaskIntoConstraints="NO" id="VL8-g7-7h3">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="852"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3TR-V8-8Th">
                                         <rect key="frame" x="0.0" y="59" width="393" height="759"/>
@@ -39,7 +39,7 @@
                                     <constraint firstItem="VL8-g7-7h3" firstAttribute="leading" secondItem="xp7-Mi-v8M" secondAttribute="leading" id="6HB-Mp-5wN"/>
                                     <constraint firstItem="VL8-g7-7h3" firstAttribute="top" secondItem="xp7-Mi-v8M" secondAttribute="top" id="DAo-c0-jiW"/>
                                     <constraint firstAttribute="bottom" secondItem="VL8-g7-7h3" secondAttribute="bottom" id="QWG-qZ-BQh"/>
-                                    <constraint firstAttribute="trailing" secondItem="VL8-g7-7h3" secondAttribute="trailing" id="qKE-3H-ZiY"/>
+                                    <constraint firstAttribute="trailing" secondItem="VL8-g7-7h3" secondAttribute="trailing" constant="-5" id="qKE-3H-ZiY"/>
                                 </constraints>
                             </view>
                         </subviews>

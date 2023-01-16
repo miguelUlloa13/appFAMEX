@@ -79,6 +79,7 @@ class FirstPopUpViewController: UIViewController {
     func setUpImage(){
         
         PopUpOneImg.image = PopUpOneImage
+        PopUpOneImg.layer.cornerRadius = 10
         
     }
     
