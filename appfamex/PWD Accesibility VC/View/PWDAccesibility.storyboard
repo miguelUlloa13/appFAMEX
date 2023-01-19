@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Accesibility View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="PWDAccesibilityViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCf-SY-h8s">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImgTwo" translatesAutoresizingMaskIntoConstraints="NO" id="y7i-HN-aXE">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLy-bC-QO6">
+                                        <rect key="frame" x="0.0" y="59" width="450" height="839"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="y7i-HN-aXE" firstAttribute="top" secondItem="VCf-SY-h8s" secondAttribute="top" id="GjJ-oU-hYy"/>
+                                    <constraint firstAttribute="bottom" secondItem="y7i-HN-aXE" secondAttribute="bottom" id="HjY-yu-0sS"/>
+                                    <constraint firstItem="y7i-HN-aXE" firstAttribute="leading" secondItem="VCf-SY-h8s" secondAttribute="leading" id="iLu-Ei-Eym"/>
+                                    <constraint firstAttribute="trailing" secondItem="y7i-HN-aXE" secondAttribute="trailing" id="lCW-Ys-rQz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.062745101750000004" green="0.1686274707" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="VCf-SY-h8s" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="455-VY-aSi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lLy-bC-QO6" secondAttribute="trailing" constant="-20" id="IUI-ur-Gwt"/>
+                            <constraint firstItem="VCf-SY-h8s" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="WLF-9F-T8e"/>
+                            <constraint firstItem="VCf-SY-h8s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Z7U-5J-iWi"/>
+                            <constraint firstItem="lLy-bC-QO6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="caH-Lh-r5l"/>
+                            <constraint firstAttribute="bottom" secondItem="VCf-SY-h8s" secondAttribute="bottom" id="kZF-jj-fKF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="lLy-bC-QO6" secondAttribute="top" id="tUk-Id-Y9m"/>
+                            <constraint firstItem="lLy-bC-QO6" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="xbG-Wa-5gp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PWDAccesibilityBGImg" destination="y7i-HN-aXE" id="e8t-tg-acW"/>
+                        <outlet property="PWDAccesibilityPDFView" destination="lLy-bC-QO6" id="7rT-X1-sGP"/>
+                        <outlet property="PWDAccesibilityView" destination="VCf-SY-h8s" id="agV-QP-Zzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BGImgTwo" width="811" height="1780"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

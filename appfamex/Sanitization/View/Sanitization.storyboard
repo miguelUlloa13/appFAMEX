@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sanitization View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SanitizationViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjq-fC-ubW">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImgTwo" translatesAutoresizingMaskIntoConstraints="NO" id="eDL-QQ-oAm">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l22-oh-w1e">
+                                        <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eDL-QQ-oAm" secondAttribute="trailing" id="Gyo-KZ-pqq"/>
+                                    <constraint firstAttribute="bottom" secondItem="eDL-QQ-oAm" secondAttribute="bottom" id="Lt6-vE-ftS"/>
+                                    <constraint firstItem="eDL-QQ-oAm" firstAttribute="leading" secondItem="Yjq-fC-ubW" secondAttribute="leading" id="mn8-NO-WzL"/>
+                                    <constraint firstItem="eDL-QQ-oAm" firstAttribute="top" secondItem="Yjq-fC-ubW" secondAttribute="top" id="su4-kw-p2e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.062745101750000004" green="0.1686274707" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="l22-oh-w1e" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1QX-nf-03z"/>
+                            <constraint firstItem="Yjq-fC-ubW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3F9-ke-M5Z"/>
+                            <constraint firstItem="l22-oh-w1e" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="GMU-nA-fSx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="l22-oh-w1e" secondAttribute="trailing" id="HYx-FB-iWi"/>
+                            <constraint firstAttribute="bottom" secondItem="Yjq-fC-ubW" secondAttribute="bottom" id="M6K-kU-vqp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="l22-oh-w1e" secondAttribute="bottom" id="OsS-cL-sqs"/>
+                            <constraint firstItem="Yjq-fC-ubW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="eiw-Uw-Xic"/>
+                            <constraint firstItem="Yjq-fC-ubW" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="man-ym-d18"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SanitizationBGImg" destination="eDL-QQ-oAm" id="RA0-GT-3Bj"/>
+                        <outlet property="SanitizationPDFView" destination="l22-oh-w1e" id="xGG-Ju-IJC"/>
+                        <outlet property="SanitizationView" destination="Yjq-fC-ubW" id="Gch-PB-73g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BGImgTwo" width="811" height="1780"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

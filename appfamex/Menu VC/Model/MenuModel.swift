@@ -35,9 +35,9 @@ class MenuModel {
         ("Restaurantes", "RestaurantsSegue", "RestaurantsIconImg"),    // Restaurants
         ("Espectáculo Aéreo", "AIrShowSegue", "AirShowIconImg"),      // Air Show
         ("FAMEX EN MUMA", "MUMASegue", "MUMAIconImg"),                  // MUMA
-        ("Accesos P.C.D", "AccesSegue", "PWDAccesIconImg"),             // PWD Accesibility (Accesibilty for Person with Disabilities)
+        ("Accesos P.C.D", "PWDAccesSegue", "PWDAccesIconImg"),             // PWD Accesibility (Accesibilty for Person with Disabilities)
         ("Sanitización", "SanitizacionSegue", "SanitizationIconImg"),   // Sanitization
-        ("PRE-FAMEX", "PreparateSegue", "GetReadyIconImg"),             // Get Ready FAMEX
+        ("PRE-FAMEX", "GetReadyFAMEXSegue", "GetReadyIconImg"),             // Get Ready FAMEX
         ("Configuración", "ConfigSegue", "SettingIconImg"),             // Settings
     ]
     
@@ -96,7 +96,5 @@ class MenuModel {
             isOpenMenu = false
         }
     }
-    
-    
     
 }

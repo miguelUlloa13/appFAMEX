@@ -33,6 +33,18 @@
 		785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D68182974C9130038ACBC /* FirstPopUpViewController.swift */; };
 		785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */; };
 		785D68212975225B0038ACBC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D68202975225B0038ACBC /* Profile.storyboard */; };
+		785D6827297651EC0038ACBC /* TutorialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6826297651EC0038ACBC /* TutorialModel.swift */; };
+		785D6829297653200038ACBC /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6828297653200038ACBC /* TutorialViewController.swift */; };
+		785D682B297653330038ACBC /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D682A297653330038ACBC /* Tutorial.storyboard */; };
+		785D683129778FF80038ACBC /* PWDAccesibility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D683029778FF80038ACBC /* PWDAccesibility.storyboard */; };
+		785D6833297790200038ACBC /* PWDAccesibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6832297790200038ACBC /* PWDAccesibilityViewController.swift */; };
+		785D6836297795530038ACBC /* SanitizationMap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 785D6835297795530038ACBC /* SanitizationMap.pdf */; };
+		785D683A29779A000038ACBC /* PWDAccesibilityMap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 785D683929779A000038ACBC /* PWDAccesibilityMap.pdf */; };
+		785D683C2977A2390038ACBC /* PDFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D683B2977A2390038ACBC /* PDFModel.swift */; };
+		785D68422977AA660038ACBC /* Sanitization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D68412977AA660038ACBC /* Sanitization.storyboard */; };
+		785D68442977AA790038ACBC /* SanitizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D68432977AA790038ACBC /* SanitizationViewController.swift */; };
+		785D684C2978E1F30038ACBC /* GetReadyFAMEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D684B2978E1F30038ACBC /* GetReadyFAMEX.swift */; };
+		785D684E2978EFCB0038ACBC /* GetReadyFAMEX.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D684D2978EFCB0038ACBC /* GetReadyFAMEX.storyboard */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -95,6 +107,18 @@
 		785D68182974C9130038ACBC /* FirstPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPopUpViewController.swift; sourceTree = "<group>"; };
 		785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPopUp.storyboard; sourceTree = "<group>"; };
 		785D68202975225B0038ACBC /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		785D6826297651EC0038ACBC /* TutorialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialModel.swift; sourceTree = "<group>"; };
+		785D6828297653200038ACBC /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		785D682A297653330038ACBC /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		785D683029778FF80038ACBC /* PWDAccesibility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PWDAccesibility.storyboard; sourceTree = "<group>"; };
+		785D6832297790200038ACBC /* PWDAccesibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWDAccesibilityViewController.swift; sourceTree = "<group>"; };
+		785D6835297795530038ACBC /* SanitizationMap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SanitizationMap.pdf; sourceTree = "<group>"; };
+		785D683929779A000038ACBC /* PWDAccesibilityMap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PWDAccesibilityMap.pdf; sourceTree = "<group>"; };
+		785D683B2977A2390038ACBC /* PDFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFModel.swift; sourceTree = "<group>"; };
+		785D68412977AA660038ACBC /* Sanitization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sanitization.storyboard; sourceTree = "<group>"; };
+		785D68432977AA790038ACBC /* SanitizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanitizationViewController.swift; sourceTree = "<group>"; };
+		785D684B2978E1F30038ACBC /* GetReadyFAMEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReadyFAMEX.swift; sourceTree = "<group>"; };
+		785D684D2978EFCB0038ACBC /* GetReadyFAMEX.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetReadyFAMEX.storyboard; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -354,6 +378,148 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		785D68222976518F0038ACBC /* Tutorials VC */ = {
+			isa = PBXGroup;
+			children = (
+				785D6825297651C50038ACBC /* Controller */,
+				785D6824297651BF0038ACBC /* View */,
+				785D6823297651B60038ACBC /* Model */,
+			);
+			path = "Tutorials VC";
+			sourceTree = "<group>";
+		};
+		785D6823297651B60038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				785D6826297651EC0038ACBC /* TutorialModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D6824297651BF0038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D682A297653330038ACBC /* Tutorial.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D6825297651C50038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D6828297653200038ACBC /* TutorialViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785D682C29778F620038ACBC /* PWD Accesibility VC */ = {
+			isa = PBXGroup;
+			children = (
+				785D682F29778F9A0038ACBC /* Controller */,
+				785D682E29778F8F0038ACBC /* View */,
+				785D682D29778F870038ACBC /* Model */,
+			);
+			path = "PWD Accesibility VC";
+			sourceTree = "<group>";
+		};
+		785D682D29778F870038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D682E29778F8F0038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D683029778FF80038ACBC /* PWDAccesibility.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D682F29778F9A0038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D6832297790200038ACBC /* PWDAccesibilityViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785D68342977951D0038ACBC /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				785D683929779A000038ACBC /* PWDAccesibilityMap.pdf */,
+				785D6835297795530038ACBC /* SanitizationMap.pdf */,
+			);
+			path = PDFs;
+			sourceTree = "<group>";
+		};
+		785D683D2977AA010038ACBC /* Sanitization */ = {
+			isa = PBXGroup;
+			children = (
+				785D68402977AA3C0038ACBC /* Controller */,
+				785D683F2977AA370038ACBC /* View */,
+				785D683E2977AA310038ACBC /* Model */,
+			);
+			path = Sanitization;
+			sourceTree = "<group>";
+		};
+		785D683E2977AA310038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D683F2977AA370038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D68412977AA660038ACBC /* Sanitization.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D68402977AA3C0038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D68432977AA790038ACBC /* SanitizationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785D68452977AFC90038ACBC /* PREFAMEX VC */ = {
+			isa = PBXGroup;
+			children = (
+				785D68482977B0580038ACBC /* Controller */,
+				785D68472977B0530038ACBC /* View */,
+				785D68462977B04C0038ACBC /* Model */,
+			);
+			path = "PREFAMEX VC";
+			sourceTree = "<group>";
+		};
+		785D68462977B04C0038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D68472977B0530038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D684D2978EFCB0038ACBC /* GetReadyFAMEX.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D68482977B0580038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D684B2978E1F30038ACBC /* GetReadyFAMEX.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		788CFD26296958F2009E189F = {
 			isa = PBXGroup;
 			children = (
@@ -398,7 +564,11 @@
 				785D67FB29736F040038ACBC /* Itinerary VC */,
 				785D68032973B2840038ACBC /* Restaurants VC */,
 				785D680B2974AD2F0038ACBC /* Air Show VC */,
+				785D682C29778F620038ACBC /* PWD Accesibility VC */,
+				785D683D2977AA010038ACBC /* Sanitization */,
+				785D68452977AFC90038ACBC /* PREFAMEX VC */,
 				7822D006296B76E60012034F /* Pop Ups VC */,
+				785D68222976518F0038ACBC /* Tutorials VC */,
 			);
 			path = appfamex;
 			sourceTree = "<group>";
@@ -457,6 +627,7 @@
 			isa = PBXGroup;
 			children = (
 				788CFD85296A247A009E189F /* Fonts */,
+				785D68342977951D0038ACBC /* PDFs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -466,6 +637,7 @@
 			children = (
 				788CFD73296A211A009E189F /* Extensions.swift */,
 				785D67E8296D0FDF0038ACBC /* FAMEXFont.swift */,
+				785D683B2977A2390038ACBC /* PDFModel.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -777,9 +949,15 @@
 				785D67F8297355A00038ACBC /* Show.storyboard in Resources */,
 				7822CFF6296A837D0012034F /* Menu.storyboard in Resources */,
 				785D68122974ADA40038ACBC /* AirShow.storyboard in Resources */,
+				785D68422977AA660038ACBC /* Sanitization.storyboard in Resources */,
+				785D6836297795530038ACBC /* SanitizationMap.pdf in Resources */,
 				785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */,
+				785D683A29779A000038ACBC /* PWDAccesibilityMap.pdf in Resources */,
+				785D684E2978EFCB0038ACBC /* GetReadyFAMEX.storyboard in Resources */,
 				785D68212975225B0038ACBC /* Profile.storyboard in Resources */,
+				785D682B297653330038ACBC /* Tutorial.storyboard in Resources */,
 				7822D003296B718A0012034F /* FAMEX.storyboard in Resources */,
+				785D683129778FF80038ACBC /* PWDAccesibility.storyboard in Resources */,
 				788CFD87296A24C5009E189F /* Plateia.ttf in Resources */,
 				7822CFF0296A28320012034F /* LogIn.storyboard in Resources */,
 				7822CFFF296B6B940012034F /* Home.storyboard in Resources */,
@@ -911,9 +1089,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785D6833297790200038ACBC /* PWDAccesibilityViewController.swift in Sources */,
 				7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */,
 				785D67FA297355C00038ACBC /* ShowViewController.swift in Sources */,
+				785D68442977AA790038ACBC /* SanitizationViewController.swift in Sources */,
+				785D6829297653200038ACBC /* TutorialViewController.swift in Sources */,
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
+				785D684C2978E1F30038ACBC /* GetReadyFAMEX.swift in Sources */,
 				7822D00A296B77340012034F /* FranceViewController.swift in Sources */,
 				7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */,
 				785D68082973B5410038ACBC /* RestaurantsViewController.swift in Sources */,
@@ -925,8 +1107,10 @@
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
 				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
 				785D67EF296F8E660038ACBC /* MenuModel.swift in Sources */,
+				785D683C2977A2390038ACBC /* PDFModel.swift in Sources */,
 				785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
+				785D6827297651EC0038ACBC /* TutorialModel.swift in Sources */,
 				788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */,
 				788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */,
 			);
@@ -1104,8 +1288,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1133,8 +1317,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

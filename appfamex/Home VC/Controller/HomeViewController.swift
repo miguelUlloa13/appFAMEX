@@ -43,6 +43,7 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     
     let myMenu = MenuModel()    // Object type Menu
+    let myTutorial = TutorialModel()    // Object type Menu
     
     let HomeCarouselImgs = ["HomeCarouselImgOne", "HomeCarouselImgTwo", "HomeCarouselImgThree", "HomeCarouselImgFour", "HomeCarouselImgFive"]
     
@@ -64,6 +65,7 @@ class HomeViewController: UIViewController {
         setUpCarousels()
         addChildMenuController()
         setUpMenu()
+        setUpTutorial()
         
     }
     
@@ -124,6 +126,13 @@ class HomeViewController: UIViewController {
         myMenu.myBGImage = HomeBGImg
         myMenu.firstViewPosition = HomeView.transform
         
+    }
+    
+    func setUpTutorial() {
+        myTutorial.navItem = navigationItem
+        myTutorial.navBar = navigationController!
+        myTutorial.myTutorialImage = "TutorialMexChalets"
+        myTutorial.setTutorial()
     }
     
     private func addChildMenuController() {

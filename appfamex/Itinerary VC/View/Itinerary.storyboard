@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,23 +14,23 @@
             <objects>
                 <viewController storyboardIdentifier="ItineraryVC" id="Y6W-OH-hqX" customClass="ItineraryViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yq3-m3-v7l">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImgOne" translatesAutoresizingMaskIntoConstraints="NO" id="Y04-xC-a89">
-                                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YUq-DL-yEw">
-                                        <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56g-hR-PCl">
-                                                <rect key="frame" x="0.0" y="0.0" width="430" height="210"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6a-pS-xhm">
-                                                        <rect key="frame" x="125" y="15" width="180" height="180"/>
+                                                        <rect key="frame" x="70" y="15" width="180" height="180"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="180" id="Lju-S2-1y1"/>
                                                             <constraint firstAttribute="height" constant="180" id="zvb-9B-iOV"/>
@@ -46,10 +47,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNG-jc-4gc">
-                                                <rect key="frame" x="0.0" y="210" width="430" height="60"/>
+                                                <rect key="frame" x="0.0" y="210" width="320" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iT-FB-Pga">
-                                                        <rect key="frame" x="12" y="0.0" width="406" height="48"/>
+                                                        <rect key="frame" x="12" y="0.0" width="296" height="48"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -64,10 +65,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMz-Ab-9pd">
-                                                <rect key="frame" x="0.0" y="270" width="430" height="30"/>
+                                                <rect key="frame" x="0.0" y="270" width="320" height="30"/>
                                                 <subviews>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lQK-gi-hYV">
-                                                        <rect key="frame" x="12" y="0.0" width="406" height="31"/>
+                                                        <rect key="frame" x="12" y="0.0" width="296" height="31"/>
                                                         <segments>
                                                             <segment title="First"/>
                                                             <segment title="Second"/>
@@ -84,10 +85,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfu-bc-7Wg">
-                                                <rect key="frame" x="0.0" y="300" width="430" height="539"/>
+                                                <rect key="frame" x="0.0" y="300" width="320" height="268"/>
                                                 <subviews>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="phE-PC-S13">
-                                                        <rect key="frame" x="12" y="12" width="406" height="527"/>
+                                                        <rect key="frame" x="12" y="12" width="296" height="256"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </tableView>
                                                 </subviews>
