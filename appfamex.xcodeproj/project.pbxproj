@@ -45,6 +45,10 @@
 		785D68442977AA790038ACBC /* SanitizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D68432977AA790038ACBC /* SanitizationViewController.swift */; };
 		785D684C2978E1F30038ACBC /* GetReadyFAMEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D684B2978E1F30038ACBC /* GetReadyFAMEX.swift */; };
 		785D684E2978EFCB0038ACBC /* GetReadyFAMEX.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D684D2978EFCB0038ACBC /* GetReadyFAMEX.storyboard */; };
+		785D6850297A3EAD0038ACBC /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D684F297A3EAD0038ACBC /* LocationModel.swift */; };
+		785D6854297A52560038ACBC /* HotelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6853297A52560038ACBC /* HotelsViewController.swift */; };
+		785D6857297A560E0038ACBC /* HotelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6855297A560E0038ACBC /* HotelsCollectionViewCell.swift */; };
+		785D6858297A560E0038ACBC /* HotelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785D6856297A560E0038ACBC /* HotelsCollectionViewCell.xib */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -119,6 +123,10 @@
 		785D68432977AA790038ACBC /* SanitizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanitizationViewController.swift; sourceTree = "<group>"; };
 		785D684B2978E1F30038ACBC /* GetReadyFAMEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReadyFAMEX.swift; sourceTree = "<group>"; };
 		785D684D2978EFCB0038ACBC /* GetReadyFAMEX.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetReadyFAMEX.storyboard; sourceTree = "<group>"; };
+		785D684F297A3EAD0038ACBC /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		785D6853297A52560038ACBC /* HotelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsViewController.swift; sourceTree = "<group>"; };
+		785D6855297A560E0038ACBC /* HotelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsCollectionViewCell.swift; sourceTree = "<group>"; };
+		785D6856297A560E0038ACBC /* HotelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelsCollectionViewCell.xib; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -500,6 +508,7 @@
 		785D68462977B04C0038ACBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				785D684F297A3EAD0038ACBC /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -508,6 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				785D684D2978EFCB0038ACBC /* GetReadyFAMEX.storyboard */,
+				785D6856297A560E0038ACBC /* HotelsCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -516,6 +526,8 @@
 			isa = PBXGroup;
 			children = (
 				785D684B2978E1F30038ACBC /* GetReadyFAMEX.swift */,
+				785D6853297A52560038ACBC /* HotelsViewController.swift */,
+				785D6855297A560E0038ACBC /* HotelsCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -957,6 +969,7 @@
 				785D68212975225B0038ACBC /* Profile.storyboard in Resources */,
 				785D682B297653330038ACBC /* Tutorial.storyboard in Resources */,
 				7822D003296B718A0012034F /* FAMEX.storyboard in Resources */,
+				785D6858297A560E0038ACBC /* HotelsCollectionViewCell.xib in Resources */,
 				785D683129778FF80038ACBC /* PWDAccesibility.storyboard in Resources */,
 				788CFD87296A24C5009E189F /* Plateia.ttf in Resources */,
 				7822CFF0296A28320012034F /* LogIn.storyboard in Resources */,
@@ -1090,6 +1103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				785D6833297790200038ACBC /* PWDAccesibilityViewController.swift in Sources */,
+				785D6857297A560E0038ACBC /* HotelsCollectionViewCell.swift in Sources */,
 				7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */,
 				785D67FA297355C00038ACBC /* ShowViewController.swift in Sources */,
 				785D68442977AA790038ACBC /* SanitizationViewController.swift in Sources */,
@@ -1100,6 +1114,7 @@
 				7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */,
 				785D68082973B5410038ACBC /* RestaurantsViewController.swift in Sources */,
 				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
+				785D6854297A52560038ACBC /* HotelsViewController.swift in Sources */,
 				785D68102974AD880038ACBC /* AirShowViewController.swift in Sources */,
 				785D680029736FDD0038ACBC /* ItineraryViewController.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
@@ -1107,6 +1122,7 @@
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
 				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
 				785D67EF296F8E660038ACBC /* MenuModel.swift in Sources */,
+				785D6850297A3EAD0038ACBC /* LocationModel.swift in Sources */,
 				785D683C2977A2390038ACBC /* PDFModel.swift in Sources */,
 				785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,

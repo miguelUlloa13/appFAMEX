@@ -166,5 +166,26 @@ class GetReadyFAMEX: UIViewController {
     }
     
     // MARK: - Method Actions
-
+    
+    @IBAction func TappedHotelsBtn(_ sender: UIButton) {
+        
+        GetReadyFAMEXHotelsBtn.bounce()
+        
+    }
+    
+    @IBAction func TappedGeThereBtn(_ sender: UIButton) {
+        
+        GetReadyFAMEXGetThereBtn.bounce()
+        
+        let myLocation = LocationModel(latitude: 19.7479, longitude: -98.9727, companyName: "Campo Militar No.37-D")
+        myLocation.openMapForPlace()
+        
+    }
+    
+    @IBAction func TappedRoutesBtn(_ sender: UIButton) {
+        
+        GetReadyFAMEXRoutesBtn.bounce()
+        
+    }
+    
 }
