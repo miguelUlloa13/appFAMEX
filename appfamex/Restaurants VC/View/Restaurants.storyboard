@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImgTwo" translatesAutoresizingMaskIntoConstraints="NO" id="VL8-g7-7h3">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="852"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="852"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3TR-V8-8Th">
                                         <rect key="frame" x="0.0" y="59" width="393" height="759"/>
@@ -39,12 +40,12 @@
                                     <constraint firstItem="VL8-g7-7h3" firstAttribute="leading" secondItem="xp7-Mi-v8M" secondAttribute="leading" id="6HB-Mp-5wN"/>
                                     <constraint firstItem="VL8-g7-7h3" firstAttribute="top" secondItem="xp7-Mi-v8M" secondAttribute="top" id="DAo-c0-jiW"/>
                                     <constraint firstAttribute="bottom" secondItem="VL8-g7-7h3" secondAttribute="bottom" id="QWG-qZ-BQh"/>
-                                    <constraint firstAttribute="trailing" secondItem="VL8-g7-7h3" secondAttribute="trailing" constant="-5" id="qKE-3H-ZiY"/>
+                                    <constraint firstAttribute="trailing" secondItem="VL8-g7-7h3" secondAttribute="trailing" constant="-3" id="qKE-3H-ZiY"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.062745101750000004" green="0.1686274707" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.04800620932" green="0.1325002461" blue="0.29279119320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3TR-V8-8Th" secondAttribute="trailing" id="0XA-La-Zkq"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3TR-V8-8Th" secondAttribute="bottom" id="6tE-tS-Pky"/>

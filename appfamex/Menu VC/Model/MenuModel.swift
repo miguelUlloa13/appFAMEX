@@ -38,7 +38,7 @@ class MenuModel {
         ("Accesos P.C.D", "PWDAccesSegue", "PWDAccesIconImg"),             // PWD Accesibility (Accesibilty for Person with Disabilities)
         ("Sanitización", "SanitizacionSegue", "SanitizationIconImg"),   // Sanitization
         ("PRE-FAMEX", "GetReadyFAMEXSegue", "GetReadyIconImg"),             // Get Ready FAMEX
-        ("Configuración", "ConfigSegue", "SettingIconImg"),             // Settings
+        ("Configuración", "SettingsSegue", "SettingIconImg"),             // Settings
     ]
     
     // MARK: - Methods
@@ -52,7 +52,7 @@ class MenuModel {
         let x = screen.width * 0.8
         let originalTransform = myView.transform
         let scaledTransform = originalTransform.scaledBy(x: 0.8, y: 0.8)
-        let scaledAndTranslatedTransform = scaledTransform.translatedBy(x: x, y: 0)
+        let scaledAndTranslatedTransform = scaledTransform.translatedBy(x: x, y: 10)
         UIView.animate(withDuration: 0.7) {
             self.myView.transform = scaledAndTranslatedTransform
             

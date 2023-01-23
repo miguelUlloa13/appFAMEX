@@ -49,6 +49,12 @@
 		785D6854297A52560038ACBC /* HotelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6853297A52560038ACBC /* HotelsViewController.swift */; };
 		785D6857297A560E0038ACBC /* HotelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6855297A560E0038ACBC /* HotelsCollectionViewCell.swift */; };
 		785D6858297A560E0038ACBC /* HotelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785D6856297A560E0038ACBC /* HotelsCollectionViewCell.xib */; };
+		785D685E297A80330038ACBC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D685D297A80330038ACBC /* SettingsViewController.swift */; };
+		785D6860297A80520038ACBC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D685F297A80520038ACBC /* Settings.storyboard */; };
+		785D6862297E2EFC0038ACBC /* RoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6861297E2EFC0038ACBC /* RoutesViewController.swift */; };
+		785D6868297E48410038ACBC /* MUMA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D6867297E48410038ACBC /* MUMA.storyboard */; };
+		785D686A297E48500038ACBC /* MUMAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6869297E48500038ACBC /* MUMAViewController.swift */; };
+		785D686C297E500B0038ACBC /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D686B297E500B0038ACBC /* TermsViewController.swift */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -127,6 +133,12 @@
 		785D6853297A52560038ACBC /* HotelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsViewController.swift; sourceTree = "<group>"; };
 		785D6855297A560E0038ACBC /* HotelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsCollectionViewCell.swift; sourceTree = "<group>"; };
 		785D6856297A560E0038ACBC /* HotelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelsCollectionViewCell.xib; sourceTree = "<group>"; };
+		785D685D297A80330038ACBC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		785D685F297A80520038ACBC /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		785D6861297E2EFC0038ACBC /* RoutesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewController.swift; sourceTree = "<group>"; };
+		785D6867297E48410038ACBC /* MUMA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MUMA.storyboard; sourceTree = "<group>"; };
+		785D6869297E48500038ACBC /* MUMAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUMAViewController.swift; sourceTree = "<group>"; };
+		785D686B297E500B0038ACBC /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -528,6 +540,74 @@
 				785D684B2978E1F30038ACBC /* GetReadyFAMEX.swift */,
 				785D6853297A52560038ACBC /* HotelsViewController.swift */,
 				785D6855297A560E0038ACBC /* HotelsCollectionViewCell.swift */,
+				785D6861297E2EFC0038ACBC /* RoutesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785D6859297A7FAE0038ACBC /* Settings VC */ = {
+			isa = PBXGroup;
+			children = (
+				785D685C297A7FD00038ACBC /* Controller */,
+				785D685B297A7FCC0038ACBC /* View */,
+				785D685A297A7FC60038ACBC /* Model */,
+			);
+			path = "Settings VC";
+			sourceTree = "<group>";
+		};
+		785D685A297A7FC60038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D685B297A7FCC0038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D685F297A80520038ACBC /* Settings.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D685C297A7FD00038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D685D297A80330038ACBC /* SettingsViewController.swift */,
+				785D686B297E500B0038ACBC /* TermsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		785D6863297E47BC0038ACBC /* MUMA */ = {
+			isa = PBXGroup;
+			children = (
+				785D6866297E47E00038ACBC /* Controller */,
+				785D6865297E47DA0038ACBC /* View */,
+				785D6864297E47D00038ACBC /* Model */,
+			);
+			path = MUMA;
+			sourceTree = "<group>";
+		};
+		785D6864297E47D00038ACBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785D6865297E47DA0038ACBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785D6867297E48410038ACBC /* MUMA.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785D6866297E47E00038ACBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				785D6869297E48500038ACBC /* MUMAViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -576,9 +656,11 @@
 				785D67FB29736F040038ACBC /* Itinerary VC */,
 				785D68032973B2840038ACBC /* Restaurants VC */,
 				785D680B2974AD2F0038ACBC /* Air Show VC */,
+				785D6863297E47BC0038ACBC /* MUMA */,
 				785D682C29778F620038ACBC /* PWD Accesibility VC */,
 				785D683D2977AA010038ACBC /* Sanitization */,
 				785D68452977AFC90038ACBC /* PREFAMEX VC */,
+				785D6859297A7FAE0038ACBC /* Settings VC */,
 				7822D006296B76E60012034F /* Pop Ups VC */,
 				785D68222976518F0038ACBC /* Tutorials VC */,
 			);
@@ -955,6 +1037,7 @@
 				788CFD42296958F3009E189F /* LaunchScreen.storyboard in Resources */,
 				7822CFFD296A96090012034F /* MenuTableViewCell.xib in Resources */,
 				785D680229736FED0038ACBC /* Itinerary.storyboard in Resources */,
+				785D6860297A80520038ACBC /* Settings.storyboard in Resources */,
 				788CFD3F296958F3009E189F /* Assets.xcassets in Resources */,
 				7822D008296B771F0012034F /* France.storyboard in Resources */,
 				788CFD72296A1B37009E189F /* SignUp.storyboard in Resources */,
@@ -964,6 +1047,7 @@
 				785D68422977AA660038ACBC /* Sanitization.storyboard in Resources */,
 				785D6836297795530038ACBC /* SanitizationMap.pdf in Resources */,
 				785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */,
+				785D6868297E48410038ACBC /* MUMA.storyboard in Resources */,
 				785D683A29779A000038ACBC /* PWDAccesibilityMap.pdf in Resources */,
 				785D684E2978EFCB0038ACBC /* GetReadyFAMEX.storyboard in Resources */,
 				785D68212975225B0038ACBC /* Profile.storyboard in Resources */,
@@ -1102,11 +1186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785D686A297E48500038ACBC /* MUMAViewController.swift in Sources */,
 				785D6833297790200038ACBC /* PWDAccesibilityViewController.swift in Sources */,
 				785D6857297A560E0038ACBC /* HotelsCollectionViewCell.swift in Sources */,
 				7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */,
 				785D67FA297355C00038ACBC /* ShowViewController.swift in Sources */,
 				785D68442977AA790038ACBC /* SanitizationViewController.swift in Sources */,
+				785D6862297E2EFC0038ACBC /* RoutesViewController.swift in Sources */,
 				785D6829297653200038ACBC /* TutorialViewController.swift in Sources */,
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
 				785D684C2978E1F30038ACBC /* GetReadyFAMEX.swift in Sources */,
@@ -1115,6 +1201,7 @@
 				785D68082973B5410038ACBC /* RestaurantsViewController.swift in Sources */,
 				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
 				785D6854297A52560038ACBC /* HotelsViewController.swift in Sources */,
+				785D686C297E500B0038ACBC /* TermsViewController.swift in Sources */,
 				785D68102974AD880038ACBC /* AirShowViewController.swift in Sources */,
 				785D680029736FDD0038ACBC /* ItineraryViewController.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
@@ -1125,6 +1212,7 @@
 				785D6850297A3EAD0038ACBC /* LocationModel.swift in Sources */,
 				785D683C2977A2390038ACBC /* PDFModel.swift in Sources */,
 				785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */,
+				785D685E297A80330038ACBC /* SettingsViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
 				785D6827297651EC0038ACBC /* TutorialModel.swift in Sources */,
 				788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */,

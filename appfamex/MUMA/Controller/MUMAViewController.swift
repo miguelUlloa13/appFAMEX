@@ -1,21 +1,25 @@
 //
-//  AirShowViewController.swift
+//  MUMAViewController.swift
 //  appfamex
 //
-//  Created by Miguel Angel Bric Ulloa on 15/01/23.
+//  Created by Miguel Angel Bric Ulloa on 22/01/23.
 //
 
 import UIKit
+import WebKit
 
-class AirShowViewController: UIViewController {
+class MUMAViewController: UIViewController {
     
     // MARK: - Outlets
-        
-        // View
-    @IBOutlet weak var AirShowView: UIView!
     
-        // Images
-    @IBOutlet weak var AirShowBGImg: UIImageView!
+        // View
+    @IBOutlet weak var MUMAView: UIView!
+    
+        // Image
+    @IBOutlet weak var MUMABGImg: UIImageView!
+    
+        // Web View
+    @IBOutlet weak var MUMAWebView: WKWebView!
     
     // MARK: - Properties
     
@@ -26,9 +30,10 @@ class AirShowViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addChildMenuViewController()
+        openWebPage()
         setUpMenu()
-        
+        addChildMenuViewController()
+      
     }
     
     // MARK: - Methods
@@ -38,10 +43,10 @@ class AirShowViewController: UIViewController {
         myMenu.navBar = navigationController!
         myMenu.navItem = navigationItem
         
-        myMenu.customNavigationBar(viewTitle: "ESPECT. AEREO")
-        myMenu.myView = AirShowView
-        myMenu.myBGImage = AirShowBGImg
-        myMenu.firstViewPosition = AirShowView.transform
+        myMenu.customNavigationBar(viewTitle: "MUMA")
+        myMenu.myView = MUMAView
+        myMenu.myBGImage = MUMABGImg
+        myMenu.firstViewPosition = MUMAView.transform
         
     }
     
@@ -62,6 +67,12 @@ class AirShowViewController: UIViewController {
 
     }
     
-    // MARK: - Method Actions
+    func openWebPage() {
+        
+        let urlMUMA = "https://webobook.com/public/62e35877f7f4f4058c1e32f2,en#"
+        
+        MUMAWebView.load(URLRequest(url: URL(string: urlMUMA)!))
+        
+    }
 
 }

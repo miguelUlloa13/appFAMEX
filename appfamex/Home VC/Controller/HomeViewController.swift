@@ -53,8 +53,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = #colorLiteral(red: 0.01175179426, green: 0.1716858149, blue: 0.3742573261, alpha: 1)
-        
         HomeCarousel.delegate = self
         HomeCarousel.dataSource = self
         SponsorCarousel.delegate = self
@@ -118,6 +116,7 @@ class HomeViewController: UIViewController {
     
     func setUpMenu() {
         
+        
         myMenu.navBar = navigationController!
         myMenu.navItem = navigationItem
         
@@ -144,7 +143,7 @@ class HomeViewController: UIViewController {
         view.addSubview(menuVC.view)
         NSLayoutConstraint.activate([
             menuVC.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),   // Constraint Izquierdo
-            menuVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -110),   // Constraint derecho
+            menuVC.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),   // Constraint derecho
             menuVC.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),          // Constraint superior
             menuVC.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)])    // Constraint inferior
         menuVC.didMove(toParent: self)
@@ -154,7 +153,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Method Actions
     
-    @IBAction func TappedShowBtn(_ sender: Any) {
+    @IBAction func TappedShowBtn(_ sender: UIButton) {
         
         ShowBtn.bounce()
         
@@ -165,7 +164,7 @@ class HomeViewController: UIViewController {
     }
     
     
-    @IBAction func TappedItineraryBtn(_ sender: Any) {
+    @IBAction func TappedItineraryBtn(_ sender: UIButton) {
         
         ItineraryBtn.bounce()
         

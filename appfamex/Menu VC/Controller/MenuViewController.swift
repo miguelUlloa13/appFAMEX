@@ -48,6 +48,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        MenuView.layer.cornerRadius = 10
         MenuTV.delegate = self
         MenuTV.dataSource = self
         MenuTV.backgroundColor = .clear
@@ -119,12 +120,16 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             // Apply plateia font
         if indexPath.row == 1 || indexPath.row == 7 || indexPath.row == 10{
             cell.TitleSection.font = .Plateia(size: 16)
+        } else {
+            cell.TitleSection.font = .Futura(size: 20)
         }
         
             // Apply Gradient color
         if indexPath.row == 2 {
             let gradient = UIImage.gradientImage(bounds: cell.TitleSection.bounds, colors: [.blue, .white, .red])
             cell.TitleSection.textColor = UIColor(patternImage: gradient)
+        } else {
+            cell.TitleSection.textColor = .white
         }
         
         return cell

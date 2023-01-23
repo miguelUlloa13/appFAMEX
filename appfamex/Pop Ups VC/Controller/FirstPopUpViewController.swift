@@ -49,6 +49,8 @@ class FirstPopUpViewController: UIViewController {
         setUpNavigatonController()
 
     }
+    
+    // MARK: - Methods
 
     func setUpLabels () {
         
@@ -89,6 +91,8 @@ class FirstPopUpViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cerrar", style: .plain, target: self, action: #selector(btnClosePopUp))
         
     }
+    
+    // MARK: - Method Actions
     
     @objc func btnClosePopUp () {
         

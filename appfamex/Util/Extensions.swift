@@ -67,32 +67,13 @@ extension UIButton {
 
 // Extension de funcionalidad de las vistas
 extension UIView {
-    //  Metodo para desplegar el menu
-    func showMenu() {
-        print("Deplegar Menu")
-        let screen = UIScreen.main.bounds
-        self.layer.cornerRadius = 40
-        let x = screen.width * 0.8
-        let originalTransform = self.transform
-        let scaledTransform = originalTransform.scaledBy(x: 0.9, y: 0.9)
-        let scaledAndTranslatedTransform = scaledTransform.translatedBy(x: x, y: 0)
-        
-        UIView.animate(withDuration: 0.7) {
-            self.transform = scaledAndTranslatedTransform
-        }
-        
-    }
-    
-    // Metodo para cerrar el menu
-    func hideMenu(viewOptionSelect: CGAffineTransform) {
-        print("Cerrar Menu")
-        //var viewOptionSelect = CGAffineTransform()
-        //viewOptionSelect = self.transform
-        UIView.animate(withDuration: 0.7) {
-            self.transform = viewOptionSelect
-            self.layer.cornerRadius = 0
-            self.layer.cornerRadius = self.layer.cornerRadius
-        }
+
+    func setGradientBackground(colorOne: UIColor, colorTwo: UIColor) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = bounds
+        gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
+        gradientLayer.locations = [0.0, 4.0]
+        layer.insertSublayer(gradientLayer, at: 0)
     }
     
     

@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImgThree" translatesAutoresizingMaskIntoConstraints="NO" id="1jn-sq-KR1">
-                                        <rect key="frame" x="-5" y="0.0" width="440" height="932"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="433" height="932"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZW-Qu-cp2">
                                         <rect key="frame" x="0.0" y="59" width="430" height="839"/>
@@ -276,15 +276,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="1jn-sq-KR1" firstAttribute="leading" secondItem="uKW-gz-JCS" secondAttribute="leading" constant="-5" id="Bgw-P9-HBx"/>
+                                    <constraint firstItem="1jn-sq-KR1" firstAttribute="leading" secondItem="uKW-gz-JCS" secondAttribute="leading" id="Bgw-P9-HBx"/>
                                     <constraint firstItem="1jn-sq-KR1" firstAttribute="top" secondItem="uKW-gz-JCS" secondAttribute="top" id="WRX-Ru-FxF"/>
                                     <constraint firstAttribute="bottom" secondItem="1jn-sq-KR1" secondAttribute="bottom" id="jjP-9c-Edu"/>
-                                    <constraint firstAttribute="trailing" secondItem="1jn-sq-KR1" secondAttribute="trailing" constant="-5" id="xoN-3k-yLn"/>
+                                    <constraint firstAttribute="trailing" secondItem="1jn-sq-KR1" secondAttribute="trailing" constant="-3" id="xoN-3k-yLn"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.062745101750000004" green="0.1686274707" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.04800620932" green="0.1325002461" blue="0.29279119320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="uKW-gz-JCS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="8r0-HG-gTp"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OZW-Qu-cp2" secondAttribute="trailing" id="E34-bL-4iM"/>

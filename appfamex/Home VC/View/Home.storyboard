@@ -180,7 +180,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lps-8b-9qJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.04800620932" green="0.1325002461" blue="0.29279119320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Y5V-8V-Lip" firstAttribute="leading" secondItem="lps-8b-9qJ" secondAttribute="leading" id="DEY-hq-ybf"/>
                             <constraint firstItem="AO8-ey-zqu" firstAttribute="top" secondItem="Il4-gk-cuA" secondAttribute="top" id="L9p-Gf-cLg"/>
