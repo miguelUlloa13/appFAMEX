@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class AirShowViewController: UIViewController {
     
@@ -13,25 +15,43 @@ class AirShowViewController: UIViewController {
         
         // View
     @IBOutlet weak var AirShowView: UIView!
+    @IBOutlet weak var AirShowVideo: UIView!
     
         // Images
     @IBOutlet weak var AirShowBGImg: UIImageView!
+    @IBOutlet weak var AirShowTicketImg: UIImageView!
     
     // MARK: - Properties
     
     let myMenu = MenuModel()    // Object type Menu
+    let myVideo = VideoModel()  // Object type VideoModel
     
     // MARK: - View Life Cycle Method
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        AirShowVideo.fadeIn(duration: 5)
+        AirShowTicketImg.fadeIn(duration: 5)
+        setUpVideo()
         addChildMenuViewController()
         setUpMenu()
         
     }
     
     // MARK: - Methods
+    
+    func setUpVideo() {
+        
+        myVideo.playVideo(nameClassViewController: self, nameVideo: "AirShowVideo", typeVideo: "mp4", viewVideo: AirShowVideo)
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+ 
+        myVideo.player?.pause()
+    }
+
     
     func setUpMenu() {
         

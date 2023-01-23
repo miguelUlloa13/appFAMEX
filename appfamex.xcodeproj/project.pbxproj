@@ -55,6 +55,8 @@
 		785D6868297E48410038ACBC /* MUMA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D6867297E48410038ACBC /* MUMA.storyboard */; };
 		785D686A297E48500038ACBC /* MUMAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6869297E48500038ACBC /* MUMAViewController.swift */; };
 		785D686C297E500B0038ACBC /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D686B297E500B0038ACBC /* TermsViewController.swift */; };
+		785D686E297E5BBB0038ACBC /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D686D297E5BBB0038ACBC /* VideoModel.swift */; };
+		785D6871297E5F600038ACBC /* AirShowVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 785D6870297E5F600038ACBC /* AirShowVideo.mp4 */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -139,6 +141,8 @@
 		785D6867297E48410038ACBC /* MUMA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MUMA.storyboard; sourceTree = "<group>"; };
 		785D6869297E48500038ACBC /* MUMAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUMAViewController.swift; sourceTree = "<group>"; };
 		785D686B297E500B0038ACBC /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		785D686D297E5BBB0038ACBC /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		785D6870297E5F600038ACBC /* AirShowVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirShowVideo.mp4; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -323,6 +327,7 @@
 		785D680C2974AD570038ACBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				785D686D297E5BBB0038ACBC /* VideoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -612,6 +617,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		785D686F297E5F370038ACBC /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				785D6870297E5F600038ACBC /* AirShowVideo.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		788CFD26296958F2009E189F = {
 			isa = PBXGroup;
 			children = (
@@ -722,6 +735,7 @@
 			children = (
 				788CFD85296A247A009E189F /* Fonts */,
 				785D68342977951D0038ACBC /* PDFs */,
+				785D686F297E5F370038ACBC /* Videos */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1046,6 +1060,7 @@
 				785D68122974ADA40038ACBC /* AirShow.storyboard in Resources */,
 				785D68422977AA660038ACBC /* Sanitization.storyboard in Resources */,
 				785D6836297795530038ACBC /* SanitizationMap.pdf in Resources */,
+				785D6871297E5F600038ACBC /* AirShowVideo.mp4 in Resources */,
 				785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */,
 				785D6868297E48410038ACBC /* MUMA.storyboard in Resources */,
 				785D683A29779A000038ACBC /* PWDAccesibilityMap.pdf in Resources */,
@@ -1205,6 +1220,7 @@
 				785D68102974AD880038ACBC /* AirShowViewController.swift in Sources */,
 				785D680029736FDD0038ACBC /* ItineraryViewController.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
+				785D686E297E5BBB0038ACBC /* VideoModel.swift in Sources */,
 				785D67E9296D0FDF0038ACBC /* FAMEXFont.swift in Sources */,
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
 				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
