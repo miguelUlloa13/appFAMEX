@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Developers View Controller-->
+        <scene sceneID="o5e-xx-pfy">
+            <objects>
+                <viewController storyboardIdentifier="DevelopersPopUpVC" id="5Iw-PC-Vah" customClass="DevelopersViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gx4-7l-Kq7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejM-Fy-fh0">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CM5-oB-nEl">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <color key="backgroundColor" red="0.1607843041" green="0.2941176593" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OOZ-Vd-zSX">
+                                        <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h92-xf-Prh">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nsY-9O-mdB">
+                                                        <rect key="frame" x="12" y="12" width="369" height="665"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="nsY-9O-mdB" secondAttribute="bottom" constant="12" id="Imu-3A-Y4A"/>
+                                                    <constraint firstItem="nsY-9O-mdB" firstAttribute="leading" secondItem="h92-xf-Prh" secondAttribute="leading" constant="12" id="XX4-3e-rtK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nsY-9O-mdB" secondAttribute="trailing" constant="12" id="c9L-Iz-LTq"/>
+                                                    <constraint firstItem="nsY-9O-mdB" firstAttribute="top" secondItem="h92-xf-Prh" secondAttribute="top" constant="12" id="ye5-90-Ffi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oC-NN-GcX">
+                                                <rect key="frame" x="0.0" y="689" width="393" height="70"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LwR-k5-z6o">
+                                                        <rect key="frame" x="12" y="0.0" width="369" height="70"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FuerzaAereaMexLogoImg" translatesAutoresizingMaskIntoConstraints="NO" id="N8H-9r-zfS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="70"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UAMLogoImg" translatesAutoresizingMaskIntoConstraints="NO" id="z9b-hl-Msn">
+                                                                <rect key="frame" x="73.666666666666671" y="0.0" width="74.000000000000014" height="70"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNAMLogoImg" translatesAutoresizingMaskIntoConstraints="NO" id="9UT-4x-YO2">
+                                                                <rect key="frame" x="147.66666666666666" y="0.0" width="73.666666666666657" height="70"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IPNLogoImg" translatesAutoresizingMaskIntoConstraints="NO" id="b0c-9L-6dq">
+                                                                <rect key="frame" x="221.33333333333337" y="0.0" width="74" height="70"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UTCLogoImg" translatesAutoresizingMaskIntoConstraints="NO" id="jxw-31-7Ps">
+                                                                <rect key="frame" x="295.33333333333331" y="0.0" width="73.666666666666686" height="70"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="0Po-Us-9Sf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LwR-k5-z6o" secondAttribute="trailing" constant="12" id="2F6-C5-YSC"/>
+                                                    <constraint firstItem="LwR-k5-z6o" firstAttribute="top" secondItem="4oC-NN-GcX" secondAttribute="top" id="Qsg-xE-4sx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="LwR-k5-z6o" secondAttribute="bottom" id="yG1-JD-5wj"/>
+                                                    <constraint firstItem="LwR-k5-z6o" firstAttribute="leading" secondItem="4oC-NN-GcX" secondAttribute="leading" constant="12" id="zXI-to-YfD"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="CM5-oB-nEl" firstAttribute="leading" secondItem="ejM-Fy-fh0" secondAttribute="leading" id="AGo-G7-ar5"/>
+                                    <constraint firstItem="CM5-oB-nEl" firstAttribute="top" secondItem="ejM-Fy-fh0" secondAttribute="top" id="d9q-Ar-z5o"/>
+                                    <constraint firstAttribute="bottom" secondItem="CM5-oB-nEl" secondAttribute="bottom" id="daz-vT-QaP"/>
+                                    <constraint firstAttribute="trailing" secondItem="CM5-oB-nEl" secondAttribute="trailing" id="zy6-5Z-qhc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="baJ-JO-PSj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="baJ-JO-PSj" firstAttribute="bottom" secondItem="OOZ-Vd-zSX" secondAttribute="bottom" id="10H-f3-X5j"/>
+                            <constraint firstItem="baJ-JO-PSj" firstAttribute="trailing" secondItem="OOZ-Vd-zSX" secondAttribute="trailing" id="8zm-qE-rQr"/>
+                            <constraint firstItem="ejM-Fy-fh0" firstAttribute="trailing" secondItem="baJ-JO-PSj" secondAttribute="trailing" id="DWG-dC-JNc"/>
+                            <constraint firstItem="OOZ-Vd-zSX" firstAttribute="top" secondItem="baJ-JO-PSj" secondAttribute="top" id="JwO-z0-E3Y"/>
+                            <constraint firstItem="ejM-Fy-fh0" firstAttribute="top" secondItem="Gx4-7l-Kq7" secondAttribute="top" id="Kvl-zR-3dj"/>
+                            <constraint firstItem="ejM-Fy-fh0" firstAttribute="leading" secondItem="baJ-JO-PSj" secondAttribute="leading" id="Yta-oa-sfB"/>
+                            <constraint firstItem="OOZ-Vd-zSX" firstAttribute="leading" secondItem="baJ-JO-PSj" secondAttribute="leading" id="uPA-cI-APV"/>
+                            <constraint firstAttribute="bottom" secondItem="ejM-Fy-fh0" secondAttribute="bottom" id="uw3-Yi-6jC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DevelopersTXTV" destination="nsY-9O-mdB" id="sdr-Qe-8wm"/>
+                        <outlet property="DevsBodyTextView" destination="h92-xf-Prh" id="ekB-Ll-3QG"/>
+                        <outlet property="DevsInstutesImagesView" destination="4oC-NN-GcX" id="zdU-UO-FSn"/>
+                        <outlet property="DevsInstutessSV" destination="LwR-k5-z6o" id="Qtv-hj-reG"/>
+                        <outlet property="DevsSV" destination="OOZ-Vd-zSX" id="QAY-LZ-gA5"/>
+                        <outlet property="DevsView" destination="ejM-Fy-fh0" id="7HA-fV-weJ"/>
+                        <outlet property="FifthInstituteImg" destination="jxw-31-7Ps" id="WaG-Ja-X3V"/>
+                        <outlet property="FirstInstituteImg" destination="N8H-9r-zfS" id="MFU-ma-h6c"/>
+                        <outlet property="FourthInstituteImg" destination="b0c-9L-6dq" id="4bq-ss-Vbd"/>
+                        <outlet property="SecondInstituteImg" destination="z9b-hl-Msn" id="fyi-QE-1DQ"/>
+                        <outlet property="ThirsdInstituteImg" destination="9UT-4x-YO2" id="dZi-Vp-NNU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Trx-aW-5jx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2927.4809160305344" y="-271.12676056338029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FuerzaAereaMexLogoImg" width="188" height="120"/>
+        <image name="IPNLogoImg" width="100" height="148"/>
+        <image name="UAMLogoImg" width="186" height="144"/>
+        <image name="UNAMLogoImg" width="135" height="152"/>
+        <image name="UTCLogoImg" width="172" height="152"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

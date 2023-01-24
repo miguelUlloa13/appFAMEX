@@ -14,9 +14,6 @@ class TutorialModel: MenuModel {
     
     func setTutorial() {
         
-        
-        //navItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "QuestionMark")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(btnTutorial))
-        
         navItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "questionmark.circle")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(btnTutorial))
         
     }

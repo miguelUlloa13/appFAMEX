@@ -58,6 +58,9 @@
 		785D686E297E5BBB0038ACBC /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D686D297E5BBB0038ACBC /* VideoModel.swift */; };
 		785D6871297E5F600038ACBC /* AirShowVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 785D6870297E5F600038ACBC /* AirShowVideo.mp4 */; };
 		785D6873297F78F80038ACBC /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6872297F78F80038ACBC /* AboutAppViewController.swift */; };
+		785D6875297F84090038ACBC /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6874297F84090038ACBC /* DevelopersViewController.swift */; };
+		785D6877297F85EB0038ACBC /* DevelopersPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D6876297F85EB0038ACBC /* DevelopersPopUp.storyboard */; };
+		785D6879297FA2EF0038ACBC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6878297FA2EF0038ACBC /* ContactViewController.swift */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -145,6 +148,9 @@
 		785D686D297E5BBB0038ACBC /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		785D6870297E5F600038ACBC /* AirShowVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirShowVideo.mp4; sourceTree = "<group>"; };
 		785D6872297F78F80038ACBC /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		785D6874297F84090038ACBC /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
+		785D6876297F85EB0038ACBC /* DevelopersPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DevelopersPopUp.storyboard; sourceTree = "<group>"; };
+		785D6878297FA2EF0038ACBC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -361,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */,
+				785D6876297F85EB0038ACBC /* DevelopersPopUp.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,6 +375,7 @@
 		785D68152974C8270038ACBC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				785D6874297F84090038ACBC /* DevelopersViewController.swift */,
 				785D68182974C9130038ACBC /* FirstPopUpViewController.swift */,
 			);
 			path = Controller;
@@ -583,6 +591,7 @@
 				785D685D297A80330038ACBC /* SettingsViewController.swift */,
 				785D686B297E500B0038ACBC /* TermsViewController.swift */,
 				785D6872297F78F80038ACBC /* AboutAppViewController.swift */,
+				785D6878297FA2EF0038ACBC /* ContactViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1059,6 +1068,7 @@
 				7822D008296B771F0012034F /* France.storyboard in Resources */,
 				788CFD72296A1B37009E189F /* SignUp.storyboard in Resources */,
 				785D67F8297355A00038ACBC /* Show.storyboard in Resources */,
+				785D6877297F85EB0038ACBC /* DevelopersPopUp.storyboard in Resources */,
 				7822CFF6296A837D0012034F /* Menu.storyboard in Resources */,
 				785D68122974ADA40038ACBC /* AirShow.storyboard in Resources */,
 				785D68422977AA660038ACBC /* Sanitization.storyboard in Resources */,
@@ -1229,9 +1239,11 @@
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
 				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
 				785D67EF296F8E660038ACBC /* MenuModel.swift in Sources */,
+				785D6875297F84090038ACBC /* DevelopersViewController.swift in Sources */,
 				785D6850297A3EAD0038ACBC /* LocationModel.swift in Sources */,
 				785D683C2977A2390038ACBC /* PDFModel.swift in Sources */,
 				785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */,
+				785D6879297FA2EF0038ACBC /* ContactViewController.swift in Sources */,
 				785D685E297A80330038ACBC /* SettingsViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
 				785D6827297651EC0038ACBC /* TutorialModel.swift in Sources */,

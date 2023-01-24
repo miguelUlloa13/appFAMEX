@@ -78,5 +78,17 @@ class AboutAppViewController: UIViewController {
         AboutAppDevelopersBtn.titleLabel?.minimumScaleFactor = 0.5
         
     }
+    
+    @IBAction func TappedAboutAppBtn(_ sender: UIButton) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "DevelopersPopUp", bundle: nil)
+        let popUpVC = storyBoard.instantiateViewController(withIdentifier: "DevelopersPopUpVC") as! DevelopersViewController
+        let navBarOnModal: UINavigationController = UINavigationController(rootViewController: popUpVC)
+        
+        self.present(navBarOnModal, animated: true, completion: nil)
+        
+        
+    }
+    
 
 }
