@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TutorialVC" id="Y6W-OH-hqX" customClass="TutorialViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spD-kS-WVb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImgTwo" translatesAutoresizingMaskIntoConstraints="NO" id="VSo-70-GLE">
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="852"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lP3-On-C0Q">
+                                        <rect key="frame" x="40" y="89" width="313" height="729"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="VSo-70-GLE" firstAttribute="leading" secondItem="spD-kS-WVb" secondAttribute="leading" id="9yl-bg-3aJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="VSo-70-GLE" secondAttribute="bottom" id="Laz-9a-OUO"/>
+                                    <constraint firstAttribute="trailing" secondItem="VSo-70-GLE" secondAttribute="trailing" constant="-3" id="Yix-kH-djg"/>
+                                    <constraint firstItem="VSo-70-GLE" firstAttribute="top" secondItem="spD-kS-WVb" secondAttribute="top" id="cP2-du-cZQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="spD-kS-WVb" secondAttribute="bottom" id="16R-3n-qnt"/>
+                            <constraint firstItem="spD-kS-WVb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3vj-So-aom"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lP3-On-C0Q" secondAttribute="trailing" constant="40" id="5Ec-7v-tec"/>
+                            <constraint firstItem="spD-kS-WVb" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Pd0-iZ-GWf"/>
+                            <constraint firstItem="lP3-On-C0Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Shs-eA-1pz"/>
+                            <constraint firstItem="lP3-On-C0Q" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="mY1-em-9j7"/>
+                            <constraint firstItem="lP3-On-C0Q" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="pKI-bl-aqW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="spD-kS-WVb" secondAttribute="trailing" id="s8Z-nY-dkI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9b1-s4-osj"/>
+                    <connections>
+                        <outlet property="TutorialImg" destination="lP3-On-C0Q" id="9pJ-4P-OTO"/>
+                        <outlet property="TutorialView" destination="spD-kS-WVb" id="nkN-yi-B64"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870.9923664122136" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BGImgTwo" width="811" height="1780"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

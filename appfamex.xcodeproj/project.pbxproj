@@ -57,6 +57,7 @@
 		785D686C297E500B0038ACBC /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D686B297E500B0038ACBC /* TermsViewController.swift */; };
 		785D686E297E5BBB0038ACBC /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D686D297E5BBB0038ACBC /* VideoModel.swift */; };
 		785D6871297E5F600038ACBC /* AirShowVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 785D6870297E5F600038ACBC /* AirShowVideo.mp4 */; };
+		785D6873297F78F80038ACBC /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6872297F78F80038ACBC /* AboutAppViewController.swift */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -143,6 +144,7 @@
 		785D686B297E500B0038ACBC /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		785D686D297E5BBB0038ACBC /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		785D6870297E5F600038ACBC /* AirShowVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirShowVideo.mp4; sourceTree = "<group>"; };
+		785D6872297F78F80038ACBC /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -580,6 +582,7 @@
 			children = (
 				785D685D297A80330038ACBC /* SettingsViewController.swift */,
 				785D686B297E500B0038ACBC /* TermsViewController.swift */,
+				785D6872297F78F80038ACBC /* AboutAppViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1212,6 +1215,7 @@
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
 				785D684C2978E1F30038ACBC /* GetReadyFAMEX.swift in Sources */,
 				7822D00A296B77340012034F /* FranceViewController.swift in Sources */,
+				785D6873297F78F80038ACBC /* AboutAppViewController.swift in Sources */,
 				7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */,
 				785D68082973B5410038ACBC /* RestaurantsViewController.swift in Sources */,
 				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
@@ -1406,10 +1410,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = appfamex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1435,10 +1439,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = appfamex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

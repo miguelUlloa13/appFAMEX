@@ -51,8 +51,8 @@ class MenuModel {
         
         let x = screen.width * 0.8
         let originalTransform = myView.transform
-        let scaledTransform = originalTransform.scaledBy(x: 0.8, y: 0.8)
-        let scaledAndTranslatedTransform = scaledTransform.translatedBy(x: x, y: 10)
+        let scaledTransform = originalTransform.scaledBy(x: 0.85, y: 0.85)
+        let scaledAndTranslatedTransform = scaledTransform.translatedBy(x: x, y: 50)
         UIView.animate(withDuration: 0.7) {
             self.myView.transform = scaledAndTranslatedTransform
             
