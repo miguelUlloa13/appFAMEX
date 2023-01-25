@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ITINERARIO" representedClassName="ITINERARIO" syncable="YES" codeGenerationType="class">
+        <attribute name="authorConferencia" optional="YES" attributeType="String"/>
+        <attribute name="dateConferencia" optional="YES" attributeType="String"/>
+        <attribute name="descriptionConferencia" optional="YES" attributeType="String"/>
+        <attribute name="idConferencia" optional="YES" attributeType="String"/>
+        <attribute name="placeConferencia" optional="YES" attributeType="String"/>
+        <attribute name="timeConferencia" optional="YES" attributeType="String"/>
+        <attribute name="titleConferencia" optional="YES" attributeType="String"/>
+    </entity>
 </model>

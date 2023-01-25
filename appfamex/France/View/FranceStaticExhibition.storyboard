@@ -12,7 +12,7 @@
         <!--France Static Exhibition Menu View Controller-->
         <scene sceneID="Zn4-me-Fnv">
             <objects>
-                <viewController id="nxH-v9-7Xc" customClass="FranceStaticExhibitionMenuViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExhibitionVC" id="nxH-v9-7Xc" customClass="FranceStaticExhibitionMenuViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IJt-02-wl9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

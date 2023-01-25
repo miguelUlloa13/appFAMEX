@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ItineraryViewController: UIViewController {
     
@@ -39,6 +40,15 @@ class ItineraryViewController: UIViewController {
     
     let myMenu = MenuModel()    // Object type Menu
     
+    var itinerarioList = [ITINERARIO]() // Arreglo de objetos de la base de datos local (Entidad ITINERARIO)
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext   // Referencia a la base de datos
+    
+    var menu: Bool = false
+    
+    var viewOptionSelect: CGAffineTransform = CGAffineTransform()
+    
+    let segmentedControlValues = ["Dia 26", "Dia 27", "Dia 28"]
+    
     // MARK: - View Life Cycle Method
 
     override func viewDidLoad() {
@@ -46,10 +56,55 @@ class ItineraryViewController: UIViewController {
         
         addChildMenuViewController()
         setUpMenu()
+        
+        ConferenceTV.delegate = self
+        ConferenceTV.dataSource = self
+        
+        ConferenceTV.register(UINib(nibName: "TableViewCellMiItinerario", bundle: nil), forCellReuseIdentifier: "cellMiItinerario")
+        
+        readTask()
+        customViews()
 
     }
     
     // MARK: - Methods
+    
+    
+    func customViews() {
+        
+
+        // Botones
+        ShareBtn.setTitle("Compartir Itinerario", for: .normal)
+        
+        // Segmented Control
+        ConferenceDaysSC.removeAllSegments()
+        for (index, value) in segmentedControlValues.enumerated() {
+            ConferenceDaysSC.insertSegment(withTitle: value, at: index, animated: true)
+        }
+        ConferenceDaysSC.selectedSegmentIndex = 0
+        
+        
+    }
+    
+    func save() {       // Funcion para salvar la informacion en la BD local
+        do {
+            try context.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        self.ConferenceTV.reloadData()
+    }
+    
+    func readTask() {
+        let request: NSFetchRequest<ITINERARIO> = ITINERARIO.fetchRequest()
+        
+        do {
+            itinerarioList = try context.fetch(request)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
     
     
     func setUpMenu() {
@@ -82,3 +137,65 @@ class ItineraryViewController: UIViewController {
     }
 
 }
+
+extension ItineraryViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        itinerarioList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellMiItinerario", for: indexPath) as! TableViewCellMiItinerario
+        
+        let itinerario = itinerarioList[indexPath.row]
+        
+        cell.lblTitleConferenciaMiItinerario.text = itinerario.titleConferencia
+        cell.lblDateConferenciaMiItinerario.text = itinerario.dateConferencia
+        
+        cell.btnTrash.tag = indexPath.row
+        cell.btnInfo.tag = indexPath.row
+        
+        cell.btnTrash.addTarget(self, action: #selector(btnTrashAction), for: .touchUpInside)
+        cell.btnInfo.addTarget(self, action: #selector(btnInfoAction), for: .touchUpInside)
+        
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let deleteAction = UIContextualAction(style: .normal, title: "Delete") { _, _, _ in self.context.delete(self.itinerarioList[indexPath.row])
+            self.itinerarioList.remove(at: indexPath.row)
+            self.save()
+        }
+        deleteAction.backgroundColor = .red
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    
+    
+    @objc func btnTrashAction (sender: UIButton) {
+        let indexPathAux = IndexPath(row: sender.tag, section: 0)
+        print("Se borro la celda: \(indexPathAux)")
+        
+        
+    }
+    
+    @objc func btnInfoAction (sender: UIButton) {
+  
+        //let indexPathAux = itinerarioList[IndexPath(row: sender.tag, section: 0)]
+       
+        
+        let vc = storyboard?.instantiateViewController(identifier: "detailConferencia") as! detailConferenciaViewController
+        vc.title = "Detalles"
+        let navBarOnModal: UINavigationController = UINavigationController(rootViewController: vc)
+        
+        vc.titleConferencia = "Hola"
+        
+        
+        self.present(navBarOnModal, animated: true, completion: nil)
+        
+      
+        
+    }
+    
+}
+

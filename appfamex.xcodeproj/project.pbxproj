@@ -88,7 +88,15 @@
 		78BD478229810C0100E9AF4A /* ChaletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD478029810C0100E9AF4A /* ChaletTableViewCell.swift */; };
 		78BD478329810C0100E9AF4A /* ChaletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78BD478129810C0100E9AF4A /* ChaletTableViewCell.xib */; };
 		78BD478529811A6500E9AF4A /* FranceConferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD478429811A6500E9AF4A /* FranceConferences.storyboard */; };
-		78BD478829811A9000E9AF4A /* FranceConferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD478729811A9000E9AF4A /* FranceConferencesViewController.swift */; };
+		78BD478829811A9000E9AF4A /* FranceConferencesFirstDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD478729811A9000E9AF4A /* FranceConferencesFirstDayViewController.swift */; };
+		78BD478D29811F6700E9AF4A /* ConferenciasFranciaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78BD478C29811F6700E9AF4A /* ConferenciasFranciaTableViewCell.xib */; };
+		78BD478F29811F9500E9AF4A /* ConferenciasFranciaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD478E29811F9500E9AF4A /* ConferenciasFranciaTableViewCell.swift */; };
+		78BD47912981202000E9AF4A /* AddItineraryPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD47902981202000E9AF4A /* AddItineraryPopUp.storyboard */; };
+		78BD47932981207A00E9AF4A /* popUpAddMiItinerarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD47922981207A00E9AF4A /* popUpAddMiItinerarioViewController.swift */; };
+		78BD47952981221B00E9AF4A /* detailConferenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD47942981221B00E9AF4A /* detailConferenciaViewController.swift */; };
+		78BD47972981228000E9AF4A /* detailConferencia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD47962981228000E9AF4A /* detailConferencia.storyboard */; };
+		78BD479A298127D400E9AF4A /* TableViewCellMiItinerario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD4798298127D400E9AF4A /* TableViewCellMiItinerario.swift */; };
+		78BD479B298127D400E9AF4A /* TableViewCellMiItinerario.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78BD4799298127D400E9AF4A /* TableViewCellMiItinerario.xib */; };
 		8814E23C7C8E7D34FD0DD6DE /* Pods_appfamex_appfamexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */; };
 		F6CF7EFE507C7080A4922B91 /* Pods_appfamexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */; };
 /* End PBXBuildFile section */
@@ -198,7 +206,15 @@
 		78BD478029810C0100E9AF4A /* ChaletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaletTableViewCell.swift; sourceTree = "<group>"; };
 		78BD478129810C0100E9AF4A /* ChaletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChaletTableViewCell.xib; sourceTree = "<group>"; };
 		78BD478429811A6500E9AF4A /* FranceConferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FranceConferences.storyboard; sourceTree = "<group>"; };
-		78BD478729811A9000E9AF4A /* FranceConferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceConferencesViewController.swift; sourceTree = "<group>"; };
+		78BD478729811A9000E9AF4A /* FranceConferencesFirstDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceConferencesFirstDayViewController.swift; sourceTree = "<group>"; };
+		78BD478C29811F6700E9AF4A /* ConferenciasFranciaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConferenciasFranciaTableViewCell.xib; sourceTree = "<group>"; };
+		78BD478E29811F9500E9AF4A /* ConferenciasFranciaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenciasFranciaTableViewCell.swift; sourceTree = "<group>"; };
+		78BD47902981202000E9AF4A /* AddItineraryPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddItineraryPopUp.storyboard; sourceTree = "<group>"; };
+		78BD47922981207A00E9AF4A /* popUpAddMiItinerarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popUpAddMiItinerarioViewController.swift; sourceTree = "<group>"; };
+		78BD47942981221B00E9AF4A /* detailConferenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailConferenciaViewController.swift; sourceTree = "<group>"; };
+		78BD47962981228000E9AF4A /* detailConferencia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = detailConferencia.storyboard; sourceTree = "<group>"; };
+		78BD4798298127D400E9AF4A /* TableViewCellMiItinerario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellMiItinerario.swift; sourceTree = "<group>"; };
+		78BD4799298127D400E9AF4A /* TableViewCellMiItinerario.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellMiItinerario.xib; sourceTree = "<group>"; };
 		88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamex_appfamexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991939547D034D42DDF10B47 /* Pods-appfamexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamexTests.debug.xcconfig"; path = "Target Support Files/Pods-appfamexTests/Pods-appfamexTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -316,6 +332,8 @@
 		785D67FE29736FC10038ACBC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				78BD4798298127D400E9AF4A /* TableViewCellMiItinerario.swift */,
+				78BD4799298127D400E9AF4A /* TableViewCellMiItinerario.xib */,
 				785D67FF29736FDD0038ACBC /* ItineraryViewController.swift */,
 			);
 			path = Controller;
@@ -400,6 +418,8 @@
 			children = (
 				785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */,
 				785D6876297F85EB0038ACBC /* DevelopersPopUp.storyboard */,
+				78BD47902981202000E9AF4A /* AddItineraryPopUp.storyboard */,
+				78BD47962981228000E9AF4A /* detailConferencia.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,8 +427,10 @@
 		785D68152974C8270038ACBC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				78BD47942981221B00E9AF4A /* detailConferenciaViewController.swift */,
 				785D6874297F84090038ACBC /* DevelopersViewController.swift */,
 				785D68182974C9130038ACBC /* FirstPopUpViewController.swift */,
+				78BD47922981207A00E9AF4A /* popUpAddMiItinerarioViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -721,6 +743,7 @@
 				785D683D2977AA010038ACBC /* Sanitization */,
 				785D68452977AFC90038ACBC /* PREFAMEX */,
 				785D6859297A7FAE0038ACBC /* Settings */,
+				78BD478929811EEC00E9AF4A /* Conferences */,
 				78BD47682980E43400E9AF4A /* Static Exhibition */,
 				78BD477D29810BB400E9AF4A /* Chalets */,
 				7822D006296B76E60012034F /* Pop Ups */,
@@ -1053,9 +1076,34 @@
 		78BD478629811A6A00E9AF4A /* Conferences */ = {
 			isa = PBXGroup;
 			children = (
-				78BD478729811A9000E9AF4A /* FranceConferencesViewController.swift */,
+				78BD478729811A9000E9AF4A /* FranceConferencesFirstDayViewController.swift */,
 			);
 			path = Conferences;
+			sourceTree = "<group>";
+		};
+		78BD478929811EEC00E9AF4A /* Conferences */ = {
+			isa = PBXGroup;
+			children = (
+				78BD478B29811F1700E9AF4A /* Controller */,
+				78BD478A29811F0800E9AF4A /* View */,
+			);
+			path = Conferences;
+			sourceTree = "<group>";
+		};
+		78BD478A29811F0800E9AF4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78BD478C29811F6700E9AF4A /* ConferenciasFranciaTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78BD478B29811F1700E9AF4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78BD478E29811F9500E9AF4A /* ConferenciasFranciaTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		AEBF199F50CFFB94DDD7FC13 /* Pods */ = {
@@ -1196,21 +1244,25 @@
 				785D68422977AA660038ACBC /* Sanitization.storyboard in Resources */,
 				785D6836297795530038ACBC /* SanitizationMap.pdf in Resources */,
 				785D6871297E5F600038ACBC /* AirShowVideo.mp4 in Resources */,
+				78BD478D29811F6700E9AF4A /* ConferenciasFranciaTableViewCell.xib in Resources */,
 				785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */,
 				78BD4778298105FC00E9AF4A /* FranceStaticExhibition.storyboard in Resources */,
 				785D6868297E48410038ACBC /* MUMA.storyboard in Resources */,
 				78BD476E2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.xib in Resources */,
 				785D683A29779A000038ACBC /* PWDAccesibilityMap.pdf in Resources */,
 				785D684E2978EFCB0038ACBC /* GetReadyFAMEX.storyboard in Resources */,
+				78BD47972981228000E9AF4A /* detailConferencia.storyboard in Resources */,
 				785D68212975225B0038ACBC /* Profile.storyboard in Resources */,
 				785D682B297653330038ACBC /* Tutorial.storyboard in Resources */,
 				7822D003296B718A0012034F /* FAMEX.storyboard in Resources */,
 				785D6858297A560E0038ACBC /* HotelsCollectionViewCell.xib in Resources */,
 				785D683129778FF80038ACBC /* PWDAccesibility.storyboard in Resources */,
+				78BD479B298127D400E9AF4A /* TableViewCellMiItinerario.xib in Resources */,
 				788CFD87296A24C5009E189F /* Plateia.ttf in Resources */,
 				78BD477A298106AF00E9AF4A /* FranceChalets.storyboard in Resources */,
 				78BD478329810C0100E9AF4A /* ChaletTableViewCell.xib in Resources */,
 				7822CFF0296A28320012034F /* LogIn.storyboard in Resources */,
+				78BD47912981202000E9AF4A /* AddItineraryPopUp.storyboard in Resources */,
 				7822CFFF296B6B940012034F /* Home.storyboard in Resources */,
 				785D680A2973B5580038ACBC /* Restaurants.storyboard in Resources */,
 			);
@@ -1357,6 +1409,7 @@
 				785D6873297F78F80038ACBC /* AboutAppViewController.swift in Sources */,
 				78BD4772298101B300E9AF4A /* FranceBlockTwoViewController.swift in Sources */,
 				7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */,
+				78BD479A298127D400E9AF4A /* TableViewCellMiItinerario.swift in Sources */,
 				785D68082973B5410038ACBC /* RestaurantsViewController.swift in Sources */,
 				78BD47642980C3B200E9AF4A /* ProfileCollectionViewCell.swift in Sources */,
 				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
@@ -1364,12 +1417,14 @@
 				785D686C297E500B0038ACBC /* TermsViewController.swift in Sources */,
 				785D68102974AD880038ACBC /* AirShowViewController.swift in Sources */,
 				785D680029736FDD0038ACBC /* ItineraryViewController.swift in Sources */,
+				78BD478F29811F9500E9AF4A /* ConferenciasFranciaTableViewCell.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
 				78BD476D2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.swift in Sources */,
 				785D686E297E5BBB0038ACBC /* VideoModel.swift in Sources */,
 				78BD47702980E91900E9AF4A /* FranceBlockOneViewController.swift in Sources */,
 				785D67E9296D0FDF0038ACBC /* FAMEXFont.swift in Sources */,
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
+				78BD47952981221B00E9AF4A /* detailConferenciaViewController.swift in Sources */,
 				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
 				785D67EF296F8E660038ACBC /* MenuModel.swift in Sources */,
 				78BD47742981031D00E9AF4A /* FranceBlockThreeViewController.swift in Sources */,
@@ -1377,12 +1432,13 @@
 				785D6850297A3EAD0038ACBC /* LocationModel.swift in Sources */,
 				785D683C2977A2390038ACBC /* PDFModel.swift in Sources */,
 				785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */,
+				78BD47932981207A00E9AF4A /* popUpAddMiItinerarioViewController.swift in Sources */,
 				78BD47672980DB5E00E9AF4A /* FranceStaticExhibitionMenuViewController.swift in Sources */,
 				785D6879297FA2EF0038ACBC /* ContactViewController.swift in Sources */,
 				785D685E297A80330038ACBC /* SettingsViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
 				785D6827297651EC0038ACBC /* TutorialModel.swift in Sources */,
-				78BD478829811A9000E9AF4A /* FranceConferencesViewController.swift in Sources */,
+				78BD478829811A9000E9AF4A /* FranceConferencesFirstDayViewController.swift in Sources */,
 				788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */,
 				788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */,
 			);

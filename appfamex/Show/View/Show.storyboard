@@ -74,24 +74,36 @@
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Button" backgroundImage="WhiteShowButton"/>
+                                                                <connections>
+                                                                    <action selector="TappedShowMexConferencesBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KGn-F0-5s3"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2F-UM-u92">
                                                                 <rect key="frame" x="0.0" y="129.66666666666669" width="300" height="100"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Button" backgroundImage="WhiteShowButton"/>
+                                                                <connections>
+                                                                    <action selector="TappedShowMexPavilionsBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VlT-JW-8zH"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilt-dj-GaE">
                                                                 <rect key="frame" x="0.0" y="259.66666666666663" width="300" height="99.666666666666686"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Button" backgroundImage="WhiteShowButton"/>
+                                                                <connections>
+                                                                    <action selector="TappedMexChaletsBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pgr-9Y-MCw"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTc-8h-wdf">
                                                                 <rect key="frame" x="0.0" y="389.33333333333337" width="300" height="99.666666666666686"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Button" backgroundImage="WhiteShowButton"/>
+                                                                <connections>
+                                                                    <action selector="TappedShowMexExhibitionBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wzc-43-7tR"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>

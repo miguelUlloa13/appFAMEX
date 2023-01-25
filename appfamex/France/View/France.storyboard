@@ -45,6 +45,9 @@
                                                                                         <rect key="frame" x="0.0" y="0.0" width="340" height="73.333333333333329"/>
                                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                                         <state key="normal" title="Button" backgroundImage="ConferencesImg"/>
+                                                                                        <connections>
+                                                                                            <segue destination="CM5-Uc-VMG" kind="show" id="ivE-j2-N6W"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -336,6 +339,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.65116279069764" y="-2.5751072961373391"/>
+        </scene>
+        <!--FranceConferences-->
+        <scene sceneID="07Z-nI-nfc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FranceConferences" id="CM5-Uc-VMG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3r9-X9-GG8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnt-7Z-zI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1981" y="-155"/>
         </scene>
         <!--FranceStaticExhibition-->
         <scene sceneID="kfB-CR-8xm">

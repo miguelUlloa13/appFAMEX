@@ -138,4 +138,36 @@ class ShowViewController: UIViewController {
     
     // MARK: - Method Actions
 
+    @IBAction func TappedShowMexConferencesBtn(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func TappedShowMexPavilionsBtn(_ sender: Any) {
+        
+
+    }
+    
+    @IBAction func TappedMexChaletsBtn(_ sender: Any) {
+        
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "FranceChalets", bundle: nil)
+        let itineraryVC = storyBoard.instantiateViewController(withIdentifier: "FranceChaletVC") as! FranceChaletsViewController
+        self.navigationController?.pushViewController(itineraryVC, animated: true)
+
+        
+    }
+    
+    @IBAction func TappedShowMexExhibitionBtn(_ sender: Any) {
+        
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "FranceStaticExhibition", bundle: nil)
+        let itineraryVC = storyBoard.instantiateViewController(withIdentifier: "ExhibitionVC") as! FranceStaticExhibitionMenuViewController
+
+        
+        self.navigationController?.pushViewController(itineraryVC, animated: true)
+
+        
+    }
+    
 }
