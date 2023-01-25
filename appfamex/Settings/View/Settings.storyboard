@@ -880,7 +880,7 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4w0-PM-WPW">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="56"/>
                                                                                 <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
-                                                                                <state key="normal" title="Button" image="FacebookIcon"/>
+                                                                                <state key="normal" image="FacebookIcon"/>
                                                                                 <connections>
                                                                                     <action selector="TappedSocialNetworkingBtns:" destination="zXi-JR-SH8" eventType="touchUpInside" id="dzs-7F-U4w"/>
                                                                                 </connections>
@@ -888,7 +888,7 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiQ-kI-2UP">
                                                                                 <rect key="frame" x="92.333333333333343" y="0.0" width="92.333333333333343" height="56"/>
                                                                                 <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
-                                                                                <state key="normal" title="Button" image="InstagramIcon"/>
+                                                                                <state key="normal" image="InstagramIcon"/>
                                                                                 <connections>
                                                                                     <action selector="TappedSocialNetworkingBtns:" destination="zXi-JR-SH8" eventType="touchUpInside" id="cF7-DB-X7o"/>
                                                                                 </connections>
@@ -896,7 +896,7 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7q5-ny-eLf">
                                                                                 <rect key="frame" x="184.66666666666666" y="0.0" width="91.999999999999972" height="56"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="2.2250738585072014e-308" maxY="2"/>
-                                                                                <state key="normal" title="Button" image="WebPageIcon"/>
+                                                                                <state key="normal" image="WebPageIcon"/>
                                                                                 <connections>
                                                                                     <action selector="TappedSocialNetworkingBtns:" destination="zXi-JR-SH8" eventType="touchUpInside" id="GEc-IY-OMK"/>
                                                                                 </connections>
@@ -904,7 +904,7 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeQ-Ln-Fy6">
                                                                                 <rect key="frame" x="276.66666666666669" y="0.0" width="92.333333333333314" height="56"/>
                                                                                 <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
-                                                                                <state key="normal" title="Button" image="YoutubeIcon"/>
+                                                                                <state key="normal" image="YoutubeIcon"/>
                                                                                 <connections>
                                                                                     <action selector="TappedSocialNetworkingBtns:" destination="zXi-JR-SH8" eventType="touchUpInside" id="38X-Ku-9It"/>
                                                                                 </connections>

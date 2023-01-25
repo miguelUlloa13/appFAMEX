@@ -61,6 +61,7 @@
 		785D6875297F84090038ACBC /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6874297F84090038ACBC /* DevelopersViewController.swift */; };
 		785D6877297F85EB0038ACBC /* DevelopersPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D6876297F85EB0038ACBC /* DevelopersPopUp.storyboard */; };
 		785D6879297FA2EF0038ACBC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6878297FA2EF0038ACBC /* ContactViewController.swift */; };
+		785D687B2980C1A30038ACBC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D687A2980C1A30038ACBC /* ProfileViewController.swift */; };
 		788CFD33296958F2009E189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD32296958F2009E189F /* AppDelegate.swift */; };
 		788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD34296958F2009E189F /* SceneDelegate.swift */; };
 		788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD3B296958F2009E189F /* appfamex.xcdatamodeld */; };
@@ -73,6 +74,16 @@
 		788CFD72296A1B37009E189F /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788CFD71296A1B37009E189F /* SignUp.storyboard */; };
 		788CFD74296A211A009E189F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFD73296A211A009E189F /* Extensions.swift */; };
 		788CFD87296A24C5009E189F /* Plateia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 788CFD86296A24C5009E189F /* Plateia.ttf */; };
+		78BD47642980C3B200E9AF4A /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD47622980C3B200E9AF4A /* ProfileCollectionViewCell.swift */; };
+		78BD47652980C3B200E9AF4A /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78BD47632980C3B200E9AF4A /* ProfileCollectionViewCell.xib */; };
+		78BD47672980DB5E00E9AF4A /* FranceStaticExhibitionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD47662980DB5E00E9AF4A /* FranceStaticExhibitionMenuViewController.swift */; };
+		78BD476D2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD476B2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.swift */; };
+		78BD476E2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78BD476C2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.xib */; };
+		78BD47702980E91900E9AF4A /* FranceBlockOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD476F2980E91900E9AF4A /* FranceBlockOneViewController.swift */; };
+		78BD4772298101B300E9AF4A /* FranceBlockTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD4771298101B300E9AF4A /* FranceBlockTwoViewController.swift */; };
+		78BD47742981031D00E9AF4A /* FranceBlockThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD47732981031D00E9AF4A /* FranceBlockThreeViewController.swift */; };
+		78BD4778298105FC00E9AF4A /* FranceStaticExhibition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD4777298105FC00E9AF4A /* FranceStaticExhibition.storyboard */; };
+		78BD477A298106AF00E9AF4A /* FranceChalets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD4779298106AF00E9AF4A /* FranceChalets.storyboard */; };
 		8814E23C7C8E7D34FD0DD6DE /* Pods_appfamex_appfamexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */; };
 		F6CF7EFE507C7080A4922B91 /* Pods_appfamexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */; };
 /* End PBXBuildFile section */
@@ -151,6 +162,7 @@
 		785D6874297F84090038ACBC /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		785D6876297F85EB0038ACBC /* DevelopersPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DevelopersPopUp.storyboard; sourceTree = "<group>"; };
 		785D6878297FA2EF0038ACBC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		785D687A2980C1A30038ACBC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		788CFD2F296958F2009E189F /* appfamex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appfamex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788CFD32296958F2009E189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788CFD34296958F2009E189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +179,16 @@
 		788CFD71296A1B37009E189F /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		788CFD73296A211A009E189F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		788CFD86296A24C5009E189F /* Plateia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Plateia.ttf; sourceTree = "<group>"; };
+		78BD47622980C3B200E9AF4A /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		78BD47632980C3B200E9AF4A /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		78BD47662980DB5E00E9AF4A /* FranceStaticExhibitionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceStaticExhibitionMenuViewController.swift; sourceTree = "<group>"; };
+		78BD476B2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticExhibitionCollectionViewCell.swift; sourceTree = "<group>"; };
+		78BD476C2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaticExhibitionCollectionViewCell.xib; sourceTree = "<group>"; };
+		78BD476F2980E91900E9AF4A /* FranceBlockOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceBlockOneViewController.swift; sourceTree = "<group>"; };
+		78BD4771298101B300E9AF4A /* FranceBlockTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceBlockTwoViewController.swift; sourceTree = "<group>"; };
+		78BD47732981031D00E9AF4A /* FranceBlockThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceBlockThreeViewController.swift; sourceTree = "<group>"; };
+		78BD4777298105FC00E9AF4A /* FranceStaticExhibition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FranceStaticExhibition.storyboard; sourceTree = "<group>"; };
+		78BD4779298106AF00E9AF4A /* FranceChalets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FranceChalets.storyboard; sourceTree = "<group>"; };
 		88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamex_appfamexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991939547D034D42DDF10B47 /* Pods-appfamexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamexTests.debug.xcconfig"; path = "Target Support Files/Pods-appfamexTests/Pods-appfamexTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,24 +235,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7822D006296B76E60012034F /* Pop Ups VC */ = {
+		7822D006296B76E60012034F /* Pop Ups */ = {
 			isa = PBXGroup;
 			children = (
 				785D68152974C8270038ACBC /* Controller */,
 				785D68142974C8210038ACBC /* View */,
 				785D68132974C81B0038ACBC /* Model */,
 			);
-			path = "Pop Ups VC";
+			path = "Pop Ups";
 			sourceTree = "<group>";
 		};
-		785D67EA296DF0D10038ACBC /* Show VC */ = {
+		785D67EA296DF0D10038ACBC /* Show */ = {
 			isa = PBXGroup;
 			children = (
 				785D67ED296DF10D0038ACBC /* Controller */,
 				785D67EC296DF10A0038ACBC /* View */,
 				785D67EB296DF1070038ACBC /* Model */,
 			);
-			path = "Show VC";
+			path = Show;
 			sourceTree = "<group>";
 		};
 		785D67EB296DF1070038ACBC /* Model */ = {
@@ -256,14 +278,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		785D67FB29736F040038ACBC /* Itinerary VC */ = {
+		785D67FB29736F040038ACBC /* Itinerary */ = {
 			isa = PBXGroup;
 			children = (
 				785D67FE29736FC10038ACBC /* Controller */,
 				785D67FD29736FB60038ACBC /* View */,
 				785D67FC29736FAD0038ACBC /* Model */,
 			);
-			path = "Itinerary VC";
+			path = Itinerary;
 			sourceTree = "<group>";
 		};
 		785D67FC29736FAD0038ACBC /* Model */ = {
@@ -289,14 +311,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		785D68032973B2840038ACBC /* Restaurants VC */ = {
+		785D68032973B2840038ACBC /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
 				785D68062973B2CB0038ACBC /* Controller */,
 				785D68052973B2C50038ACBC /* View */,
 				785D68042973B2BF0038ACBC /* Model */,
 			);
-			path = "Restaurants VC";
+			path = Restaurants;
 			sourceTree = "<group>";
 		};
 		785D68042973B2BF0038ACBC /* Model */ = {
@@ -322,14 +344,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		785D680B2974AD2F0038ACBC /* Air Show VC */ = {
+		785D680B2974AD2F0038ACBC /* Air Show */ = {
 			isa = PBXGroup;
 			children = (
 				785D680E2974AD660038ACBC /* Controller */,
 				785D680D2974AD5D0038ACBC /* View */,
 				785D680C2974AD570038ACBC /* Model */,
 			);
-			path = "Air Show VC";
+			path = "Air Show";
 			sourceTree = "<group>";
 		};
 		785D680C2974AD570038ACBC /* Model */ = {
@@ -381,14 +403,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		785D681C2975220F0038ACBC /* Profile VC */ = {
+		785D681C2975220F0038ACBC /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				785D681F2975223C0038ACBC /* Controller */,
 				785D681E297522360038ACBC /* View */,
 				785D681D2975222D0038ACBC /* Model */,
 			);
-			path = "Profile VC";
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		785D681D2975222D0038ACBC /* Model */ = {
@@ -402,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				785D68202975225B0038ACBC /* Profile.storyboard */,
+				78BD47632980C3B200E9AF4A /* ProfileCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,18 +432,20 @@
 		785D681F2975223C0038ACBC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				78BD47622980C3B200E9AF4A /* ProfileCollectionViewCell.swift */,
+				785D687A2980C1A30038ACBC /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		785D68222976518F0038ACBC /* Tutorials VC */ = {
+		785D68222976518F0038ACBC /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
 				785D6825297651C50038ACBC /* Controller */,
 				785D6824297651BF0038ACBC /* View */,
 				785D6823297651B60038ACBC /* Model */,
 			);
-			path = "Tutorials VC";
+			path = Tutorials;
 			sourceTree = "<group>";
 		};
 		785D6823297651B60038ACBC /* Model */ = {
@@ -447,14 +472,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		785D682C29778F620038ACBC /* PWD Accesibility VC */ = {
+		785D682C29778F620038ACBC /* PWD Accesibility */ = {
 			isa = PBXGroup;
 			children = (
 				785D682F29778F9A0038ACBC /* Controller */,
 				785D682E29778F8F0038ACBC /* View */,
 				785D682D29778F870038ACBC /* Model */,
 			);
-			path = "PWD Accesibility VC";
+			path = "PWD Accesibility";
 			sourceTree = "<group>";
 		};
 		785D682D29778F870038ACBC /* Model */ = {
@@ -522,14 +547,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		785D68452977AFC90038ACBC /* PREFAMEX VC */ = {
+		785D68452977AFC90038ACBC /* PREFAMEX */ = {
 			isa = PBXGroup;
 			children = (
 				785D68482977B0580038ACBC /* Controller */,
 				785D68472977B0530038ACBC /* View */,
 				785D68462977B04C0038ACBC /* Model */,
 			);
-			path = "PREFAMEX VC";
+			path = PREFAMEX;
 			sourceTree = "<group>";
 		};
 		785D68462977B04C0038ACBC /* Model */ = {
@@ -560,14 +585,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		785D6859297A7FAE0038ACBC /* Settings VC */ = {
+		785D6859297A7FAE0038ACBC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				785D685C297A7FD00038ACBC /* Controller */,
 				785D685B297A7FCC0038ACBC /* View */,
 				785D685A297A7FC60038ACBC /* Model */,
 			);
-			path = "Settings VC";
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		785D685A297A7FC60038ACBC /* Model */ = {
@@ -670,24 +695,25 @@
 				788CFD3E296958F3009E189F /* Assets.xcassets */,
 				788CFD6B2969EF6C009E189F /* Resources */,
 				788CFD6C2969EF79009E189F /* Util */,
-				788CFD652969EF11009E189F /* Log In VC */,
-				788CFD6D296A1AD6009E189F /* Sign Up VC */,
-				788CFD81296A2370009E189F /* Menu VC */,
-				785D681C2975220F0038ACBC /* Profile VC */,
-				788CFD75296A2159009E189F /* Home VC */,
-				788CFD79296A22D0009E189F /* FAMEX VC */,
-				788CFD7A296A22DD009E189F /* France VC */,
-				785D67EA296DF0D10038ACBC /* Show VC */,
-				785D67FB29736F040038ACBC /* Itinerary VC */,
-				785D68032973B2840038ACBC /* Restaurants VC */,
-				785D680B2974AD2F0038ACBC /* Air Show VC */,
+				788CFD652969EF11009E189F /* Log In */,
+				788CFD6D296A1AD6009E189F /* Sign Up */,
+				788CFD81296A2370009E189F /* Menu */,
+				785D681C2975220F0038ACBC /* Profile */,
+				788CFD75296A2159009E189F /* Home */,
+				788CFD79296A22D0009E189F /* FAMEX */,
+				788CFD7A296A22DD009E189F /* France */,
+				785D67EA296DF0D10038ACBC /* Show */,
+				785D67FB29736F040038ACBC /* Itinerary */,
+				785D68032973B2840038ACBC /* Restaurants */,
+				785D680B2974AD2F0038ACBC /* Air Show */,
 				785D6863297E47BC0038ACBC /* MUMA */,
-				785D682C29778F620038ACBC /* PWD Accesibility VC */,
+				785D682C29778F620038ACBC /* PWD Accesibility */,
 				785D683D2977AA010038ACBC /* Sanitization */,
-				785D68452977AFC90038ACBC /* PREFAMEX VC */,
-				785D6859297A7FAE0038ACBC /* Settings VC */,
-				7822D006296B76E60012034F /* Pop Ups VC */,
-				785D68222976518F0038ACBC /* Tutorials VC */,
+				785D68452977AFC90038ACBC /* PREFAMEX */,
+				785D6859297A7FAE0038ACBC /* Settings */,
+				78BD47682980E43400E9AF4A /* Static Exhibition */,
+				7822D006296B76E60012034F /* Pop Ups */,
+				785D68222976518F0038ACBC /* Tutorials */,
 			);
 			path = appfamex;
 			sourceTree = "<group>";
@@ -709,14 +735,14 @@
 			path = appfamexUITests;
 			sourceTree = "<group>";
 		};
-		788CFD652969EF11009E189F /* Log In VC */ = {
+		788CFD652969EF11009E189F /* Log In */ = {
 			isa = PBXGroup;
 			children = (
 				788CFD682969EF2A009E189F /* Controller */,
 				788CFD672969EF24009E189F /* View */,
 				788CFD662969EF1C009E189F /* Model */,
 			);
-			path = "Log In VC";
+			path = "Log In";
 			sourceTree = "<group>";
 		};
 		788CFD662969EF1C009E189F /* Model */ = {
@@ -762,14 +788,14 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
-		788CFD6D296A1AD6009E189F /* Sign Up VC */ = {
+		788CFD6D296A1AD6009E189F /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
 				788CFD70296A1AF9009E189F /* Controller */,
 				788CFD6F296A1AF5009E189F /* View */,
 				788CFD6E296A1AEF009E189F /* Model */,
 			);
-			path = "Sign Up VC";
+			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 		788CFD6E296A1AEF009E189F /* Model */ = {
@@ -795,14 +821,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		788CFD75296A2159009E189F /* Home VC */ = {
+		788CFD75296A2159009E189F /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				788CFD78296A22A0009E189F /* Controller */,
 				788CFD77296A229D009E189F /* View */,
 				788CFD76296A2299009E189F /* Model */,
 			);
-			path = "Home VC";
+			path = Home;
 			sourceTree = "<group>";
 		};
 		788CFD76296A2299009E189F /* Model */ = {
@@ -828,24 +854,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		788CFD79296A22D0009E189F /* FAMEX VC */ = {
+		788CFD79296A22D0009E189F /* FAMEX */ = {
 			isa = PBXGroup;
 			children = (
 				788CFD7D296A232B009E189F /* Controller */,
 				788CFD7C296A2328009E189F /* View */,
 				788CFD7B296A230D009E189F /* Model */,
 			);
-			path = "FAMEX VC";
+			path = FAMEX;
 			sourceTree = "<group>";
 		};
-		788CFD7A296A22DD009E189F /* France VC */ = {
+		788CFD7A296A22DD009E189F /* France */ = {
 			isa = PBXGroup;
 			children = (
 				788CFD80296A234A009E189F /* Controller */,
 				788CFD7F296A2347009E189F /* View */,
 				788CFD7E296A2344009E189F /* Model */,
 			);
-			path = "France VC";
+			path = France;
 			sourceTree = "<group>";
 		};
 		788CFD7B296A230D009E189F /* Model */ = {
@@ -882,6 +908,8 @@
 			isa = PBXGroup;
 			children = (
 				7822D007296B771F0012034F /* France.storyboard */,
+				78BD4777298105FC00E9AF4A /* FranceStaticExhibition.storyboard */,
+				78BD4779298106AF00E9AF4A /* FranceChalets.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -890,18 +918,21 @@
 			isa = PBXGroup;
 			children = (
 				7822D009296B77340012034F /* FranceViewController.swift */,
+				78BD47662980DB5E00E9AF4A /* FranceStaticExhibitionMenuViewController.swift */,
+				78BD47752981043900E9AF4A /* Blocks */,
+				78BD47762981048200E9AF4A /* Chalets */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		788CFD81296A2370009E189F /* Menu VC */ = {
+		788CFD81296A2370009E189F /* Menu */ = {
 			isa = PBXGroup;
 			children = (
 				788CFD84296A239A009E189F /* Controller */,
 				788CFD83296A2394009E189F /* View */,
 				788CFD82296A238E009E189F /* Model */,
 			);
-			path = "Menu VC";
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		788CFD82296A238E009E189F /* Model */ = {
@@ -936,6 +967,48 @@
 				788CFD86296A24C5009E189F /* Plateia.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		78BD47682980E43400E9AF4A /* Static Exhibition */ = {
+			isa = PBXGroup;
+			children = (
+				78BD476A2980E46700E9AF4A /* Controller */,
+				78BD47692980E45F00E9AF4A /* View */,
+			);
+			path = "Static Exhibition";
+			sourceTree = "<group>";
+		};
+		78BD47692980E45F00E9AF4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78BD476C2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78BD476A2980E46700E9AF4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78BD476B2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78BD47752981043900E9AF4A /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				78BD476F2980E91900E9AF4A /* FranceBlockOneViewController.swift */,
+				78BD4771298101B300E9AF4A /* FranceBlockTwoViewController.swift */,
+				78BD47732981031D00E9AF4A /* FranceBlockThreeViewController.swift */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		78BD47762981048200E9AF4A /* Chalets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chalets;
 			sourceTree = "<group>";
 		};
 		AEBF199F50CFFB94DDD7FC13 /* Pods */ = {
@@ -1070,12 +1143,15 @@
 				785D67F8297355A00038ACBC /* Show.storyboard in Resources */,
 				785D6877297F85EB0038ACBC /* DevelopersPopUp.storyboard in Resources */,
 				7822CFF6296A837D0012034F /* Menu.storyboard in Resources */,
+				78BD47652980C3B200E9AF4A /* ProfileCollectionViewCell.xib in Resources */,
 				785D68122974ADA40038ACBC /* AirShow.storyboard in Resources */,
 				785D68422977AA660038ACBC /* Sanitization.storyboard in Resources */,
 				785D6836297795530038ACBC /* SanitizationMap.pdf in Resources */,
 				785D6871297E5F600038ACBC /* AirShowVideo.mp4 in Resources */,
 				785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */,
+				78BD4778298105FC00E9AF4A /* FranceStaticExhibition.storyboard in Resources */,
 				785D6868297E48410038ACBC /* MUMA.storyboard in Resources */,
+				78BD476E2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.xib in Resources */,
 				785D683A29779A000038ACBC /* PWDAccesibilityMap.pdf in Resources */,
 				785D684E2978EFCB0038ACBC /* GetReadyFAMEX.storyboard in Resources */,
 				785D68212975225B0038ACBC /* Profile.storyboard in Resources */,
@@ -1084,6 +1160,7 @@
 				785D6858297A560E0038ACBC /* HotelsCollectionViewCell.xib in Resources */,
 				785D683129778FF80038ACBC /* PWDAccesibility.storyboard in Resources */,
 				788CFD87296A24C5009E189F /* Plateia.ttf in Resources */,
+				78BD477A298106AF00E9AF4A /* FranceChalets.storyboard in Resources */,
 				7822CFF0296A28320012034F /* LogIn.storyboard in Resources */,
 				7822CFFF296B6B940012034F /* Home.storyboard in Resources */,
 				785D680A2973B5580038ACBC /* Restaurants.storyboard in Resources */,
@@ -1220,29 +1297,36 @@
 				7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */,
 				785D67FA297355C00038ACBC /* ShowViewController.swift in Sources */,
 				785D68442977AA790038ACBC /* SanitizationViewController.swift in Sources */,
+				785D687B2980C1A30038ACBC /* ProfileViewController.swift in Sources */,
 				785D6862297E2EFC0038ACBC /* RoutesViewController.swift in Sources */,
 				785D6829297653200038ACBC /* TutorialViewController.swift in Sources */,
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
 				785D684C2978E1F30038ACBC /* GetReadyFAMEX.swift in Sources */,
 				7822D00A296B77340012034F /* FranceViewController.swift in Sources */,
 				785D6873297F78F80038ACBC /* AboutAppViewController.swift in Sources */,
+				78BD4772298101B300E9AF4A /* FranceBlockTwoViewController.swift in Sources */,
 				7822D005296B71A70012034F /* FAMEXViewController.swift in Sources */,
 				785D68082973B5410038ACBC /* RestaurantsViewController.swift in Sources */,
+				78BD47642980C3B200E9AF4A /* ProfileCollectionViewCell.swift in Sources */,
 				7822CFFC296A96090012034F /* MenuTableViewCell.swift in Sources */,
 				785D6854297A52560038ACBC /* HotelsViewController.swift in Sources */,
 				785D686C297E500B0038ACBC /* TermsViewController.swift in Sources */,
 				785D68102974AD880038ACBC /* AirShowViewController.swift in Sources */,
 				785D680029736FDD0038ACBC /* ItineraryViewController.swift in Sources */,
 				788CFD33296958F2009E189F /* AppDelegate.swift in Sources */,
+				78BD476D2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.swift in Sources */,
 				785D686E297E5BBB0038ACBC /* VideoModel.swift in Sources */,
+				78BD47702980E91900E9AF4A /* FranceBlockOneViewController.swift in Sources */,
 				785D67E9296D0FDF0038ACBC /* FAMEXFont.swift in Sources */,
 				7822CFF8296A838F0012034F /* MenuViewController.swift in Sources */,
 				7822D001296B6BB60012034F /* HomeViewController.swift in Sources */,
 				785D67EF296F8E660038ACBC /* MenuModel.swift in Sources */,
+				78BD47742981031D00E9AF4A /* FranceBlockThreeViewController.swift in Sources */,
 				785D6875297F84090038ACBC /* DevelopersViewController.swift in Sources */,
 				785D6850297A3EAD0038ACBC /* LocationModel.swift in Sources */,
 				785D683C2977A2390038ACBC /* PDFModel.swift in Sources */,
 				785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */,
+				78BD47672980DB5E00E9AF4A /* FranceStaticExhibitionMenuViewController.swift in Sources */,
 				785D6879297FA2EF0038ACBC /* ContactViewController.swift in Sources */,
 				785D685E297A80330038ACBC /* SettingsViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
