@@ -84,6 +84,11 @@
 		78BD47742981031D00E9AF4A /* FranceBlockThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD47732981031D00E9AF4A /* FranceBlockThreeViewController.swift */; };
 		78BD4778298105FC00E9AF4A /* FranceStaticExhibition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD4777298105FC00E9AF4A /* FranceStaticExhibition.storyboard */; };
 		78BD477A298106AF00E9AF4A /* FranceChalets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD4779298106AF00E9AF4A /* FranceChalets.storyboard */; };
+		78BD477C29810A0F00E9AF4A /* FranceChaletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD477B29810A0F00E9AF4A /* FranceChaletsViewController.swift */; };
+		78BD478229810C0100E9AF4A /* ChaletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD478029810C0100E9AF4A /* ChaletTableViewCell.swift */; };
+		78BD478329810C0100E9AF4A /* ChaletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78BD478129810C0100E9AF4A /* ChaletTableViewCell.xib */; };
+		78BD478529811A6500E9AF4A /* FranceConferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD478429811A6500E9AF4A /* FranceConferences.storyboard */; };
+		78BD478829811A9000E9AF4A /* FranceConferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD478729811A9000E9AF4A /* FranceConferencesViewController.swift */; };
 		8814E23C7C8E7D34FD0DD6DE /* Pods_appfamex_appfamexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */; };
 		F6CF7EFE507C7080A4922B91 /* Pods_appfamexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */; };
 /* End PBXBuildFile section */
@@ -189,6 +194,11 @@
 		78BD47732981031D00E9AF4A /* FranceBlockThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceBlockThreeViewController.swift; sourceTree = "<group>"; };
 		78BD4777298105FC00E9AF4A /* FranceStaticExhibition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FranceStaticExhibition.storyboard; sourceTree = "<group>"; };
 		78BD4779298106AF00E9AF4A /* FranceChalets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FranceChalets.storyboard; sourceTree = "<group>"; };
+		78BD477B29810A0F00E9AF4A /* FranceChaletsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceChaletsViewController.swift; sourceTree = "<group>"; };
+		78BD478029810C0100E9AF4A /* ChaletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaletTableViewCell.swift; sourceTree = "<group>"; };
+		78BD478129810C0100E9AF4A /* ChaletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChaletTableViewCell.xib; sourceTree = "<group>"; };
+		78BD478429811A6500E9AF4A /* FranceConferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FranceConferences.storyboard; sourceTree = "<group>"; };
+		78BD478729811A9000E9AF4A /* FranceConferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranceConferencesViewController.swift; sourceTree = "<group>"; };
 		88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamex_appfamexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991939547D034D42DDF10B47 /* Pods-appfamexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamexTests.debug.xcconfig"; path = "Target Support Files/Pods-appfamexTests/Pods-appfamexTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -712,6 +722,7 @@
 				785D68452977AFC90038ACBC /* PREFAMEX */,
 				785D6859297A7FAE0038ACBC /* Settings */,
 				78BD47682980E43400E9AF4A /* Static Exhibition */,
+				78BD477D29810BB400E9AF4A /* Chalets */,
 				7822D006296B76E60012034F /* Pop Ups */,
 				785D68222976518F0038ACBC /* Tutorials */,
 			);
@@ -910,6 +921,7 @@
 				7822D007296B771F0012034F /* France.storyboard */,
 				78BD4777298105FC00E9AF4A /* FranceStaticExhibition.storyboard */,
 				78BD4779298106AF00E9AF4A /* FranceChalets.storyboard */,
+				78BD478429811A6500E9AF4A /* FranceConferences.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -921,6 +933,7 @@
 				78BD47662980DB5E00E9AF4A /* FranceStaticExhibitionMenuViewController.swift */,
 				78BD47752981043900E9AF4A /* Blocks */,
 				78BD47762981048200E9AF4A /* Chalets */,
+				78BD478629811A6A00E9AF4A /* Conferences */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1007,8 +1020,42 @@
 		78BD47762981048200E9AF4A /* Chalets */ = {
 			isa = PBXGroup;
 			children = (
+				78BD477B29810A0F00E9AF4A /* FranceChaletsViewController.swift */,
 			);
 			path = Chalets;
+			sourceTree = "<group>";
+		};
+		78BD477D29810BB400E9AF4A /* Chalets */ = {
+			isa = PBXGroup;
+			children = (
+				78BD477F29810BDB00E9AF4A /* Controller */,
+				78BD477E29810BCA00E9AF4A /* View */,
+			);
+			path = Chalets;
+			sourceTree = "<group>";
+		};
+		78BD477E29810BCA00E9AF4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78BD478129810C0100E9AF4A /* ChaletTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78BD477F29810BDB00E9AF4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78BD478029810C0100E9AF4A /* ChaletTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78BD478629811A6A00E9AF4A /* Conferences */ = {
+			isa = PBXGroup;
+			children = (
+				78BD478729811A9000E9AF4A /* FranceConferencesViewController.swift */,
+			);
+			path = Conferences;
 			sourceTree = "<group>";
 		};
 		AEBF199F50CFFB94DDD7FC13 /* Pods */ = {
@@ -1134,6 +1181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				788CFD42296958F3009E189F /* LaunchScreen.storyboard in Resources */,
+				78BD478529811A6500E9AF4A /* FranceConferences.storyboard in Resources */,
 				7822CFFD296A96090012034F /* MenuTableViewCell.xib in Resources */,
 				785D680229736FED0038ACBC /* Itinerary.storyboard in Resources */,
 				785D6860297A80520038ACBC /* Settings.storyboard in Resources */,
@@ -1161,6 +1209,7 @@
 				785D683129778FF80038ACBC /* PWDAccesibility.storyboard in Resources */,
 				788CFD87296A24C5009E189F /* Plateia.ttf in Resources */,
 				78BD477A298106AF00E9AF4A /* FranceChalets.storyboard in Resources */,
+				78BD478329810C0100E9AF4A /* ChaletTableViewCell.xib in Resources */,
 				7822CFF0296A28320012034F /* LogIn.storyboard in Resources */,
 				7822CFFF296B6B940012034F /* Home.storyboard in Resources */,
 				785D680A2973B5580038ACBC /* Restaurants.storyboard in Resources */,
@@ -1295,9 +1344,11 @@
 				785D6833297790200038ACBC /* PWDAccesibilityViewController.swift in Sources */,
 				785D6857297A560E0038ACBC /* HotelsCollectionViewCell.swift in Sources */,
 				7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */,
+				78BD478229810C0100E9AF4A /* ChaletTableViewCell.swift in Sources */,
 				785D67FA297355C00038ACBC /* ShowViewController.swift in Sources */,
 				785D68442977AA790038ACBC /* SanitizationViewController.swift in Sources */,
 				785D687B2980C1A30038ACBC /* ProfileViewController.swift in Sources */,
+				78BD477C29810A0F00E9AF4A /* FranceChaletsViewController.swift in Sources */,
 				785D6862297E2EFC0038ACBC /* RoutesViewController.swift in Sources */,
 				785D6829297653200038ACBC /* TutorialViewController.swift in Sources */,
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
@@ -1331,6 +1382,7 @@
 				785D685E297A80330038ACBC /* SettingsViewController.swift in Sources */,
 				788CFD6A2969EF4C009E189F /* LogInViewController.swift in Sources */,
 				785D6827297651EC0038ACBC /* TutorialModel.swift in Sources */,
+				78BD478829811A9000E9AF4A /* FranceConferencesViewController.swift in Sources */,
 				788CFD35296958F2009E189F /* SceneDelegate.swift in Sources */,
 				788CFD3D296958F2009E189F /* appfamex.xcdatamodeld in Sources */,
 			);

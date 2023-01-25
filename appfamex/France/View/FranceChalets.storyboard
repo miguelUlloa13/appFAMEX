@@ -1,28 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--France Chalets View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="FranceChaletsViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPh-fo-ZQu">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGImgTwo" translatesAutoresizingMaskIntoConstraints="NO" id="WXh-lt-uKh">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8K1-xM-GSM">
+                                        <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranceBarImg" translatesAutoresizingMaskIntoConstraints="NO" id="Biy-3c-2Wo">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKq-B0-h10">
+                                                <rect key="frame" x="96.666666666666686" y="5" width="200" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="Duv-5G-x2M"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChaletIconImg" translatesAutoresizingMaskIntoConstraints="NO" id="WcT-E8-juS">
+                                                <rect key="frame" x="44.666666666666657" y="12" width="40" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="OEo-mL-yqO"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="WKq-B0-h10" firstAttribute="centerX" secondItem="8K1-xM-GSM" secondAttribute="centerX" id="4Qk-xy-LlI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Biy-3c-2Wo" secondAttribute="trailing" id="9ZB-nS-Pwp"/>
+                                            <constraint firstItem="WcT-E8-juS" firstAttribute="top" secondItem="8K1-xM-GSM" secondAttribute="top" constant="12" id="EFG-MN-8dB"/>
+                                            <constraint firstAttribute="bottom" secondItem="WKq-B0-h10" secondAttribute="bottom" constant="5" id="ZeQ-zg-o4d"/>
+                                            <constraint firstItem="WKq-B0-h10" firstAttribute="leading" secondItem="WcT-E8-juS" secondAttribute="trailing" constant="12" id="aHs-Hp-vp5"/>
+                                            <constraint firstItem="WKq-B0-h10" firstAttribute="top" secondItem="8K1-xM-GSM" secondAttribute="top" constant="5" id="anO-vu-Rgc"/>
+                                            <constraint firstAttribute="bottom" secondItem="WcT-E8-juS" secondAttribute="bottom" constant="12" id="dxx-lG-MPK"/>
+                                            <constraint firstAttribute="height" constant="50" id="h54-EY-35N"/>
+                                            <constraint firstAttribute="bottom" secondItem="Biy-3c-2Wo" secondAttribute="bottom" id="iSx-f7-4Vr"/>
+                                            <constraint firstItem="Biy-3c-2Wo" firstAttribute="top" secondItem="8K1-xM-GSM" secondAttribute="top" id="j8I-qM-k4n"/>
+                                            <constraint firstItem="Biy-3c-2Wo" firstAttribute="leading" secondItem="8K1-xM-GSM" secondAttribute="leading" id="se9-Ma-mMB"/>
+                                        </constraints>
+                                    </view>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iPQ-PF-ilf">
+                                        <rect key="frame" x="12" y="121" width="369" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="sWf-ob-lNk"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="TappedFranceChaletSegmControl:" destination="Y6W-OH-hqX" eventType="valueChanged" id="mqj-3j-e5r"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Med-9J-2U0">
+                                        <rect key="frame" x="0.0" y="163" width="393" height="689"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="iPQ-PF-ilf" firstAttribute="top" secondItem="8K1-xM-GSM" secondAttribute="bottom" constant="12" id="2wg-Pu-dbH"/>
+                                    <constraint firstAttribute="trailing" secondItem="iPQ-PF-ilf" secondAttribute="trailing" constant="12" id="6w5-bm-GJ8"/>
+                                    <constraint firstItem="iPQ-PF-ilf" firstAttribute="leading" secondItem="iPh-fo-ZQu" secondAttribute="leading" constant="12" id="7x4-4j-ydd"/>
+                                    <constraint firstItem="WXh-lt-uKh" firstAttribute="top" secondItem="iPh-fo-ZQu" secondAttribute="top" id="KtE-Qd-YjO"/>
+                                    <constraint firstItem="WXh-lt-uKh" firstAttribute="leading" secondItem="iPh-fo-ZQu" secondAttribute="leading" id="Lga-4p-XUv"/>
+                                    <constraint firstAttribute="bottom" secondItem="WXh-lt-uKh" secondAttribute="bottom" id="LkD-0A-6tq"/>
+                                    <constraint firstItem="Med-9J-2U0" firstAttribute="leading" secondItem="iPh-fo-ZQu" secondAttribute="leading" id="Pfp-Dq-Lq5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Med-9J-2U0" secondAttribute="bottom" id="RsN-JL-etH"/>
+                                    <constraint firstItem="Med-9J-2U0" firstAttribute="top" secondItem="iPQ-PF-ilf" secondAttribute="bottom" constant="12" id="WAM-HT-vnt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Med-9J-2U0" secondAttribute="trailing" id="f5v-fX-fb2"/>
+                                    <constraint firstAttribute="trailing" secondItem="WXh-lt-uKh" secondAttribute="trailing" id="uah-FR-20K"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8K1-xM-GSM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="F6W-bY-9QO"/>
+                            <constraint firstAttribute="bottom" secondItem="iPh-fo-ZQu" secondAttribute="bottom" id="LVY-0C-5Sv"/>
+                            <constraint firstItem="iPh-fo-ZQu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Mgi-iT-cfH"/>
+                            <constraint firstItem="iPh-fo-ZQu" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="MiO-M3-TVH"/>
+                            <constraint firstItem="8K1-xM-GSM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PPO-d1-Ir3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8K1-xM-GSM" secondAttribute="trailing" id="nb9-q4-Yw2"/>
+                            <constraint firstItem="iPh-fo-ZQu" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="rCh-kh-O1g"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="FranceChaletsBGImg" destination="WXh-lt-uKh" id="wfu-ie-VsI"/>
+                        <outlet property="FranceChaletsIconImg" destination="WcT-E8-juS" id="fsX-3t-BgD"/>
+                        <outlet property="FranceChaletsLbl" destination="WKq-B0-h10" id="oQ8-ej-6mh"/>
+                        <outlet property="FranceChaletsSegmControl" destination="iPQ-PF-ilf" id="eEd-EA-ROl"/>
+                        <outlet property="FranceChaletsTV" destination="Med-9J-2U0" id="76X-6p-MUh"/>
+                        <outlet property="FranceChaletsTitleBGImg" destination="Biy-3c-2Wo" id="ty2-NF-osk"/>
+                        <outlet property="FranceChaletsTitleView" destination="8K1-xM-GSM" id="z55-5D-Ogs"/>
+                        <outlet property="FranceChaletsView" destination="iPh-fo-ZQu" id="Jaj-Ua-Gfj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-14.503816793893129" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BGImgTwo" width="811" height="1780"/>
+        <image name="ChaletIconImg" width="111" height="81"/>
+        <image name="FranceBarImg" width="1082" height="138"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

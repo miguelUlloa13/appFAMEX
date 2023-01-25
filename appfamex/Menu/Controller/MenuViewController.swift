@@ -104,7 +104,6 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myMenu.menuSections.count
-        //return menuSections.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -113,9 +112,7 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.TitleSection.text = myMenu.menuSections[indexPath.row].title                  // Colocar el titulo a cada celda
         cell.SectionImg.image = UIImage(named: myMenu.menuSections[indexPath.row].image)   // Colocar la imagen a cada celda
-        
-        //cell.TitleSection.text = menuSections[indexPath.row].title                  // Colocar el titulo a cada celda
-        //cell.SectionImg.image = UIImage(named: menuSections[indexPath.row].image)   // Colocar la imagen a cada celda
+    
         
             // Apply plateia font
         if indexPath.row == 1 || indexPath.row == 7 || indexPath.row == 10{
