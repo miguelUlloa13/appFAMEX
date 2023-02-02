@@ -49,6 +49,8 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("Hola mundo")
+        
         UsrTF.delegate = self
         PwTF.delegate = self
         
