@@ -7,6 +7,7 @@ target 'appfamex' do
 
   # Pods for appfamex
   pod 'iCarousel'
+  pod 'SwipeableTabBarController'
 
   target 'appfamexTests' do
     inherit! :search_paths

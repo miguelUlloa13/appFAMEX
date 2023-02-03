@@ -1,16 +1,20 @@
 PODS:
   - iCarousel (1.8.3)
+  - SwipeableTabBarController (3.4.2)
 
 DEPENDENCIES:
   - iCarousel
+  - SwipeableTabBarController
 
 SPEC REPOS:
   trunk:
     - iCarousel
+    - SwipeableTabBarController
 
 SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  SwipeableTabBarController: 9a218bdee9426d1bfe36d7962f852024bb08d61b
 
-PODFILE CHECKSUM: de42aac69da0500fd87441adae6d6cbd591135e8
+PODFILE CHECKSUM: 198bc3f0193f8797dbcd7e58871775a23929bfab
 
 COCOAPODS: 1.11.3
