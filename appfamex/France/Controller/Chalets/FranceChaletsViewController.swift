@@ -101,6 +101,7 @@ class FranceChaletsViewController: UIViewController {
     
 }
 
+    // MARK: - UITableViewDelegate, UITableViewDataSource
 extension FranceChaletsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -120,6 +121,7 @@ extension FranceChaletsViewController: UITableViewDelegate, UITableViewDataSourc
         cell.backgroundColor = .clear
         
         return cell
+        
     }
     
 }

@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jus-Ir-8lt">
                         <rect key="frame" x="0.0" y="0.0" width="620" height="117"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChaletCellImg" translatesAutoresizingMaskIntoConstraints="NO" id="g7N-ZX-Kg1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConferenceAndChaletCellImg" translatesAutoresizingMaskIntoConstraints="NO" id="g7N-ZX-Kg1">
                                 <rect key="frame" x="0.0" y="0.0" width="620" height="117"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pi2-Ve-hWn">
@@ -83,6 +83,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="ChaletCellImg" width="1082" height="138"/>
+        <image name="ConferenceAndChaletCellImg" width="1082" height="138"/>
     </resources>
 </document>
