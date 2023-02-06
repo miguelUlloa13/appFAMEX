@@ -60,12 +60,6 @@ class FirstPopUpViewController: UIViewController {
         myTitleText.Title = PopUpOneTitle
         myTitleText.Size = 30
         myTitleText.HandlingText()
-
-
-        //imgPopUp.image = imagenPopUP
-        //imgBarraPopUp.image = imagenBarraPopUp
-
-        //customNavigationBarPopUp()
         
     }
     

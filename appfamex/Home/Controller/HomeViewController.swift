@@ -81,14 +81,14 @@ class HomeViewController: UIViewController {
         ShowBtn.layer.cornerRadius = 5
         ShowBtn.setTitle("Evento", for: .normal)
         ShowBtn.titleLabel?.font = .Plateia(size: 20)
-        ShowBtn.setTitleColor(.systemGray, for: .normal)
+        ShowBtn.setTitleColor(.white, for: .normal)
         ShowBtn.titleLabel?.adjustsFontSizeToFitWidth = true
         ShowBtn.titleLabel?.minimumScaleFactor = 0.5
         
         ItineraryBtn.layer.cornerRadius = 5
         ItineraryBtn.setTitle("Mi Itinerario", for: .normal)
         ItineraryBtn.titleLabel?.font = .Plateia(size: 20)
-        ItineraryBtn.setTitleColor(.systemGray, for: .normal)
+        ItineraryBtn.setTitleColor(.white, for: .normal)
         ItineraryBtn.titleLabel?.adjustsFontSizeToFitWidth = true
         ItineraryBtn.titleLabel?.minimumScaleFactor = 0.5
 

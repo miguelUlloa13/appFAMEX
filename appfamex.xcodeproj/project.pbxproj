@@ -91,6 +91,9 @@
 		78BD478829811A9000E9AF4A /* FirstDayFranceConferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD478729811A9000E9AF4A /* FirstDayFranceConferenceViewController.swift */; };
 		78BD4833298CE02100E9AF4A /* ConferencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD4831298CE02100E9AF4A /* ConferencesTableViewCell.swift */; };
 		78BD4834298CE02100E9AF4A /* ConferencesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78BD4832298CE02100E9AF4A /* ConferencesTableViewCell.xib */; };
+		78BD4836298F452400E9AF4A /* ConferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD4835298F452400E9AF4A /* ConferenceModel.swift */; };
+		78BD48392990CFDD00E9AF4A /* DetailsPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD48382990CFDD00E9AF4A /* DetailsPopUp.storyboard */; };
+		78BD483B2990D65500E9AF4A /* DetailsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD483A2990D65500E9AF4A /* DetailsPopUpViewController.swift */; };
 		8814E23C7C8E7D34FD0DD6DE /* Pods_appfamex_appfamexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */; };
 		F6CF7EFE507C7080A4922B91 /* Pods_appfamexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */; };
 /* End PBXBuildFile section */
@@ -203,6 +206,9 @@
 		78BD478729811A9000E9AF4A /* FirstDayFranceConferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDayFranceConferenceViewController.swift; sourceTree = "<group>"; };
 		78BD4831298CE02100E9AF4A /* ConferencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferencesTableViewCell.swift; sourceTree = "<group>"; };
 		78BD4832298CE02100E9AF4A /* ConferencesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConferencesTableViewCell.xib; sourceTree = "<group>"; };
+		78BD4835298F452400E9AF4A /* ConferenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceModel.swift; sourceTree = "<group>"; };
+		78BD48382990CFDD00E9AF4A /* DetailsPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsPopUp.storyboard; sourceTree = "<group>"; };
+		78BD483A2990D65500E9AF4A /* DetailsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPopUpViewController.swift; sourceTree = "<group>"; };
 		88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamex_appfamexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991939547D034D42DDF10B47 /* Pods-appfamexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamexTests.debug.xcconfig"; path = "Target Support Files/Pods-appfamexTests/Pods-appfamexTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -404,6 +410,7 @@
 			children = (
 				785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */,
 				785D6876297F85EB0038ACBC /* DevelopersPopUp.storyboard */,
+				78BD48382990CFDD00E9AF4A /* DetailsPopUp.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -413,6 +420,7 @@
 			children = (
 				785D6874297F84090038ACBC /* DevelopersViewController.swift */,
 				785D68182974C9130038ACBC /* FirstPopUpViewController.swift */,
+				78BD483A2990D65500E9AF4A /* DetailsPopUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -725,9 +733,9 @@
 				785D683D2977AA010038ACBC /* Sanitization */,
 				785D68452977AFC90038ACBC /* PREFAMEX */,
 				785D6859297A7FAE0038ACBC /* Settings */,
-				78BD482E298CDF8800E9AF4A /* Conferences */,
-				78BD47682980E43400E9AF4A /* Static Exhibition */,
-				78BD477D29810BB400E9AF4A /* Chalets */,
+				78BD482E298CDF8800E9AF4A /* Conferences Cell */,
+				78BD47682980E43400E9AF4A /* Static Exhibition Cell */,
+				78BD477D29810BB400E9AF4A /* Chalets Cell */,
 				7822D006296B76E60012034F /* Pop Ups */,
 				785D68222976518F0038ACBC /* Tutorials */,
 			);
@@ -916,6 +924,7 @@
 		788CFD7E296A2344009E189F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78BD4835298F452400E9AF4A /* ConferenceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -935,9 +944,9 @@
 			isa = PBXGroup;
 			children = (
 				7822D009296B77340012034F /* FranceViewController.swift */,
+				78BD478629811A6A00E9AF4A /* Conferences */,
 				78BD482D298CCB4500E9AF4A /* Static Exhibition */,
 				78BD47762981048200E9AF4A /* Chalets */,
-				78BD478629811A6A00E9AF4A /* Conferences */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -986,13 +995,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		78BD47682980E43400E9AF4A /* Static Exhibition */ = {
+		78BD47682980E43400E9AF4A /* Static Exhibition Cell */ = {
 			isa = PBXGroup;
 			children = (
 				78BD476A2980E46700E9AF4A /* Controller */,
 				78BD47692980E45F00E9AF4A /* View */,
 			);
-			path = "Static Exhibition";
+			path = "Static Exhibition Cell";
 			sourceTree = "<group>";
 		};
 		78BD47692980E45F00E9AF4A /* View */ = {
@@ -1029,13 +1038,13 @@
 			path = Chalets;
 			sourceTree = "<group>";
 		};
-		78BD477D29810BB400E9AF4A /* Chalets */ = {
+		78BD477D29810BB400E9AF4A /* Chalets Cell */ = {
 			isa = PBXGroup;
 			children = (
 				78BD477F29810BDB00E9AF4A /* Controller */,
 				78BD477E29810BCA00E9AF4A /* View */,
 			);
-			path = Chalets;
+			path = "Chalets Cell";
 			sourceTree = "<group>";
 		};
 		78BD477E29810BCA00E9AF4A /* View */ = {
@@ -1071,13 +1080,13 @@
 			path = "Static Exhibition";
 			sourceTree = "<group>";
 		};
-		78BD482E298CDF8800E9AF4A /* Conferences */ = {
+		78BD482E298CDF8800E9AF4A /* Conferences Cell */ = {
 			isa = PBXGroup;
 			children = (
 				78BD4830298CDFA700E9AF4A /* Controller */,
 				78BD482F298CDF9B00E9AF4A /* View */,
 			);
-			path = Conferences;
+			path = "Conferences Cell";
 			sourceTree = "<group>";
 		};
 		78BD482F298CDF9B00E9AF4A /* View */ = {
@@ -1234,6 +1243,7 @@
 				785D68122974ADA40038ACBC /* AirShow.storyboard in Resources */,
 				785D68422977AA660038ACBC /* Sanitization.storyboard in Resources */,
 				785D6836297795530038ACBC /* SanitizationMap.pdf in Resources */,
+				78BD48392990CFDD00E9AF4A /* DetailsPopUp.storyboard in Resources */,
 				785D6871297E5F600038ACBC /* AirShowVideo.mp4 in Resources */,
 				785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */,
 				78BD4778298105FC00E9AF4A /* FranceStaticExhibition.storyboard in Resources */,
@@ -1380,6 +1390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				785D686A297E48500038ACBC /* MUMAViewController.swift in Sources */,
+				78BD4836298F452400E9AF4A /* ConferenceModel.swift in Sources */,
 				785D6833297790200038ACBC /* PWDAccesibilityViewController.swift in Sources */,
 				785D6857297A560E0038ACBC /* HotelsCollectionViewCell.swift in Sources */,
 				7822CFF4296A815C0012034F /* SignUpViewController.swift in Sources */,
@@ -1417,6 +1428,7 @@
 				78BD4833298CE02100E9AF4A /* ConferencesTableViewCell.swift in Sources */,
 				785D683C2977A2390038ACBC /* PDFModel.swift in Sources */,
 				785D68192974C9130038ACBC /* FirstPopUpViewController.swift in Sources */,
+				78BD483B2990D65500E9AF4A /* DetailsPopUpViewController.swift in Sources */,
 				78BD47672980DB5E00E9AF4A /* FranceStaticExhibitionMenuViewController.swift in Sources */,
 				785D6879297FA2EF0038ACBC /* ContactViewController.swift in Sources */,
 				785D685E297A80330038ACBC /* SettingsViewController.swift in Sources */,
