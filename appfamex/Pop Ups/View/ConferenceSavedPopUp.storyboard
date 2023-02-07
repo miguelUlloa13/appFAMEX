@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Conference Saved Pop Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ConferenceSavedPopUpVC" id="Y6W-OH-hqX" customClass="ConferenceSavedPopUpViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFp-Aj-dbo">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13v-FQ-ab5">
+                                        <rect key="frame" x="12" y="80" width="40" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="conferenceSaved" translatesAutoresizingMaskIntoConstraints="NO" id="l5K-Lw-mLp">
+                                                <rect key="frame" x="7" y="7" width="26" height="26"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.062745101750000004" green="0.1686274707" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="5kE-VR-Xol"/>
+                                            <constraint firstAttribute="trailing" secondItem="l5K-Lw-mLp" secondAttribute="trailing" constant="7" id="Y47-Nl-kmW"/>
+                                            <constraint firstAttribute="bottom" secondItem="l5K-Lw-mLp" secondAttribute="bottom" constant="7" id="Y6F-bI-fje"/>
+                                            <constraint firstAttribute="height" constant="40" id="k2Z-6i-SCH"/>
+                                            <constraint firstItem="l5K-Lw-mLp" firstAttribute="top" secondItem="13v-FQ-ab5" secondAttribute="top" constant="7" id="nUt-RI-r4x"/>
+                                            <constraint firstItem="l5K-Lw-mLp" firstAttribute="leading" secondItem="13v-FQ-ab5" secondAttribute="leading" constant="7" id="r39-Gc-iQb"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSP-Vv-iB1">
+                                        <rect key="frame" x="61" y="80" width="320" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9Xe-kI-96n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstItem="SSP-Vv-iB1" firstAttribute="centerY" secondItem="BFp-Aj-dbo" secondAttribute="centerY" id="DrO-b0-dzc"/>
+                                    <constraint firstItem="SSP-Vv-iB1" firstAttribute="leading" secondItem="13v-FQ-ab5" secondAttribute="trailing" constant="9" id="Idt-yc-PBp"/>
+                                    <constraint firstAttribute="trailing" secondItem="SSP-Vv-iB1" secondAttribute="trailing" constant="12" id="P9n-LX-oEa"/>
+                                    <constraint firstItem="13v-FQ-ab5" firstAttribute="centerY" secondItem="BFp-Aj-dbo" secondAttribute="centerY" id="YSl-SV-Zjc"/>
+                                    <constraint firstItem="13v-FQ-ab5" firstAttribute="leading" secondItem="BFp-Aj-dbo" secondAttribute="leading" constant="12" id="nmq-5s-S3S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BFp-Aj-dbo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0cl-cw-9Ca"/>
+                            <constraint firstItem="BFp-Aj-dbo" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="FOY-rB-yl5"/>
+                            <constraint firstItem="BFp-Aj-dbo" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="LKc-Z7-OUG"/>
+                            <constraint firstItem="BFp-Aj-dbo" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="wbr-Cf-VQW"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="200"/>
+                    <connections>
+                        <outlet property="BackGroundSavedImgView" destination="13v-FQ-ab5" id="C3f-WW-j5q"/>
+                        <outlet property="ConferenceSavedPopUpView" destination="BFp-Aj-dbo" id="KfR-m3-dTR"/>
+                        <outlet property="SavedImg" destination="l5K-Lw-mLp" id="McO-y5-WsL"/>
+                        <outlet property="SavedLbl" destination="SSP-Vv-iB1" id="Ou3-BP-yr7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="conferenceSaved" width="103" height="91"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

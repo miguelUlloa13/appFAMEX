@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DevelopersViewController: UIViewController {
+final class DevelopersViewController: UIViewController {
     
     @IBOutlet weak var DevsView: UIView!
     @IBOutlet weak var DevsBodyTextView: UIView!

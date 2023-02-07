@@ -94,6 +94,8 @@
 		78BD4836298F452400E9AF4A /* ConferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD4835298F452400E9AF4A /* ConferenceModel.swift */; };
 		78BD48392990CFDD00E9AF4A /* DetailsPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD48382990CFDD00E9AF4A /* DetailsPopUp.storyboard */; };
 		78BD483B2990D65500E9AF4A /* DetailsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD483A2990D65500E9AF4A /* DetailsPopUpViewController.swift */; };
+		78BD483E299223E500E9AF4A /* ConferenceSavedPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BD483D299223E500E9AF4A /* ConferenceSavedPopUp.storyboard */; };
+		78BD48402992264800E9AF4A /* ConferenceSavedPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD483F2992264800E9AF4A /* ConferenceSavedPopUpViewController.swift */; };
 		8814E23C7C8E7D34FD0DD6DE /* Pods_appfamex_appfamexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */; };
 		F6CF7EFE507C7080A4922B91 /* Pods_appfamexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */; };
 /* End PBXBuildFile section */
@@ -209,6 +211,8 @@
 		78BD4835298F452400E9AF4A /* ConferenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceModel.swift; sourceTree = "<group>"; };
 		78BD48382990CFDD00E9AF4A /* DetailsPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsPopUp.storyboard; sourceTree = "<group>"; };
 		78BD483A2990D65500E9AF4A /* DetailsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPopUpViewController.swift; sourceTree = "<group>"; };
+		78BD483D299223E500E9AF4A /* ConferenceSavedPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConferenceSavedPopUp.storyboard; sourceTree = "<group>"; };
+		78BD483F2992264800E9AF4A /* ConferenceSavedPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceSavedPopUpViewController.swift; sourceTree = "<group>"; };
 		88A9FA7F230888F845672BEA /* Pods_appfamex_appfamexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamex_appfamexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F62B8E8B7D421FFF1661424 /* Pods_appfamexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appfamexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991939547D034D42DDF10B47 /* Pods-appfamexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appfamexTests.debug.xcconfig"; path = "Target Support Files/Pods-appfamexTests/Pods-appfamexTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -411,6 +415,7 @@
 				785D681A2974CA7D0038ACBC /* FirstPopUp.storyboard */,
 				785D6876297F85EB0038ACBC /* DevelopersPopUp.storyboard */,
 				78BD48382990CFDD00E9AF4A /* DetailsPopUp.storyboard */,
+				78BD483D299223E500E9AF4A /* ConferenceSavedPopUp.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 				785D6874297F84090038ACBC /* DevelopersViewController.swift */,
 				785D68182974C9130038ACBC /* FirstPopUpViewController.swift */,
 				78BD483A2990D65500E9AF4A /* DetailsPopUpViewController.swift */,
+				78BD483F2992264800E9AF4A /* ConferenceSavedPopUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1248,6 +1254,7 @@
 				785D681B2974CA7D0038ACBC /* FirstPopUp.storyboard in Resources */,
 				78BD4778298105FC00E9AF4A /* FranceStaticExhibition.storyboard in Resources */,
 				785D6868297E48410038ACBC /* MUMA.storyboard in Resources */,
+				78BD483E299223E500E9AF4A /* ConferenceSavedPopUp.storyboard in Resources */,
 				78BD476E2980E49400E9AF4A /* StaticExhibitionCollectionViewCell.xib in Resources */,
 				785D683A29779A000038ACBC /* PWDAccesibilityMap.pdf in Resources */,
 				785D684E2978EFCB0038ACBC /* GetReadyFAMEX.storyboard in Resources */,
@@ -1400,6 +1407,7 @@
 				785D687B2980C1A30038ACBC /* ProfileViewController.swift in Sources */,
 				78BD477C29810A0F00E9AF4A /* FranceChaletsViewController.swift in Sources */,
 				785D6862297E2EFC0038ACBC /* RoutesViewController.swift in Sources */,
+				78BD48402992264800E9AF4A /* ConferenceSavedPopUpViewController.swift in Sources */,
 				785D6829297653200038ACBC /* TutorialViewController.swift in Sources */,
 				788CFD74296A211A009E189F /* Extensions.swift in Sources */,
 				785D684C2978E1F30038ACBC /* GetReadyFAMEX.swift in Sources */,

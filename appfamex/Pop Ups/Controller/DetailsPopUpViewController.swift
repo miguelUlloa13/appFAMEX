@@ -5,9 +5,14 @@
 //  Created by Miguel Angel Bric Ulloa on 06/02/23.
 //
 
+    
+
 import UIKit
 
-class DetailsPopUpViewController: UIViewController {
+final class DetailsPopUpViewController: UIViewController {
+    
+    // MARK: - Notes -
+        // Controlador de la Pantalla "Details PopUp"
     
     // MARK: - Outlets
     
@@ -42,20 +47,23 @@ class DetailsPopUpViewController: UIViewController {
     @IBOutlet weak var LocationIconImg: UIImageView!
   
     // MARK: - Properties
-    
-    var conferenceTitle: String?
-    var speakerName: String?
-    var conferenceDate: String?
-    var conferenceTime: String?
-    var conferenceLocation: String?
-    var conferenceDescription: String?
+
+    public var conferenceTitle: String?         // Titulo de la conferencia
+    public var speakerName: String?             // Nombre del conferencista
+    public var conferenceDate: String?          // Fecha de la conferencia
+    public var conferenceTime: String?          // Hora de la conferencia
+    public var conferenceLocation: String?      // Lugar de la conferencia
+    public var conferenceDescription: String?   // Descripción de la conferencia
     
     // MARK: - View Life Cycle Method
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+            // Asignar titulo a la "View Scene"
         self.title = "Detalles"
+        
+        print("Se despliega el Pop Up Details")
         
         setUpView()
         setUpLabels()
@@ -67,23 +75,25 @@ class DetailsPopUpViewController: UIViewController {
     
     // MARK: - Methods
     
-    func setUpView() {
-        MainInfoView.layer.cornerRadius = 10
+        // Metodos para personalizar las views
+    private func setUpView() {
+        MainInfoView.layer.cornerRadius = 10        // Asignar 10 ptos de radio a las esquinas
         SubInfoView.layer.cornerRadius = 10
         DescriptionView.layer.cornerRadius = 10
     }
 
-    func setUpLabels() {
+        // Metodos para personalizar los labels
+    private func setUpLabels() {
+            
+        ConferenceTitleLbl.font = .Futura(size: 20) // Asignar tipo de fuente al label
+        ConferenceTitleLbl.textAlignment = .center  // Asignar alineación
+        ConferenceTitleLbl.numberOfLines = 0        // Salto de linea
+        ConferenceTitleLbl.adjustsFontSizeToFitWidth = true // Autoajuste al tamaño de la fuente de acuerdo al contenedor
+        ConferenceTitleLbl.minimumScaleFactor = 0.5 // Minima escala del tamańo de la fuente
         
-        ConferenceTitleLbl.font = .Futura(size: 20)
-        ConferenceTitleLbl.textAlignment = .center
-        ConferenceTitleLbl.numberOfLines = 0
-        ConferenceTitleLbl.adjustsFontSizeToFitWidth = true
-        ConferenceTitleLbl.minimumScaleFactor = 0.5
+        SpeakerNameLbl.text = "Conferencista:"      // Asignar texto al label
         
-        SpeakerNameLbl.text = "Conferencista:"
-        
-        ConferenceSpeakerNameLbl.textColor = .link
+        ConferenceSpeakerNameLbl.textColor = .link  // Asignar color al label
         ConferenceSpeakerNameLbl.numberOfLines = 0
         ConferenceSpeakerNameLbl.adjustsFontSizeToFitWidth = true
         ConferenceSpeakerNameLbl.minimumScaleFactor = 0.5
@@ -112,14 +122,16 @@ class DetailsPopUpViewController: UIViewController {
         DescriptionLbl.text = "Descripción:"
     
     }
-    
-    func setUpTextView() {
         
-        ConferenceDescriptionTxtView.isEditable = false
+        // Metodos para personalizar los text views
+    private func setUpTextView() {
+        
+        ConferenceDescriptionTxtView.isEditable = false // Quitar la edicion al text view
         
     }
     
-    func passingData() {
+        // Metodos para pasar los datos al Detail Pop Up
+    public func passingData() {
         
         ConferenceTitleLbl.text = conferenceTitle
         ConferenceSpeakerNameLbl.text = speakerName
@@ -131,8 +143,8 @@ class DetailsPopUpViewController: UIViewController {
     }
     
 
-    
-    func setUpNavigatonController() {
+        // Metodo para personalizar la barra de navegación
+    private func setUpNavigatonController() {
 
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.02154482529, green: 0.2313018143, blue: 0.3553035259, alpha: 1)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cerrar", style: .plain, target: self, action: #selector(btnClosePopUp))
@@ -141,6 +153,7 @@ class DetailsPopUpViewController: UIViewController {
     
     // MARK: - Method Actions
     
+        // Metodo para cerrar el pop up
     @objc func btnClosePopUp() {
         
         dismiss(animated: true, completion: nil)

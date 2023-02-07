@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstPopUpViewController: UIViewController {
+final class FirstPopUpViewController: UIViewController {
     
     // MARK: - Outlets
     

@@ -42,7 +42,7 @@ class ConferenceModel {
     
     func DisplayingConference (indexSegmControl:Int, myAuditoryLbl: UILabel, myPavilionLbl: UILabel) {
         
-        print(indexSegmControl)
+        print("Indice del segment control: \(indexSegmControl)")
         
         switch indexSegmControl {
             

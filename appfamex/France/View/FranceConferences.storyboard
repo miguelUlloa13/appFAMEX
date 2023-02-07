@@ -32,7 +32,7 @@
         <!--Item 1-->
         <scene sceneID="56m-Ms-xYG">
             <objects>
-                <viewController id="oFg-Vg-1lP" userLabel="Item 1" customClass="FirstDayFranceConferenceViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oFg-Vg-1lP" customClass="FirstDayFranceConferenceViewController" customModule="appfamex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L1U-v8-xir">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

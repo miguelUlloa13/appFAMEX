@@ -9,6 +9,9 @@ import UIKit
 
 class FirstDayFranceConferenceViewController: UIViewController {
     
+    // MARK: - Notes -
+        // Controlador de la Pantalla "Item 1"
+    
     // MARK: - Outlets
     
         // View
@@ -41,19 +44,17 @@ class FirstDayFranceConferenceViewController: UIViewController {
     @IBOutlet weak var FirstDayTV: UITableView!
     
     // MARK: - Properties
-    private let myConferenceModel = ConferenceModel()
-    private let pavilionLetters = ["A", "B", "C", "D", "E", "F"]
-    
-
+    private let myConferenceModel = ConferenceModel()   // Instancia de la clase "ConferenceModel" (Objeto)
+    private let pavilionLetters = ["A", "B", "C", "D", "E", "F"]    // Valores para el segmented control
     
     // MARK: - View Life Cycle Method
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        FirstDayTV.backgroundColor = .clear
-        FirstDayTV.delegate = self
-        FirstDayTV.dataSource = self
+        FirstDayTV.backgroundColor = .clear     // Color de fondo del Table view
+        FirstDayTV.delegate = self              //
+        FirstDayTV.dataSource = self            //
         FirstDayTV.register(UINib(nibName: "ConferencesTableViewCell", bundle: nil), forCellReuseIdentifier: "ConferenceCell")
         
         setUpLabel()
@@ -149,26 +150,101 @@ extension FirstDayFranceConferenceViewController: UITableViewDelegate, UITableVi
         cell.ConferenceTime.text = "6:00"
         
         cell.backgroundColor = .clear
+        cell.selectionStyle = .none
+        
+        cell.SaveBtn.tag = indexPath.row
+        cell.infoBtn.tag = indexPath.row
+        
+        cell.SaveBtn.addTarget(self, action: #selector(TappedSaveBtn), for: .touchUpInside)
+        cell.infoBtn.addTarget(self, action: #selector(TappedInfoBtn), for: .touchUpInside)
         
         return cell
         
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    @objc func TappedInfoBtn (sender: UIButton) {
+        
+        let indexPathAux = IndexPath(row: sender.tag, section: 0)
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "DetailsPopUp", bundle: nil)
         let popUpVC = storyBoard.instantiateViewController(withIdentifier: "DetailsPopUpVC") as! DetailsPopUpViewController
         let navBarOnModal: UINavigationController = UINavigationController(rootViewController: popUpVC)
-    
-        popUpVC.conferenceTitle = "Hola"
-        popUpVC.speakerName = "Hola"
-        popUpVC.conferenceDate = "Hola"
-        popUpVC.conferenceTime = "Hola"
-        popUpVC.conferenceLocation = "Hola"
-        popUpVC.conferenceDescription = "Hola"
- 
+        
+        print("Se presiono el boton info: fila \(indexPathAux.row) -- sección \(indexPathAux.section)")
+        
+        switch FirstDaySegmControl.selectedSegmentIndex {
+            
+        case 0:
+            popUpVC.conferenceTitle = "Hola 0"
+            popUpVC.speakerName = "Hola 0"
+            popUpVC.conferenceDate = "Hola 0"
+            popUpVC.conferenceTime = "Hola 0"
+            popUpVC.conferenceLocation = "Hola 0"
+            popUpVC.conferenceDescription = "Hola 0"
+        case 1:
+            popUpVC.conferenceTitle = "Hola 1"
+            popUpVC.speakerName = "Hola 1"
+            popUpVC.conferenceDate = "Hola 1"
+            popUpVC.conferenceTime = "Hola 1"
+            popUpVC.conferenceLocation = "Hola 1"
+            popUpVC.conferenceDescription = "Hola 1"
+        case 2:
+            popUpVC.conferenceTitle = "Hola 2"
+            popUpVC.speakerName = "Hola 2"
+            popUpVC.conferenceDate = "Hola 2"
+            popUpVC.conferenceTime = "Hola 2"
+            popUpVC.conferenceLocation = "Hola 2"
+            popUpVC.conferenceDescription = "Hola 2"
+        case 3:
+            popUpVC.conferenceTitle = "Hola 3"
+            popUpVC.speakerName = "Hola 3"
+            popUpVC.conferenceDate = "Hola 3"
+            popUpVC.conferenceTime = "Hola 3"
+            popUpVC.conferenceLocation = "Hola 3"
+            popUpVC.conferenceDescription = "Hola 3"
+        case 4:
+            popUpVC.conferenceTitle = "Hola 4"
+            popUpVC.speakerName = "Hola 4"
+            popUpVC.conferenceDate = "Hola 4"
+            popUpVC.conferenceTime = "Hola 4"
+            popUpVC.conferenceLocation = "Hola 4"
+            popUpVC.conferenceDescription = "Hola 4"
+        default:
+            popUpVC.conferenceTitle = "Hola 5"
+            popUpVC.speakerName = "Hola 5"
+            popUpVC.conferenceDate = "Hola 5"
+            popUpVC.conferenceTime = "Hola 5"
+            popUpVC.conferenceLocation = "Hola 5"
+            popUpVC.conferenceDescription = "Hola 5"
+        }
         
         self.present(navBarOnModal, animated: true, completion: nil)
+        
+    }
+    
+    @objc func TappedSaveBtn (sender: UIButton) {
+        
+        showPopUpAddMiItinerario().fadeInAndOut()
+        
+    }
+    
+    private func showPopUpAddMiItinerario () -> UIView {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "ConferenceSavedPopUp", bundle: nil)
+        let popUpVC = storyBoard.instantiateViewController(withIdentifier: "ConferenceSavedPopUpVC") as! ConferenceSavedPopUpViewController
+
+        self.addChild(popUpVC)
+        
+        
+        popUpVC.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(popUpVC.view)
+        popUpVC.view.anchor(top: .none, paddingTop: .zero , bottom: view.safeAreaLayoutGuide.bottomAnchor, paddingBottom: 5, left: view.leftAnchor, paddingLeft: 70, right: view.rightAnchor, paddingRight: 75, width: 0, height: 55)
+        popUpVC.view.layer.cornerRadius = 23
+        popUpVC.view.clipsToBounds = true
+        popUpVC.didMove(toParent: self)
+        self.view.bringSubviewToFront(popUpVC.view)
+        
+        return popUpVC.view
         
     }
     
