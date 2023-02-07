@@ -55,6 +55,8 @@ class DetailsPopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Detalles"
+        
         setUpView()
         setUpLabels()
         setUpTextView()
@@ -73,12 +75,42 @@ class DetailsPopUpViewController: UIViewController {
 
     func setUpLabels() {
         
-        SpeakerNameLbl.text = "Conferencista:"
-        DateLbl.text = "Fecha:"
-        TimeLbl.text = "Hora:"
-        LocationLbl.text = "Lugar:"
-        DescriptionLbl.text = "Descripción:"
+        ConferenceTitleLbl.font = .Futura(size: 20)
+        ConferenceTitleLbl.textAlignment = .center
+        ConferenceTitleLbl.numberOfLines = 0
+        ConferenceTitleLbl.adjustsFontSizeToFitWidth = true
+        ConferenceTitleLbl.minimumScaleFactor = 0.5
         
+        SpeakerNameLbl.text = "Conferencista:"
+        
+        ConferenceSpeakerNameLbl.textColor = .link
+        ConferenceSpeakerNameLbl.numberOfLines = 0
+        ConferenceSpeakerNameLbl.adjustsFontSizeToFitWidth = true
+        ConferenceSpeakerNameLbl.minimumScaleFactor = 0.5
+        
+        DateLbl.text = "Fecha:"
+        
+        ConferenceDateLbl.textColor = .link
+        ConferenceDateLbl.numberOfLines = 0
+        ConferenceDateLbl.adjustsFontSizeToFitWidth = true
+        ConferenceDateLbl.minimumScaleFactor = 0.5
+        
+        TimeLbl.text = "Hora:"
+        
+        ConferenceTimeLbl.textColor = .link
+        ConferenceTimeLbl.numberOfLines = 0
+        ConferenceTimeLbl.adjustsFontSizeToFitWidth = true
+        ConferenceTimeLbl.minimumScaleFactor = 0.5
+        
+        LocationLbl.text = "Lugar:"
+        
+        ConferenceLocationLbl.textColor = .link
+        ConferenceLocationLbl.numberOfLines = 0
+        ConferenceLocationLbl.adjustsFontSizeToFitWidth = true
+        ConferenceLocationLbl.minimumScaleFactor = 0.5
+        
+        DescriptionLbl.text = "Descripción:"
+    
     }
     
     func setUpTextView() {
