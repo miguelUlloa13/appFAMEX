@@ -22,6 +22,8 @@ final class ConferenceSavedPopUpViewController: UIViewController {
         BackGroundSavedImgView.layer.cornerRadius = 20
         SavedLbl.text = "Se agregó a Mi Itinerario"
         SavedLbl.textAlignment = .center
+        SavedLbl.adjustsFontSizeToFitWidth = true
+        SavedLbl.minimumScaleFactor = 0.5
         
     }
     

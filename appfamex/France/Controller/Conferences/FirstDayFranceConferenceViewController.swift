@@ -136,32 +136,44 @@ class FirstDayFranceConferenceViewController: UIViewController {
 }
 
     // MARK: - UITableViewDelegate, UITableViewDataSource
+
+        // Se le aplica los protocolos necesarios (UITableViewDelegate, UITableViewDataSource) a la clase (FirstDayFranceConferenceViewController) para usar una Table view
+
 extension FirstDayFranceConferenceViewController: UITableViewDelegate, UITableViewDataSource {
-    
+        
+        // Metodo para colocar el numero de filas a la table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myConferenceModel.rowsToDisplay.count
     }
     
+        // Metodo para mostrar las celdas (filas)
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+            // Instancia (objeto) de la celda personalizada
         let cell = tableView.dequeueReusableCell(withIdentifier: "ConferenceCell", for: indexPath) as! ConferencesTableViewCell
         
+            // Se inicializa las propiedades de la celda (Se llena la celda con informacion)
         cell.ConferenceTitle.text = myConferenceModel.rowsToDisplay[indexPath.row]
         cell.ConferenceTime.text = "6:00"
         
-        cell.backgroundColor = .clear
-        cell.selectionStyle = .none
+        cell.backgroundColor = .clear   // Color de celda
+        cell.selectionStyle = .none     // Quitar el color cuando se selecciona la celda
         
-        cell.SaveBtn.tag = indexPath.row
-        cell.infoBtn.tag = indexPath.row
+        cell.SaveBtn.tag = indexPath.row    // Asignar un tag a cada botón SaveBtn
+        cell.infoBtn.tag = indexPath.row    // Asignar un tag a cada botón InfoBtn
         
+            // Agregar un metodo (Action) cuando se presiona el boton SaveBtn
         cell.SaveBtn.addTarget(self, action: #selector(TappedSaveBtn), for: .touchUpInside)
+        
+            // Agregar un metodo (Action) cuando se presiona el boton infoBtn
         cell.infoBtn.addTarget(self, action: #selector(TappedInfoBtn), for: .touchUpInside)
         
+            // Retorno de la celda
         return cell
         
     }
     
+        // Metodo (Action) del botón infoBtn
     @objc func TappedInfoBtn (sender: UIButton) {
         
         let indexPathAux = IndexPath(row: sender.tag, section: 0)
@@ -174,42 +186,47 @@ extension FirstDayFranceConferenceViewController: UITableViewDelegate, UITableVi
         
         switch FirstDaySegmControl.selectedSegmentIndex {
             
-        case 0:
+        case 0:     // Pabellón A
             popUpVC.conferenceTitle = "Hola 0"
             popUpVC.speakerName = "Hola 0"
             popUpVC.conferenceDate = "Hola 0"
             popUpVC.conferenceTime = "Hola 0"
             popUpVC.conferenceLocation = "Hola 0"
             popUpVC.conferenceDescription = "Hola 0"
-        case 1:
+            
+        case 1:     // Pabellón B
             popUpVC.conferenceTitle = "Hola 1"
             popUpVC.speakerName = "Hola 1"
             popUpVC.conferenceDate = "Hola 1"
             popUpVC.conferenceTime = "Hola 1"
             popUpVC.conferenceLocation = "Hola 1"
             popUpVC.conferenceDescription = "Hola 1"
-        case 2:
+            
+        case 2:     // Pabellón C
             popUpVC.conferenceTitle = "Hola 2"
             popUpVC.speakerName = "Hola 2"
             popUpVC.conferenceDate = "Hola 2"
             popUpVC.conferenceTime = "Hola 2"
             popUpVC.conferenceLocation = "Hola 2"
             popUpVC.conferenceDescription = "Hola 2"
-        case 3:
+            
+        case 3:     // Pabellón D
             popUpVC.conferenceTitle = "Hola 3"
             popUpVC.speakerName = "Hola 3"
             popUpVC.conferenceDate = "Hola 3"
             popUpVC.conferenceTime = "Hola 3"
             popUpVC.conferenceLocation = "Hola 3"
             popUpVC.conferenceDescription = "Hola 3"
-        case 4:
+            
+        case 4:     // Pabellón E
             popUpVC.conferenceTitle = "Hola 4"
             popUpVC.speakerName = "Hola 4"
             popUpVC.conferenceDate = "Hola 4"
             popUpVC.conferenceTime = "Hola 4"
             popUpVC.conferenceLocation = "Hola 4"
             popUpVC.conferenceDescription = "Hola 4"
-        default:
+            
+        default:    // // Pabellón D
             popUpVC.conferenceTitle = "Hola 5"
             popUpVC.speakerName = "Hola 5"
             popUpVC.conferenceDate = "Hola 5"
@@ -222,30 +239,16 @@ extension FirstDayFranceConferenceViewController: UITableViewDelegate, UITableVi
         
     }
     
+        // Metodo (Action) del botón saveBtn
     @objc func TappedSaveBtn (sender: UIButton) {
         
-        showPopUpAddMiItinerario().fadeInAndOut()
+        let myPopUp = PopUpModel()  // Objeto tipo PopUpModel
+        
+            // Mediante el objeto myPopUp se accede al metodo showSavedPopUp y con fadeInAndOut se le agrega el efecto de desvanecido
+        myPopUp.showSavedPopUp(myViewController: self).fadeInAndOut()
         
     }
     
-    private func showPopUpAddMiItinerario () -> UIView {
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "ConferenceSavedPopUp", bundle: nil)
-        let popUpVC = storyBoard.instantiateViewController(withIdentifier: "ConferenceSavedPopUpVC") as! ConferenceSavedPopUpViewController
 
-        self.addChild(popUpVC)
-        
-        
-        popUpVC.view.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(popUpVC.view)
-        popUpVC.view.anchor(top: .none, paddingTop: .zero , bottom: view.safeAreaLayoutGuide.bottomAnchor, paddingBottom: 5, left: view.leftAnchor, paddingLeft: 70, right: view.rightAnchor, paddingRight: 75, width: 0, height: 55)
-        popUpVC.view.layer.cornerRadius = 23
-        popUpVC.view.clipsToBounds = true
-        popUpVC.didMove(toParent: self)
-        self.view.bringSubviewToFront(popUpVC.view)
-        
-        return popUpVC.view
-        
-    }
     
 }
