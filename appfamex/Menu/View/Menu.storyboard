@@ -190,7 +190,24 @@
                             <constraint firstAttribute="bottom" secondItem="r4G-Pc-Lv7" secondAttribute="bottom" id="7HM-IT-Ui2"/>
                             <constraint firstItem="r4G-Pc-Lv7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="R7X-zN-tTk"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="r4G-Pc-Lv7" secondAttribute="trailing" constant="110" id="q3Y-8L-ErN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="r4G-Pc-Lv7" secondAttribute="trailing" constant="220" id="v7U-XQ-ZYq"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="q3Y-8L-ErN"/>
+                                <exclude reference="v7U-XQ-ZYq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="q3Y-8L-ErN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="v7U-XQ-ZYq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <size key="freeformSize" width="430" height="932"/>
                     <connections>

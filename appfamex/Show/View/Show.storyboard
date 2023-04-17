@@ -40,9 +40,26 @@
                                                     <constraint firstAttribute="height" constant="300" id="1kZ-lP-Pr6"/>
                                                     <constraint firstItem="riW-Zi-MkH" firstAttribute="leading" secondItem="95T-gG-rez" secondAttribute="leading" constant="70" id="2ki-ir-Y7O"/>
                                                     <constraint firstAttribute="bottom" secondItem="riW-Zi-MkH" secondAttribute="bottom" constant="20" id="4tP-Vt-Pe3"/>
+                                                    <constraint firstAttribute="height" constant="600" id="5RW-VF-Jsq"/>
                                                     <constraint firstItem="riW-Zi-MkH" firstAttribute="top" secondItem="95T-gG-rez" secondAttribute="top" constant="20" id="MqK-Oe-S3N"/>
                                                     <constraint firstAttribute="trailing" secondItem="riW-Zi-MkH" secondAttribute="trailing" constant="70" id="Q1K-aB-Ke3"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="1kZ-lP-Pr6"/>
+                                                        <exclude reference="5RW-VF-Jsq"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="1kZ-lP-Pr6"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="5RW-VF-Jsq"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cE-fS-ywG">
                                                 <rect key="frame" x="0.0" y="300" width="430" height="539"/>
@@ -94,6 +111,8 @@
                                                                 <state key="normal" title="Button" backgroundImage="WhiteShowButton"/>
                                                             </button>
                                                         </subviews>
+                                                        <variation key="heightClass=regular-widthClass=compact" spacing="30"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" spacing="70"/>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

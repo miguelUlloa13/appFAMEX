@@ -49,8 +49,12 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
 
         MenuView.layer.cornerRadius = 10
+        
+            // Degados del table view
+            // La vista recibe las acciones del usuario y delega el trabajo a una clase (MenuViewController) para que realice algún cálculo, haga una petición HTTP, etc y luego vuelva a notificar a la vista para indicar que todo ha ido bien.
         MenuTV.delegate = self
         MenuTV.dataSource = self
+        
         MenuTV.backgroundColor = .clear
         MenuTV.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "MenuCell")
    
